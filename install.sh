@@ -20,10 +20,6 @@ ln -sf "$DOTFILES/zsh/external" "$XDG_CONFIG_HOME/zsh"
 rm -rf "$XDG_CONFIG_HOME/zathura"
 ln -sf "$DOTFILES/zathura" "$XDG_CONFIG_HOME/zathura"
 
-#########
-# Fonts #
-#########
-
 mkdir -p "$XDG_DATA_HOME"
 cp -rf "$DOTFILES/fonts" "$XDG_DATA_HOME"
 
@@ -32,3 +28,13 @@ ln -sf "$DOTFILES/dunst/dunstrc" "$XDG_CONFIG_HOME/dunst/dunstrc"
 
 rm -f "$HOME/.gitconfig"
 ln -sf "$DOTFILES/git/.gitconfig" "$HOME/.gitconfig"
+
+# install neovim plugin manager
+[ ! -f "$DOTFILES/nvim/autoload/plug.vim" ] \
+    && curl -fLo "$DOTFILES/nvim/autoload/plug.vim" --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+mkdir -p "$XDG_CONFIG_HOME/nvim/autoload"
+ln -sf "$DOTFILES/nvim/autoload/plug.vim" "$XDG_CONFIG_HOME/nvim/autoload/plug.vim"
+# Install (or update) all the plugins
+nvim --noplugin +PlugUpdate +qa
