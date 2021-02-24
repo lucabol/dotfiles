@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+#xfce4-session spits out quite a bit of text during logout, which I guess
+#confuses x2go so we would get a black screen and session hang.
+#adding redirect to a logfile like "~/logfile" or "/dev/null" nicely solved it
+# see http://bugs.x2go.org/cgi-bin/bugreport.cgi?bug=914
+
+# Also this is useful to merge resources before initialization
+
+xrdb -merge $HOME/.Xresources
+urxvtd -o -q -f
+/usr/bin/i3 > /dev/null

@@ -15,6 +15,8 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
+nnoremap <c-w>h <c-w>s
+
 set noswapfile
 
 " save undo trees in files
