@@ -4,6 +4,7 @@ call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
     Plug 'simeji/winresizer'
     Plug 'junegunn/fzf.vim'
     Plug 'simnalamburt/vim-mundo'
+"    Plug 'jwilm/i3-vim-focus'
 call plug#end()
 
 set clipboard+=unnamedplus
@@ -16,6 +17,12 @@ noremap <Left> <Nop>
 noremap <Right> <Nop>
 
 nnoremap <c-w>h <c-w>s
+
+" trying to use https://github.com/jwilm/i3-vim-focus, but failed
+" map gwl :call Focus('right', 'l')<CR>
+" map gwh :call Focus('left', 'h')<CR>
+" map gwk :call Focus('up', 'k')<CR>
+" map gwj :call Focus('down', 'j')<CR>
 
 set noswapfile
 
