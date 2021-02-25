@@ -159,8 +159,8 @@ bindsym Mod1+Shift+0 move container to workspace number $ws10
 exec_always --no-startup-id autotiling
 
 # assign apps to workspaces
-# assign [class="firefox" instance="Navigator"] $web
-# assign [class="URxvt" instance="urxvt"] $code
+assign [class="Thunderbird" instance="Mail"] $mail
+exec thunderbird-beta
 
 # browser are stacked
 for_window [class="firefox" instance="Navigator"] focus child, layout stacking, focus
@@ -291,13 +291,28 @@ for_window [class="URxvt*"] border normal 1
 
 # Terminal scratchpad
 for_window [instance="urxvt_scratchpad"] move to scratchpad, border none
-bindsym Mod1+Shift+t [instance="urxvt_scratchpad"] scratchpad show
+bindsym Mod1+Shift+x [instance="urxvt_scratchpad"] scratchpad show
 exec urxvtc -name urxvt_scratchpad
 
 # htop scratchpad
 for_window [instance="htop_scratchpad"] move to scratchpad, border none
-bindsym Mod1+Shift+p [instance="htop_scratchpad"] scratchpad show
+bindsym Mod1+Shift+t [instance="htop_scratchpad"] scratchpad show
 exec urxvtc -name htop_scratchpad -e htop
+
+# keepassxc scratchpad
+for_window [instance="keepassxc"] move to scratchpad, border none
+bindsym Mod1+Shift+p [instance="keepassxc_scratchpad"] scratchpad show
+exec keepassxc -name keepassxc_scratchpad
+
+# protonmail scratchpad
+for_window [instance="proton"] move to scratchpad, border none
+bindsym Mod1+Shift+b [instance="proton"] scratchpad show
+exec protonmail-bridge
+
+# authy scratchpad
+for_window [instance="authy"] move to scratchpad, border none
+bindsym Mod1+Shift+a [instance="authy"] scratchpad show
+exec authy
 
 # i3bar
 bar {
