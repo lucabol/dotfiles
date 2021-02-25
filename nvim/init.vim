@@ -18,6 +18,8 @@ noremap <Right> <Nop>
 
 nnoremap <c-w>h <c-w>s
 
+nmap <Leader><space> :! urxvtc -e bash -i -c "nvim %"<enter><enter>
+
 " trying to use https://github.com/jwilm/i3-vim-focus, but failed
 " map gwl :call Focus('right', 'l')<CR>
 " map gwh :call Focus('left', 'h')<CR>

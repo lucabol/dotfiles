@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# -hold urxvt option is not needed as vim stays running
+# -i bash option to run interactively
+exec urxvtc -e bash -i -c "nvim"
+
