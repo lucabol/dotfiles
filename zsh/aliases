@@ -11,3 +11,4 @@ alias tmuxk='tmux kill-session -t'
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
 
+alias man='vman'
