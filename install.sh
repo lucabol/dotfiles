@@ -2,6 +2,16 @@
 
 mkdir -p "$XDG_DATA_HOME"
 
+rm -rf "$XDG_CONFIG_HOME/Code/User/settings.json"
+rm -rf "$XDG_CONFIG_HOME/Code/User/keybindings.json"
+mkdir -p "$XDG_CONFIG_HOME/Code"
+mkdir -p "$XDG_CONFIG_HOME/Code/User"
+ln -sf "$DOTFILES/Code/settings.json" "$XDG_CONFIG_HOME/Code/User/settings.json"
+ln -sf "$DOTFILES/Code/keybindings.json" "$XDG_CONFIG_HOME/Code/User/keybindings.json"
+
+rm -rf "$HOME/.profile"
+ln -sf "$DOTFILES/.profile" "$HOME/.profile"
+
 mkdir -p "$XDG_CONFIG_HOME/nvim"
 mkdir -p "$XDG_CONFIG_HOME/nvim/undo"
 ln -sf "$DOTFILES/nvim/init.vim" "$XDG_CONFIG_HOME/nvim/init.vim"
@@ -50,3 +60,6 @@ nvim --noplugin +PlugUpdate +qa
 [ ! -d "$XDG_CONFIG_HOME/tmux/plugins/tpm" ] \
 && git clone https://github.com/tmux-plugins/tpm \
 "$XDG_CONFIG_HOME/tmux/plugins/tpm"
+
+mkdir -p "$HOME/.mozilla/firefox/37a0vnc6.default-release/chrome"
+ln -sf "$DOTFILES/firefox/userChrome.css" "$HOME/.mozilla/firefox/37a0vnc6.default-release/chrome/userChrome.css"

@@ -9,3 +9,15 @@ vman() {
     echo "No manual entry for $*"
     fi
 }
+
+browse() {
+    lynx -vikeys -accept_all_cookies $1
+}
+
+wikipedia() {
+    browse "https://en.wikipedia.org/wiki/$@"
+}
+
+duckduckgo() {
+    browse "https://lite.duckduckgo.com/lite/?q='$@'"
+}

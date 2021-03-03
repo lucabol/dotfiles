@@ -1,0 +1,113 @@
+// Place your key bindings in this file to override the defaults
+    [
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetVisible"
+    },{
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+    // j/k to move between split terminals, h to move back to the editor
+    {
+        "key": "ctrl+w h",
+        "command": "workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+w l",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+w k",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+
+    // j/k to move between "open editors", the explorer tree, and outline;
+    // l to move back to the editor
+    {
+        "key": "ctrl+w l",
+        "command": "workbench.files.action.focusOpenEditorsView",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "ctrl+w h",
+        "command": "workbench.files.action.focusFilesExplorer",
+        "when": "openEditorsFocus"
+    },
+    {
+        "key": "ctrl+w l",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "explorerViewletFocus"
+    },
+    {
+        "key": "ctrl+w j",
+        "command": "outline.focus",
+        "when": "filesExplorerFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+k",
+        "command": "commandId",
+        "when": "editorTextFocus"
+    },{
+        "key": "ctrl+w k",
+        "command": "workbench.files.action.focusFilesExplorer",
+        "when": "outlineFocused"
+    },
+    {
+        "key": "ctrl+w l",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "outlineFocused"
+    },
+    {
+        "key": "alt+b",
+        "command": "-gitlens.toggleFileBlame",
+        "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /blameable/"
+    },
+    {
+        "key": "alt+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "-extension.vim_ctrl+t",
+        "when": "editorTextFocus && vim.active && vim.use<C-t> && !inDebugRepl"
+    },
+    // Open from history independently from the editor group
+    { "key": "ctrl+tab", "command": "workbench.action.openPreviousEditorFromHistory" },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+shift+a",
+        "command": "-workbench.view.extension.azure"
+    },
+    {
+        "key": "ctrl+w f",
+        "command": "workbench.explorer.fileView.focus"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "fsi.SendSelection",
+        "when": "editorFocus && !findWidgetVisible && editorLangId == 'fsharp'"
+    }
+]

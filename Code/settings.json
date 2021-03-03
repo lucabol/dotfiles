@@ -1,0 +1,162 @@
+{
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+
+    // Remove clutter
+    "workbench.editor.showTabs": false,
+    "editor.minimap.enabled": false,
+    "editor.codeLens": false,
+    "workbench.activityBar.visible": false, 
+    "explorer.openEditors.visible": 0,
+    "workbench.sideBar.location": "right",
+    "window.menuBarVisibility":"toggle",
+    "breadcrumbs.enabled": true,
+
+    // Typography
+    "editor.renderLineHighlight": "line",
+    "editor.lineNumbers": "off",
+    "editor.fontSize": 24,
+    "editor.fontFamily": "Source Code Variable, Lucida Sans Typewriter, Cascadia Code PL, Consolas, 'Courier New', monospace",
+    "editor.fontWeight": "500",
+    "editor.renderWhitespace": "trailing",
+
+    // Terminal
+    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+    "terminal.integrated.fontSize": 20,
+    "terminal.integrated.cursorBlinking": false,
+    "terminal.integrated.cursorStyle": "line",
+
+    // Various
+    "editor.emptySelectionClipboard": false,
+    "editor.formatOnPaste": true,
+
+    "window.zoomLevel": 0,
+    "editor.fontLigatures": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "vim.camelCaseMotion.enable": true,
+    "vim.changeWordIncludesWhitespace": true,
+    "vim.enableNeovim": true,
+    "vim.foldfix": true,
+    "vim.gdefault": true,
+    "vim.highlightedyank.enable": true,
+    "vim.history": 1000,
+    "vim.leader": " ",
+    "vim.replaceWithRegister": true,
+    "vim.sneak": true,
+    "vim.sneakReplacesF": true,
+    "vim.sneakUseIgnorecaseAndSmartcase": true,
+    "vim.textwidth": 100,
+    "vim.useSystemClipboard": true,
+    "vim.visualstar": true,
+    "vim.handleKeys": { "<C-k>": false },           // Used to exit Zen mode
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [ "Z", "Z" ],
+            "commands": [ ":wq" ]
+        },
+        {
+            "before": [ "<leader>", "m" ],
+            "commands": [ "bookmarks.toggle" ]
+        },
+        {
+            "before": [ "<leader>", "b" ],
+            "commands": [ "bookmarks.list" ] },
+        {
+            "before": [ "<C-n>" ],
+            "commands": [ ":nohl", ]
+        },
+        {
+            "before": [ "leader", "w" ],
+            "commands": [ "workbench.action.files.save", ]
+        },
+        // open references panel with gr
+        {
+            "before": ["g", "r"],
+            "commands": ["references-view.find"]
+        },
+        // peek references inline with gR
+        {
+            "before": ["g", "R"],
+            "commands": ["editor.action.referenceSearch.trigger"]
+        },
+        // open definition in new editor group with gs
+        {
+            "before": ["g", "s"],
+            "commands": ["editor.action.revealDefinitionAside"]
+        },
+        {
+        // peek definition inline with gD
+            "before": ["g", "D"],
+            "commands": ["editor.action.peekDefinition"]
+        },
+        // open link with gx
+        {
+            "before": ["g", "x"],
+            "commands": ["editor.action.openLink"]
+        }
+    ],
+    "vim.neovimPath": "C:\\tools\\neovim\\Neovim\\bin\\nvim.exe ",
+    "editor.wordWrapColumn": 80,
+    "editor.rulers": [ 80 ],
+    "dotnet-test-explorer.autoExpandTree": true,
+    "dotnet-test-explorer.autoWatch": true,
+    "todo-tree.highlights.enabled": true,
+    "files.autoSave": "afterDelay",
+     "files.associations": {
+        "*.boris": "json"
+},
+"cSpell.diagnosticLevel": "Hint",
+"todo-tree.tree.showScanModeButton": false,
+"editor.mouseWheelZoom": true,
+"explorer.confirmDelete": false,
+"cSpell.enableFiletypes": [
+    "rkt",
+    "racket"
+],
+
+"FSharp.useSdkScripts": true,
+"git.confirmSync": false,
+"liveServer.settings.donotShowInfoMsg": true,
+"gitlens.codeLens.enabled": false,
+"gitlens.currentLine.scrollable": false,
+"search.collapseResults": "auto",
+"window.autoDetectColorScheme": true,
+// from https://github.com/kortina/vscode-markdown-notes/blob/master/RECOMMENDED-SETTINGS.md
+"[markdown]": {
+    // quickSuggestions true will provide suggestions as you type.
+    // If you turn this on and DO NOT want suggestions
+    // for non-wiki-link, non-tag words,
+    "editor.quickSuggestions": true,
+    // This is poorly documented, but seems to offer suggestions
+    // from any word in open document when turned on, which
+    // can be a little distracting in markdown docs:
+    "editor.wordBasedSuggestions": false,
+    "editor.tabSize": 2,
+    // Set this to false if you turn on quickSuggestions
+    // but don't want suggestions for markdown related snippets
+    // as you type:
+    "editor.suggest.showSnippets": false,
+},
+"grammarly.userWords": [ "HTMX" ],
+"zenMode.fullScreen": false,
+"search.quickOpen.includeSymbols": true,
+"search.seedWithNearestWord": true,
+// Use new JS debugger
+"debug.javascript.usePreview": true,
+"explorer.confirmDragAndDrop": false,
+"[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+},
+"markdownlint.customRules": [
+    "{docsmsft.docs-linting}/markdownlint-custom-rules/rules.js"
+],
+"markdownlint.config": {
+    "MD028": false
+},
+"omnisharp.enableDecompilationSupport": true,
+"workbench.editor.decorations.colors": true,
+"workbench.editor.decorations.badges": true,
+"FSharp.lineLens.enabled": "never",
+"debug.console.fontSize": 24,
+"vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim"
+}
