@@ -1,0 +1,221 @@
+open www.google.com
+open wikipedia
+g vimb
+goto vimb
+open google
+open arch linux surf browser
+open surf start blank page
+open surf browser start web page
+open imiric surf github
+open vimb vs surf browsers
+open vimb surf browsers comparison
+open surf browser vimperator
+open surf vim key bindings
+open vimb home page
+open linux man to pdf
+open change grub config
+open arch linux grub
+open jq from_entries
+open finnhub.io
+q
+open ~/dev/linvest/bin/aapl
+open vimb
+! ls
+shellcmd('ls')
+set
+set?
+open xembed
+open winid current window
+open winid of x window
+open xembed program
+open suckless xembed
+open embed application in urxvt
+open test
+open g test
+open google.com
+set editor-command?
+open vimb editor-command urxvt
+set editor-command=urxvt -e vim %s
+q
+open https://fanglingsu.github.io/vimb/man.html
+tabopen https://fanglingsu.github.io/vimb/man.html
+q
+q
+tabopen google.com
+set x-hint-command?
+bma vimb
+bm
+map genoa savona
+open map genoa savona
+open g test
+open gh lucabol dotfiles
+qpu
+qu
+ha
+ha
+ha
+qc
+qp
+qpu
+qp
+open google.com
+open 
+open 
+go bo
+open go
+open vim map shift key
+open vim
+open arch linux xdg-open
+open arch linux magnet opener
+set autogroup?
+set augroup?
+sh ls ~/
+sh echo %
+sh echo VIMB_URI
+sh echo $VIMB_URI
+sh! ls ~/
+/arch
+open back
+set accelerated-2d-canvas?
+set caret?
+set caret
+set caret=true
+set caret
+set caret=false
+set closed-max-items
+set cookie-accept
+set dark-mode
+set dark-mode=true
+q
+set dark-mode=true
+set dark-mode=true
+q
+open dark
+set dark-mode!
+set dark-mode!
+set dark-mode!
+q
+q
+open g vimb dark-mode
+open https://fanglingsu.github.io/vimb/man.html
+set cursive-font?
+set cursiv-font?
+set default-font
+set dns-prefetching
+set download-path
+set font-size
+set font-size=18
+open gh lucabol dotfiles
+set fullscreen!
+set fullscreen!
+set hardware-acceleration-policy
+set hint-keys-same-length
+open css font size property
+q
+q
+open https://fanglingsu.github.io/vimb/man.html
+set hint-keys=asdfg;lkjh
+set stylesheet
+sh ls /local/share
+q
+set history-max-items
+set html5-database
+set html5-local-storage
+q
+set javascript-can-access-clipboard
+set notification
+set print-backgrounds
+set scripts
+set site-specific-quirks
+set smooth-scrolling
+q
+set smooth-scrolling
+set smooth-scrolling=false
+set spacial-navigation
+set spell-checking
+set status-css
+set status-ssl-css
+set strict-ssl
+set stylesheet
+set tabs-to-links
+set user-agent
+set user-scripts
+set webgl
+set webinspector
+open arch linux wyebadblock
+open easylist.txt
+open g easylist.txt
+q
+open https://fanglingsu.github.io/vimb/man.html
+open g simplyread.js
+q
+e! simplyread();
+e! simplyread();
+e! simplyread();
+nnoremap <C-R> :e! simplyread();<CR>
+e! simplyread();
+e! simplyread();
+set scripts
+e! simplyread();
+open gh lucabol dotfiles
+e! simplyread();
+open new york times
+q
+e! simplyread();
+e! simplyread();
+e! simplyread();
+e! simplyread();
+e! simplyread();
+e! not()
+open !
+open https://fanglingsu.github.io/vimb/man.html
+q
+e! simplyread();
+e simplyread();<CR>
+open github simplyread
+open vimb simplyread
+e! simplyread();
+open !/vim
+open !/
+q
+q
+open g readibility.js newest
+open vimb readibility
+qpu
+q
+open gh lucabol dotfiles
+q
+qp
+open https://fanglingsu.github.io/vimb/man.html
+open https://fanglingsu.github.io/vimb/man.html
+q
+open github vimb
+w
+q
+q
+set font-size=18
+set font-size=18
+q
+q
+q
+open gh lucabol dotfiles
+q
+set monospace-font-size=20
+q
+open dark theme simple css
+q
+open vimb dark mode
+q
+q
+q
+q
+q
+q
+set font-size=22
+q
+set font-size
+gh lucabol dotfiles
+open gh lucabol dotfiles
+open https://github.com/fanglingsu/vimb
+ha
+open gurufocus apis

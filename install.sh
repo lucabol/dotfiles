@@ -2,6 +2,12 @@
 
 mkdir -p "$XDG_DATA_HOME"
 
+rm -rf "$XDG_CONFIG_HOME/vimb"
+ln -sf "$DOTFILES/vimb" "$XDG_CONFIG_HOME/vimb"
+
+rm -rf "$XDG_CONFIG_HOME/wyebadblock"
+ln -sf "$DOTFILES/wyebadblock" "$XDG_CONFIG_HOME/wyebadblock"
+
 rm -rf "$XDG_CONFIG_HOME/Code/User/settings.json"
 rm -rf "$XDG_CONFIG_HOME/Code/User/keybindings.json"
 mkdir -p "$XDG_CONFIG_HOME/Code"

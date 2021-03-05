@@ -1,0 +1,25 @@
+set editor-command=urxvt -e vim %s
+set dark-mode=true
+set download-path=~/Downloads
+set font-size=18
+set input-autohide=true
+set javascript-can-access-clipboard=true
+set smooth-scrolling=true
+set home-page=https://www.archlinux.org/
+set spacial-navigation=true
+set status-bar=false
+
+set hint-keys=asdfg;lkjh
+set hint-match-element = false
+set stylesheet=on
+
+
+shortcut-add map=https://maps.google.com/maps?saddr=$0&daddr=$1
+shortcut-add g=https://www.google.com/search?q=$0
+shortcut-add gh=https://github.com/$0/$1
+
+shortcut-default g
+
+nnoremap H <C-o>
+nnoremap L <C-i>
+nnoremap <C-r> :eval! simplyread();<CR>

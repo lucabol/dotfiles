@@ -1,5 +1,4 @@
 call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
-    Plug 'chrisbra/csv.vim'         " manage csv files
     Plug 'simeji/winresizer'        " <Leader>w to resize panes
     Plug 'simnalamburt/vim-mundo'   " <F5> toggle undo tree
     Plug 'sheerun/vim-polyglot'     " Syntax highl and indentation
