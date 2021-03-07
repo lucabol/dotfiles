@@ -9,7 +9,7 @@ set home-page=https://www.archlinux.org/
 set spacial-navigation=true
 set status-bar=false
 
-set hint-keys=asdfg;lkjh
+set hint-keys=asdfglkjh
 set hint-match-element = false
 set stylesheet=on
 

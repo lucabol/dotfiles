@@ -1,4 +1,13 @@
+set $lockprog /home/lucabol/libs/i3lock-fancy/lock
+# Lock automatically
+exec xautolock -time 10 -locker $lockprog
+
+# Win key is the thing
 set $mod Mod4
+
+# lock the screen
+bindsym Mod1+l exec $lockprog
+
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
