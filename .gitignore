@@ -1,3 +1,7 @@
 vimb/command
 vimb/cookies.db
 vimb/history
+vimb/bookmark
+vimb/closed
+vimb/queue
+vimb/search
