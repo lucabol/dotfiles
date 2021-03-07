@@ -2,5 +2,5 @@ clear Control
 clear Lock
 clear Mod1
 
-keycode 108 = Control_R
+keycode 105 = Control_R
 keycode 66  = Escape
