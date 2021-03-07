@@ -6,7 +6,13 @@
 # see http://bugs.x2go.org/cgi-bin/bugreport.cgi?bug=914
 
 # Also this is useful to merge resources before initialization
-
 xrdb -merge $HOME/.Xresources
+
+# start the urxvtd daemon
 urxvtd -o -q -f
+
+# create appropriate config
+cat /home/lucabol/.i3config.local /home/lucabol/dotfiles/i3/config.base > /home/lucabol/.config/i3/config
+
+# avoid output confusion
 /usr/bin/i3 > /dev/null
