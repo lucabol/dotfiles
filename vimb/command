@@ -251,3 +251,6 @@ open xpra desktop
 open x2go inside i3 keys
 open vim search and replace 
 q
+open github ssh authentication
+open warning unprotected private key file
+open gh lucabol dotfiles
