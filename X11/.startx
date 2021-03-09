@@ -17,5 +17,10 @@ urxvtd -o -q -f
 # create appropriate config
 cat /home/lucabol/.i3config.local /home/lucabol/dotfiles/i3/config.base > /home/lucabol/.config/i3/config
 
+# magic to enable keyring
+source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
+eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+export SSH_AUTH_SOCK
+
 # avoid output confusion
 /usr/bin/i3 > /dev/null
