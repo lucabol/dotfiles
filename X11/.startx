@@ -5,8 +5,8 @@
 #adding redirect to a logfile like "~/logfile" or "/dev/null" nicely solved it
 # see http://bugs.x2go.org/cgi-bin/bugreport.cgi?bug=914
 
-# set right commands
-# [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
+# right alt is ctrl and caps lock is escape
+setxkbmap -option ctrl:ralt_rctrl -option caps:escape
 
 # Also this is useful to merge resources before initialization
 xrdb -merge $HOME/.Xresources
