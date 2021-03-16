@@ -8,5 +8,8 @@ alias tmuxa='tmux attach-session -t'
 alias tmuxn='tmux new-session -s'
 alias tmuxk='tmux kill-session -t'
 
+alias R="R --quiet --save"
+alias r=/usr/bin/r
+
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
