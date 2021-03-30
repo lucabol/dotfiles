@@ -8,7 +8,7 @@ alias tmuxa='tmux attach-session -t'
 alias tmuxn='tmux new-session -s'
 alias tmuxk='tmux kill-session -t'
 
-alias R="R --quiet --save"
+alias R="R --quiet --vanilla"
 alias r=/usr/bin/r
 
 alias d='dirs -v'

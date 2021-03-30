@@ -158,5 +158,7 @@
 "workbench.editor.decorations.badges": true,
 "FSharp.lineLens.enabled": "never",
 "debug.console.fontSize": 24,
-"vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim"
+"vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+"r.bracketedPaste": true,
+"r.rterm.linux": "/usr/bin/radian"
 }
