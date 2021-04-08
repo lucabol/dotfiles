@@ -305,9 +305,9 @@ bindsym $mod+Shift+w [instance="keepassxc_scratchpad"] scratchpad show
 exec keepassxc -name keepassxc_scratchpad
 
 # standardnotes scratchpad
-for_window [instance="standard notes"] move to scratchpad, border none
-bindsym $mod+Shift+n [instance="standard-scratch"] scratchpad show
-exec standardnotes -name standard-scratch
+# for_window [instance="standard notes"] move to scratchpad, border none
+# bindsym $mod+Shift+n [instance="standard-scratch"] scratchpad show
+# exec standardnotes -name standard-scratch
 
 # protonmail in background
 exec protonmail-bridge --no-window

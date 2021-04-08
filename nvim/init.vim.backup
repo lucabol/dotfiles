@@ -13,7 +13,6 @@ call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
     Plug 'jez/vim-superman'         " Read man pages in vim (vman)
     Plug 'tpope/vim-fugitive'       " Git command
     Plug 'mhinz/vim-startify'       " Cooler startup page
-    Plug 'bluz71/vim-moonfly-colors' " A color scheme
 
     "   Rust language support
     " autocomplete
@@ -34,32 +33,16 @@ call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
 
 call plug#end()
 
-" avoid matching parenthesis to be too similar in color
-hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
-
 let g:python3_host_prog = '/usr/bin/python3'
 let g:python_host_prog = '/usr/bin/python'
 
 " settings for language service
 let g:deoplete#enable_at_startup = 1
 
-" deoplete source around cursor for completion words
-call deoplete#custom#var('around', {
-\   'range_above': 15,
-\   'range_below': 15,
-\   'mark_above': '[↑]',
-\   'mark_below': '[↓]',
-\   'mark_changes': '[*]',
-\})
-
-" enable automatic filetype recognizing and plugin loading
-filetype on
-filetype plugin on
-
 " Rust settings
 nmap <F5> <Plug>(lcn-menu)
 " Or map each action separately
-nmap <silent> <F2> <Plug>(lcn-rename)
+" nmap <silent> <F2> <Plug>(lcn-rename)
 autocmd FileType rust nmap <silent> gr <Plug>(lcn-rename)
 nmap <silent>K <Plug>(lcn-hover)
 nmap <silent> gd <Plug>(lcn-definition)
@@ -70,6 +53,10 @@ let g:rustfmt_autosave = 1
 
 
 let g:sneak#label = 1
+
+" enable automatic filetype recognizing and plugin loading
+filetype on
+filetype plugin on
 
 " autosave
 au TextChanged,TextChangedI <buffer> if &readonly == 0 && filereadable(bufname('%')) | silent write | endif
@@ -89,19 +76,17 @@ set undodir=$HOME/.config/nvim/undo
 set undolevels=10000
 set undoreload=10000
 
-" see hybrid line numbers
-set number relativenumber
+" see line numbers
+" set number
 
 " use 4 spaces instead of tab ()
 " copy indent from current line when starting a new line
-" don't wrap lines
 
 set autoindent
 set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set nowrap
 
 " show substitution
 set inccommand=nosplit
@@ -134,13 +119,6 @@ nnoremap <c-w>h <c-w>s
 
 " open a new terminal and pick the file
 nmap <Leader><space> :! urxvtc -e bash -i -c "nvim %"<enter><enter>
-
-" Deoplete mappings
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-function! s:my_cr_function()
-    return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
-endfunction
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " PLUGINS
 
