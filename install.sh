@@ -1,5 +1,8 @@
 #!/bin/bash
 
+rm -rf "$HOME/.urxvt"
+ln -sf "$DOTFILES/urxvt" "$HOME/.urxvt"
+
 mkdir -p "$XDG_DATA_HOME"
 
 rm -rf "$XDG_CONFIG_HOME/vimb"

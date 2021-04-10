@@ -1,4 +1,5 @@
 call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
+    Plug 'altercation/vim-colors-solarized'
     Plug 'simeji/winresizer'        " <Leader>w to resize panes
     Plug 'simnalamburt/vim-mundo'   " <F5> toggle undo tree
     Plug 'sheerun/vim-polyglot'     " Syntax highl and indentation
@@ -13,8 +14,8 @@ call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
     Plug 'jez/vim-superman'         " Read man pages in vim (vman)
     Plug 'tpope/vim-fugitive'       " Git command
     Plug 'mhinz/vim-startify'       " Cooler startup page
-    Plug 'bluz71/vim-moonfly-colors' " A color scheme
-
+    Plug 'takac/vim-hardtime'       " can't press hjklupdownleftright twice in 1 second.
+    Plug 'ervandew/supertab'        " enable tab in many scenarios
     "   Rust language support
     " autocomplete
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -33,6 +34,21 @@ call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
     Plug 'rust-lang/rust.vim',         { 'for': 'rust' }
 
 call plug#end()
+
+"16 colors for vim
+set t_Co=16
+set background=dark
+colorscheme solarized 
+
+" F5 toggle to dark mode
+call togglebg#map("<F5>")
+
+" grey line numbers
+" hi LineNr ctermfg=8
+" hi CursorLineNr ctermfg=8 ctermbg=252
+
+" Hardtime is on, baby, stop jkl;
+let g:hardtime_default_on = 1
 
 " avoid matching parenthesis to be too similar in color
 hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
@@ -57,7 +73,7 @@ filetype on
 filetype plugin on
 
 " Rust settings
-nmap <F5> <Plug>(lcn-menu)
+nmap <F6> <Plug>(lcn-menu)
 " Or map each action separately
 nmap <silent> <F2> <Plug>(lcn-rename)
 autocmd FileType rust nmap <silent> gr <Plug>(lcn-rename)
@@ -103,6 +119,10 @@ set softtabstop=4
 set shiftwidth=4
 set nowrap
 
+" cursor line and column line
+set cursorline
+set colorcolumn=80
+
 " show substitution
 set inccommand=nosplit
 
@@ -119,7 +139,7 @@ augroup END
 map <Space> <Leader>
 let g:winresizer_start_key = "<Leader>w"
 
-nnoremap <F5> :MundoToggle<CR>
+nnoremap <F7> :MundoToggle<CR>
 
 " s is used by the sandwich plugin
 nmap s <Nop>
