@@ -35,6 +35,7 @@ call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
 
 call plug#end()
 
+let g:lightline = { 'colorscheme': 'solarized'}
 "16 colors for vim
 set t_Co=16
 set background=dark
