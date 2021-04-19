@@ -76,3 +76,6 @@ nvim --noplugin +PlugUpdate +qa
 
 mkdir -p "$HOME/.mozilla/firefox/37a0vnc6.default-release/chrome"
 ln -sf "$DOTFILES/firefox/userChrome.css" "$HOME/.mozilla/firefox/37a0vnc6.default-release/chrome/userChrome.css"
+
+# reintall patched st
+./st-patches/redeploy.sh

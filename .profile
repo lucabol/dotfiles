@@ -1,5 +1,5 @@
 export PATH=~/bin:~/.dotnet/tools:~/.local/bin:$PATH
-export LD_LIBRARY_PATH=~/lib/libgl-xlib:${LD_LIBRARY_PATH}
+# export LD_LIBRARY_PATH=~/lib/libgl-xlib:${LD_LIBRARY_PATH}
 
 # Default less customizations
 export LESS='-r --quit-if-one-screen --ignore-case --status-column --LONG-PROMPT --RAW-CONTROL-CHARS --HILITE-UNREAD --tabs=4 --no-init --window=-4'

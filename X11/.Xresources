@@ -1,10 +1,22 @@
+Xft.antialias:  1
+Xft.autohint:   0
+Xft.dpi:        140
+Xft.hinting:    1
+Xft.hintstyle:  hintfull
+Xft.rgba:       rgb
+Xft.lcdfilter:  lcddefault
+
+
 ! Attempt to get solarized colors right
 ! https://bbs.archlinux.org/viewtopic.php?id=164108
 URxvt.intensityStyles: false
 
-! URxvt*font: xft:DejaVuSansMono:size=14:antialias=true
-URxvt*font: xft:Inconsolata Nerd Font Mono:style=Medium:size=16:antialias=true
+URxvt*font:             xft:PragmataPro Liga:size=12
+URxvt*boldFont:         xft:PragmataPro Liga:size=12:bold
+URxvt*italicFont:       xft:PragmataPro Liga:size=12:italic
+URxvt*boldItalicFont:   xft:PragmataPro Liga:size=12:bold:italic
 URxvt*letterSpace: -1
+
 URxvt*borderLess: false
 URxvt*externalBorder: 0
 URxvt*internalBorder: 4
@@ -35,6 +47,6 @@ URxvt*scrollWithBuffer: true
 ! scroll back to the bottom on keypress
 URxvt*scrollTtyKeypress: true
 
-URxvt.perl-ext-common:      solarized
+URxvt.perl-ext-common:      solarized, resize-font
 URxvt.keysym.Mod4-c:        perl:solarized:toggle
 URxvt.solarized.default:    light

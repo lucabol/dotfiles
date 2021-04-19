@@ -5,7 +5,7 @@
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Bahnschrift Condensed 12
+font pango:Inconsolata Nerd Font 8
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -36,7 +36,7 @@ set $right l
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec st
+bindsym $mod+Return exec urxvtc  -vb -cd $(xcwd)
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -287,17 +287,17 @@ client.unfocused 	    #333333 #222222     #888888     #292d2e     #222222
 client.urgent 		    $red1   $red1       $white2     $red1       $red1
 client.placeholder 	    #000000 #0c0c0c     $white2     #000000     0c0c0c
 
-for_window [class="st-*"] border normal 1
+for_window [class="URxvt*"] border normal 1
 
 # Terminal scratchpad
-for_window [instance="st_scratch"] move to scratchpad, border none
-bindsym $mod+Shift+x [instance="st_scratch"] scratchpad show
-exec st -n st_scratch
+for_window [instance="urxvt_scratchpad"] move to scratchpad, border none
+bindsym $mod+Shift+x [instance="urxvt_scratchpad"] scratchpad show
+exec urxvtc -vb -name urxvt_scratchpad
 
 # htop scratchpad
 for_window [instance="htop_scratchpad"] move to scratchpad, border none
 bindsym $mod+Shift+t [instance="htop_scratchpad"] scratchpad show
-exec st -name htop_scratchpad -e htop
+exec urxvtc -vb -name htop_scratchpad -e htop
 
 # keepassxc scratchpad
 for_window [instance="keepassxc"] move to scratchpad, border none

@@ -1,10 +1,10 @@
 call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
-    Plug 'altercation/vim-colors-solarized'
+    Plug 'tpope/vim-repeat'         " Repeat more commands
+    Plug 'lifepillar/vim-solarized8' " TrueColor solarize vim
     Plug 'simeji/winresizer'        " <Leader>w to resize panes
     Plug 'simnalamburt/vim-mundo'   " <F5> toggle undo tree
     Plug 'sheerun/vim-polyglot'     " Syntax highl and indentation
     Plug 'preservim/nerdtree'       " File tree
-    Plug 'machakann/vim-sandwich'   " sa<motion/txtobj>, sd,sr,sdb,sdr
     Plug 'wellle/targets.vim'       " iX,IX,aX,AX,inX,ilX X=)([],b,.,_,a,q
     Plug 'junegunn/fzf.vim'         " Files, GFiles, Lines
     Plug 'jremmen/vim-ripgrep'      " rg for quickfix window search
@@ -16,6 +16,7 @@ call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
     Plug 'mhinz/vim-startify'       " Cooler startup page
     Plug 'takac/vim-hardtime'       " can't press hjklupdownleftright twice in 1 second.
     Plug 'ervandew/supertab'        " enable tab in many scenarios
+    Plug 'justinmk/vim-sneak'       " s<2chars> or <motion>z<2chars>
     "   Rust language support
     " autocomplete
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -35,18 +36,11 @@ call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
 
 call plug#end()
 
+set termguicolors
+
+set background=light
+colorscheme solarized8
 let g:lightline = { 'colorscheme': 'solarized'}
-"16 colors for vim
-set t_Co=16
-set background=dark
-colorscheme solarized 
-
-" F5 toggle to dark mode
-call togglebg#map("<F5>")
-
-" grey line numbers
-" hi LineNr ctermfg=8
-" hi CursorLineNr ctermfg=8 ctermbg=252
 
 " Hardtime is on, baby, stop jkl;
 let g:hardtime_default_on = 1
@@ -73,20 +67,30 @@ call deoplete#custom#var('around', {
 filetype on
 filetype plugin on
 
-" Rust settings
-nmap <F6> <Plug>(lcn-menu)
-" Or map each action separately
-nmap <silent> <F2> <Plug>(lcn-rename)
-autocmd FileType rust nmap <silent> gr <Plug>(lcn-rename)
-nmap <silent>K <Plug>(lcn-hover)
-nmap <silent> gd <Plug>(lcn-definition)
+function LC_maps()
+        if has_key(g:LanguageClient_serverCommands, &filetype)
+
+        " Rust settings
+        nmap <F6> <Plug>(lcn-menu)
+        " Or map each action separately
+        nmap <silent> <F2> <Plug>(lcn-rename)
+        autocmd FileType rust nmap <silent> gr <Plug>(lcn-rename)
+        nmap <silent>K <Plug>(lcn-hover)
+        nmap <silent> gd <Plug>(lcn-definition)
+    endif
+endfunction
+
+autocmd FileType * call LC_maps()
 
 " Configure Rust formatter https://github.com/rust-lang/rust.vim#formatting-with-rustfmt
 autocmd Filetype rust nnoremap == :RustFmt<CR>
 let g:rustfmt_autosave = 1
 
+" Rust debugging
+packadd termdebug
+let termdebugger="rust-gdb"
 
-let g:sneak#label = 1
+
 
 " autosave
 au TextChanged,TextChangedI <buffer> if &readonly == 0 && filereadable(bufname('%')) | silent write | endif
@@ -118,6 +122,7 @@ set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set nohlsearch
 set nowrap
 
 " cursor line and column line
@@ -142,8 +147,15 @@ let g:winresizer_start_key = "<Leader>w"
 
 nnoremap <F7> :MundoToggle<CR>
 
-" s is used by the sandwich plugin
-nmap s <Nop>
+
+" let g:sneak#label = 1 " Highlights all matchings to pick with keys
+" (EasyMotion)
+omap s <Plug>Sneak_s
+omap S <Plug>Sneak_S
+map f <Plug>Sneak_f
+map F <Plug>Sneak_F
+map t <Plug>Sneak_t
+map T <Plug>Sneak_T
 
 " can't use arrows
 noremap <Up> <Nop>
@@ -154,7 +166,7 @@ noremap <Right> <Nop>
 nnoremap <c-w>h <c-w>s
 
 " open a new terminal and pick the file
-nmap <Leader><space> :! urxvtc -e bash -i -c "nvim %"<enter><enter>
+nmap <Leader><space> :! st -e bash -i -c "nvim %"<enter><enter>
 
 " Deoplete mappings
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>

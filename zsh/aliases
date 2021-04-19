@@ -1,4 +1,3 @@
-alias ll='ls -lah --color=auto'
 alias ga='git add'
 alias gc='git commit'
 alias gp='git push'
@@ -13,3 +12,5 @@ alias r=/usr/bin/r
 
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
+alias ls="ls -Fh --group-directories-first --color=always"
+alias lt='ls --human-readable --size -1 -S --classify'
