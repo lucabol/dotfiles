@@ -1,0 +1,45 @@
+[options]
+    colorscheme = "NeoSolarized"
+    colorscheme_bg = "light"
+    enable_guicolors = true
+    statusline_separator = "arrow"
+    statusline_iseparator = "arrow"
+    buffer_index_type = 4
+    enable_tabline_filetype_icon = true
+    enable_statusline_mode = false
+    default_indent = 4
+
+[[layers]]
+name = 'autocomplete'
+auto_completion_return_key_behavior = "complete"
+auto_completion_tab_key_behavior = "smart"
+
+[[layers]]
+name = 'shell'
+default_position = 'top'
+default_height = 30
+
+[[layers]]
+  name = "colorscheme"
+
+[[layers]]
+  name = "lang#rust"
+
+[[layers]]
+  name = "lsp"
+  filetypes = [
+    "rust"
+  ]
+
+[layers.override_cmd]
+  rust = ["rls"]
+
+[[layers]]
+    name = "autocomplete"
+    auto-completion-return-key-behavior = "complete"
+    auto-completion-tab-key-behavior = "cycle"
+
+[[layers]]
+    name = "shell"
+    default_position = "bottom"
+    default_height = 30

@@ -8,6 +8,9 @@ mkdir -p "$XDG_DATA_HOME"
 rm -rf "$XDG_CONFIG_HOME/vimb"
 ln -sf "$DOTFILES/vimb" "$XDG_CONFIG_HOME/vimb"
 
+rm -rf "$HOME/.SpaceVim.d/init.toml"
+ln -sf "$DOTFILES/SpaceVim/init.toml" "$HOME/.SpaceVim.d/init.toml"
+
 rm -rf "$XDG_CONFIG_HOME/wyebadblock"
 ln -sf "$DOTFILES/wyebadblock" "$XDG_CONFIG_HOME/wyebadblock"
 
@@ -48,8 +51,6 @@ ln -sf "$DOTFILES/zsh/external" "$XDG_CONFIG_HOME/zsh"
 rm -rf "$XDG_CONFIG_HOME/zathura"
 ln -sf "$DOTFILES/zathura" "$XDG_CONFIG_HOME/zathura"
 
-cp -rf "$DOTFILES/fonts" "$XDG_DATA_HOME"
-
 mkdir -p "$XDG_CONFIG_HOME/dunst"
 ln -sf "$DOTFILES/dunst/dunstrc" "$XDG_CONFIG_HOME/dunst/dunstrc"
 
@@ -78,6 +79,6 @@ mkdir -p "$HOME/.mozilla/firefox/37a0vnc6.default-release/chrome"
 ln -sf "$DOTFILES/firefox/userChrome.css" "$HOME/.mozilla/firefox/37a0vnc6.default-release/chrome/userChrome.css"
 
 # reintall patched st
-cd ./st-patches
+cd "$DOTFILES/st-patches"
 ./redeploy.sh
 cd ..
