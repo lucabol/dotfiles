@@ -1,5 +1,8 @@
 call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
+    Plug 'hecal3/vim-leader-guide'  " space guide
     Plug 'tpope/vim-repeat'         " Repeat more commands
+    Plug 'tpope/vim-surround'       " cz{char}{repl}, dz{char}, yz{motion}{tag}, yzz{tag}
+    Plug 'tpope/vim-commentary'     " gcc, gc<motion> i.e. gcap paragraph, in visual gc.
     Plug 'lifepillar/vim-solarized8' " TrueColor solarize vim
     Plug 'simeji/winresizer'        " <Leader>w to resize panes
     Plug 'simnalamburt/vim-mundo'   " <F5> toggle undo tree
@@ -17,22 +20,12 @@ call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
     Plug 'takac/vim-hardtime'       " can't press hjklupdownleftright twice in 1 second.
     Plug 'ervandew/supertab'        " enable tab in many scenarios
     Plug 'justinmk/vim-sneak'       " s<2chars> or <motion>z<2chars>
-    "   Rust language support
-    " autocomplete
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-
-    " Language Server Client
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Autocomplete
     Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
-    let g:LanguageClient_serverCommands = {
-    \ 'rust': ['rust-analyzer'],
-    \ }
-
-    " For improved UI
-    Plug 'junegunn/fzf'
-    Plug 'rust-lang/rust.vim',         { 'for': 'rust' }
+    Plug 'rust-lang/rust.vim',         { 'for': 'rust' } " error syntastic, browsing tagbar, rustfmt, RunTest
 
 call plug#end()
 
@@ -54,14 +47,18 @@ let g:python_host_prog = '/usr/bin/python'
 " settings for language service
 let g:deoplete#enable_at_startup = 1
 
+let g:LanguageClient_serverCommands = {
+\ 'rust': ['rust-analyzer'],
+\ }
+
 " deoplete source around cursor for completion words
-call deoplete#custom#var('around', {
-\   'range_above': 15,
-\   'range_below': 15,
-\   'mark_above': '[↑]',
-\   'mark_below': '[↓]',
-\   'mark_changes': '[*]',
-\})
+"call deoplete#custom#var('around', {
+"\   'range_above': 15,
+"\   'range_below': 15,
+"\   'mark_above': '[↑]',
+"\   'mark_below': '[↓]',
+"\   'mark_changes': '[*]',
+"\})
 
 " enable automatic filetype recognizing and plugin loading
 filetype on
@@ -143,13 +140,29 @@ augroup END
 
 " remapping
 map <Space> <Leader>
+
+" things I do often
+nnoremap <Leader><Space> :w!<CR>
+nnoremap <Leader>q :q!<CR>
+
+nnoremap <Leader>b :b<Space>
+nnoremap <Leader>f :e#<CR>
+
 let g:winresizer_start_key = "<Leader>w"
 
 nnoremap <F7> :MundoToggle<CR>
 
+" Sneak vs Surround keymaps here: https://gist.github.com/LanHikari22/6b568683d81cbb7a2252fac86f6f4a4b
+let g:surround_no_mappings= 1 " Conflicts with Sneak resolved below
+let g:sneak#label = 1 " Highlights all matchings to pick with keys
 
-" let g:sneak#label = 1 " Highlights all matchings to pick with keys
-" (EasyMotion)
+xmap z <Plug>VSurround
+nmap yzz <Plug>Yssurround
+nmap yz  <Plug>Ysurround
+nmap dz  <Plug>Dsurround
+nmap cz  <Plug>Csurround
+
+xmap <S-s> <Plug>Sneak_S
 omap s <Plug>Sneak_s
 omap S <Plug>Sneak_S
 map f <Plug>Sneak_f
@@ -166,7 +179,7 @@ noremap <Right> <Nop>
 nnoremap <c-w>h <c-w>s
 
 " open a new terminal and pick the file
-nmap <Leader><space> :! st -e bash -i -c "nvim %"<enter><enter>
+" nmap <Leader><space> :! st -e bash -i -c "nvim %"<enter><enter>
 
 " Deoplete mappings
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
