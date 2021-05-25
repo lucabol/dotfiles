@@ -77,7 +77,7 @@ augroup END
 function! MyFugitive()
     let _ = fugitive#head()
     if exists("g:gitstatus")
-        if g:gitstatus == "true"
+        if g:gitstatus == "changed"
             return strlen(_) ? " 擪  "._ : ""
         else
             return strlen(_) ? " 㑽  "._ : ""
@@ -90,9 +90,9 @@ endfunction
 function! GetGitStatus()
     let gitoutput = systemlist('cd '.expand('%:p:h:S').' && git status --porcelain -b 2>/dev/null | grep M')
     if len(gitoutput) > 0
-        let g:gitstatus = "true"
+        let g:gitstatus = "changed"
     else
-        let g:gitstatus = "false"
+        let g:gitstatus = ""
     endif
 endfunc
 
@@ -100,12 +100,12 @@ autocmd BufEnter,BufWritePost * call GetGitStatus()
 
 set statusline=
 set statusline+=%f
-set statusline+=\ %(<%{g:gitstatus}>%)
-set statusline+=%m\
+set statusline+=\ %(<%{g:gitstatus}>%)\ 
+set statusline+=%m\ 
 set statusline+=%=
 set statusline+=\ %y
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
-set statusline+=\[%{&fileformat}\]
+set statusline+=\ \[%{&fileformat}\]
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
 set statusline+=\ 
