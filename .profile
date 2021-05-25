@@ -16,4 +16,8 @@ export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 # Syntax highlight for less
 export LESSOPEN="| /usr/bin/source-highlight-esc.sh %s"
 
+# This is needed for ctag support for the Rust standard library. But it gives too many hits (i.e. for new)
+# export RUST_SRC_PATH=$(rustc --print sysroot)/lib/rustlib/src/rust/library/
+
+# Load any secret keys I don't want to share on github.
 [ -f "~./.keys" ] && source "~/.keys"

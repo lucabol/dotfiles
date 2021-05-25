@@ -1,200 +1,158 @@
-call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
-    Plug 'hecal3/vim-leader-guide'  " space guide
-    Plug 'tpope/vim-repeat'         " Repeat more commands
-    Plug 'tpope/vim-surround'       " cz{char}{repl}, dz{char}, yz{motion}{tag}, yzz{tag}
-    Plug 'tpope/vim-commentary'     " gcc, gc<motion> i.e. gcap paragraph, in visual gc.
-    Plug 'lifepillar/vim-solarized8' " TrueColor solarize vim
-    Plug 'simeji/winresizer'        " <Leader>w to resize panes
-    Plug 'simnalamburt/vim-mundo'   " <F5> toggle undo tree
-    Plug 'sheerun/vim-polyglot'     " Syntax highl and indentation
-    Plug 'preservim/nerdtree'       " File tree
-    Plug 'wellle/targets.vim'       " iX,IX,aX,AX,inX,ilX X=)([],b,.,_,a,q
-    Plug 'junegunn/fzf.vim'         " Files, GFiles, Lines
-    Plug 'jremmen/vim-ripgrep'      " rg for quickfix window search
-    Plug 'stefandtw/quickfix-reflector.vim' " Edit files in quickfix window
-    Plug 'machakann/vim-highlightedyank' " Highlights yanks
-    Plug 'itchyny/lightline.vim'    " Better status line
-    Plug 'jez/vim-superman'         " Read man pages in vim (vman)
-    Plug 'tpope/vim-fugitive'       " Git command
-    Plug 'mhinz/vim-startify'       " Cooler startup page
-    Plug 'takac/vim-hardtime'       " can't press hjklupdownleftright twice in 1 second.
-    Plug 'ervandew/supertab'        " enable tab in many scenarios
-    Plug 'justinmk/vim-sneak'       " s<2chars> or <motion>z<2chars>
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Autocomplete
-    Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
-    Plug 'rust-lang/rust.vim',         { 'for': 'rust' } " error syntastic, browsing tagbar, rustfmt, RunTest
-
-call plug#end()
-
+" COLOR SCHEME {{{1
 set termguicolors
 
+" Default value is "normal", Setting this option to "high" or "low" does use the
+" same Solarized palette but simply shifts some values up or down in order to
+" expand or compress the tonal range displayed.
+let g:neosolarized_contrast = "normal"
+
+" Special characters such as trailing whitespace, tabs, newlines, when displayed
+" using ":set list" can be set to one of three levels depending on your needs.
+" Default value is "normal". Provide "high" and "low" options.
+let g:neosolarized_visibility = "normal"
+
+" I make vertSplitBar a transparent background color. If you like the origin
+" solarized vertSplitBar style more, set this value to 0.
+let g:neosolarized_vertSplitBgTrans = 1
+
+" If you wish to enable/disable NeoSolarized from displaying bold, underlined
+" or italicized" typefaces, simply assign 1 or 0 to the appropriate variable.
+" Default values:
+let g:neosolarized_bold = 1
+let g:neosolarized_underline = 1
+let g:neosolarized_italic = 1
+
+" Used to enable/disable "bold as bright" in Neovim terminal. If colors of bold
+" text output by commands like `ls` aren't what you expect, you might want to
+" try disabling this option. Default value:
+let g:neosolarized_termBoldAsBright = 1
+
+colorscheme NeoSolarized
 set background=light
-colorscheme solarized8
-let g:lightline = { 'colorscheme': 'solarized'}
 
-" Hardtime is on, baby, stop jkl;
-let g:hardtime_default_on = 1
+" STANDARD KEY MAPPINGS AND COMMANDS {{{1
+let mapleader = "<SPACE>"
 
-" avoid matching parenthesis to be too similar in color
-hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
+" Highlight line where the cursor is. You could also highlight just the
+" numbers on the left.
+set cursorline
 
-let g:python3_host_prog = '/usr/bin/python3'
-let g:python_host_prog = '/usr/bin/python'
+" Enable mouse in all scenarios. Remember that right click extends selection.
+set mouse=a
 
-" settings for language service
-let g:deoplete#enable_at_startup = 1
+" Enable autowrite when leaving a buffer in various ways.
+set autowriteall
 
-let g:LanguageClient_serverCommands = {
-\ 'rust': ['rust-analyzer'],
-\ }
+" Shows the number the line is on as absolute, but the rest is relative.
+" It is better for motion commands, but likely worse for Ex cmds.
+set number
+set relativenumber
 
-" deoplete source around cursor for completion words
-"call deoplete#custom#var('around', {
-"\   'range_above': 15,
-"\   'range_below': 15,
-"\   'mark_above': '[↑]',
-"\   'mark_below': '[↓]',
-"\   'mark_changes': '[*]',
-"\})
+" If terminal supports it, set the title to the name of the file edited (also
+" see iconstring). 'st', 'urxvt' and 'xterm' doesn't seem to work ...
+set icon
 
-" enable automatic filetype recognizing and plugin loading
-filetype on
-filetype plugin on
+" Always use spaces for tabs.
+set expandtab
 
-function LC_maps()
-        if has_key(g:LanguageClient_serverCommands, &filetype)
+" If a search term has uppercase chars, do a case sensitive search. Otherwise
+" use a case insensitive one.
+set ignorecase
+set smartcase
 
-        " Rust settings
-        nmap <F6> <Plug>(lcn-menu)
-        " Or map each action separately
-        nmap <silent> <F2> <Plug>(lcn-rename)
-        autocmd FileType rust nmap <silent> gr <Plug>(lcn-rename)
-        nmap <silent>K <Plug>(lcn-hover)
-        nmap <silent> gd <Plug>(lcn-definition)
+" Tries to automatically indent lines at best it can
+set autoindent
+set smartindent
+
+" From the manual, turns off hlsearch after finished searching. There are also
+" plugins that do this in case it doesn't work quite right.
+augroup vimrc-incsearch-highlight
+        autocmd!
+        autocmd CmdlineEnter /,\? :set hlsearch
+        autocmd CmdlineLeave /,\? :set nohlsearch
+augroup END
+
+" Custom statusline inspired by: https://shapeshed.com/vim-statuslines/
+" + https://gist.github.com/bla-rs/c439daa0aaa5dea899056bc0b7d34ead
+function! MyFugitive()
+    let _ = fugitive#head()
+    if exists("g:gitstatus")
+        if g:gitstatus == "true"
+            return strlen(_) ? " 擪  "._ : ""
+        else
+            return strlen(_) ? " 㑽  "._ : ""
+        endif
+    else
+        return
     endif
 endfunction
 
-autocmd FileType * call LC_maps()
+function! GetGitStatus()
+    let gitoutput = systemlist('cd '.expand('%:p:h:S').' && git status --porcelain -b 2>/dev/null | grep M')
+    if len(gitoutput) > 0
+        let g:gitstatus = "true"
+    else
+        let g:gitstatus = "false"
+    endif
+endfunc
 
-" Configure Rust formatter https://github.com/rust-lang/rust.vim#formatting-with-rustfmt
-autocmd Filetype rust nnoremap == :RustFmt<CR>
-let g:rustfmt_autosave = 1
+autocmd BufEnter,BufWritePost * call GetGitStatus()
 
-" Rust debugging
-packadd termdebug
-let termdebugger="rust-gdb"
+set statusline=
+set statusline+=%f
+set statusline+=\ %(<%{g:gitstatus}>%)
+set statusline+=%m\
+set statusline+=%=
+set statusline+=\ %y
+set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+set statusline+=\[%{&fileformat}\]
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
+set statusline+=\ 
+
+" PROGRAMMING IDE {{{1
+
+" Automatically regenerate tags file on save. This runs for any file, even not
+" programming ones, which is a bit wasteful. Could specify *.rs, *.cs, etc...
+au BufWritePost * silent! !ctags -R &
+
+" Enables Omni completion
+filetype plugin on
+
+" If a plugin has not set an omnifunc use the syntax completion file to
+" provide a poor man omni completion.
+if has("autocmd") && exists("+omnifunc")
+        autocmd Filetype *
+                \ if &omnifunc == "" |
+                        \ setlocal omnifunc=syntaxcomplete#Complete |
+                \ endif
+        endif
+
+" https://vim.fandom.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
+" Change completeopt so that completion doesn't select the first, but inserts
+" the longest and menu comes up even if just one match.
+let completeopt="longest,menuone"
+
+" When popup is visible Enter selects the highlighted menu item.
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" Simulates down key when popup appears, keeping the menu alive while you
+" type.
+inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
+" open omni completion menu closing previous if open and opening new menu without changing the text
+inoremap <expr> <C-Space> (pumvisible() ? (col('.') > 1 ? '<Esc>i<Right>' : '<Esc>i') : '') . '<C-x><C-o><C-r>=pumvisible() ? "\<lt>C-n>\<lt>C-p>\<lt>Down>" : ""<CR>'
+
+" RUST {{{1
+" Set make to cargo instead of the useless default of rustc from the rust.vim
+" default plugin.
+autocmd FileType rust compiler! cargo
+" BUGS {{{1
+
+" gx to open a browser got broken, this works just for linux, trivially change
+" for windows. https://github.com/vim/vim/issues/4738 
+nmap gx yiW:!xdg-open <cWORD><CR> <C-r>" & <CR><CR>
 
 
-
-" autosave
-au TextChanged,TextChangedI <buffer> if &readonly == 0 && filereadable(bufname('%')) | silent write | endif
-
-" use system clipboard
-set clipboard+=unnamedplus
-
-
-" no need for a swapfile these days
-set noswapfile
-
-" enable persistent undo so that undo history persists across vim sessions
-set undofile
-set undodir=$HOME/.config/nvim/undo
-
-" number of undo saved
-set undolevels=10000
-set undoreload=10000
-
-" see hybrid line numbers
-set number relativenumber
-
-" use 4 spaces instead of tab ()
-" copy indent from current line when starting a new line
-" don't wrap lines
-
-set autoindent
-set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set nohlsearch
-set nowrap
-
-" cursor line and column line
-set cursorline
-set colorcolumn=80
-
-" show substitution
-set inccommand=nosplit
-
-" hide a buffer when abandoned instead of unload it
-set hidden
-
-augroup filetype_csv
-    autocmd!
-    autocmd BufRead,BufWritePost *.csv :%ArrangeColumn!
-    autocmd BufWritePre *.csv :%UnArrangeColumn
-augroup END
-
-" remapping
-map <Space> <Leader>
-
-" things I do often
-nnoremap <Leader><Space> :w!<CR>
-nnoremap <Leader>q :q!<CR>
-
-nnoremap <Leader>b :b<Space>
-nnoremap <Leader>f :e#<CR>
-
-let g:winresizer_start_key = "<Leader>w"
-
-nnoremap <F7> :MundoToggle<CR>
-
-" Sneak vs Surround keymaps here: https://gist.github.com/LanHikari22/6b568683d81cbb7a2252fac86f6f4a4b
-let g:surround_no_mappings= 1 " Conflicts with Sneak resolved below
-let g:sneak#label = 1 " Highlights all matchings to pick with keys
-
-xmap z <Plug>VSurround
-nmap yzz <Plug>Yssurround
-nmap yz  <Plug>Ysurround
-nmap dz  <Plug>Dsurround
-nmap cz  <Plug>Csurround
-
-xmap <S-s> <Plug>Sneak_S
-omap s <Plug>Sneak_s
-omap S <Plug>Sneak_S
-map f <Plug>Sneak_f
-map F <Plug>Sneak_F
-map t <Plug>Sneak_t
-map T <Plug>Sneak_T
-
-" can't use arrows
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
-
-nnoremap <c-w>h <c-w>s
-
-" open a new terminal and pick the file
-" nmap <Leader><space> :! st -e bash -i -c "nvim %"<enter><enter>
-
-" Deoplete mappings
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-function! s:my_cr_function()
-    return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
-endfunction
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-
-" PLUGINS
-
-" Higlight time
-let g:highlightedyank_highlight_duration = 200
-
-" Set ripgrep to smart casing
-let g:rg_command = 'rg --vimgrep -S'
-
-" to remove unnecessary -- INSERT -- given our status bar plugin
-set noshowmode
+" VIM MODELINES {{{1
+" vim: fdm=marker:

@@ -26,7 +26,9 @@ ln -sf "$DOTFILES/.profile" "$HOME/.profile"
 
 mkdir -p "$XDG_CONFIG_HOME/nvim"
 mkdir -p "$XDG_CONFIG_HOME/nvim/undo"
+mkdir -p "$XDG_CONFIG_HOME/nvim/colors"
 ln -sf "$DOTFILES/nvim/init.vim" "$XDG_CONFIG_HOME/nvim/init.vim"
+ln -sf "$DOTFILES/nvim/colors/NeoSolarized.vim" "$XDG_CONFIG_HOME/nvim/colors/NeoSolarized.vim"
 
 rm -rf "$HOME/.Xresources"
 ln -sf "$DOTFILES/X11/.Xresources" "$HOME/.Xresources"
@@ -65,10 +67,10 @@ ln -sf "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
     && curl -fLo "$DOTFILES/nvim/autoload/plug.vim" --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-mkdir -p "$XDG_CONFIG_HOME/nvim/autoload"
-ln -sf "$DOTFILES/nvim/autoload/plug.vim" "$XDG_CONFIG_HOME/nvim/autoload/plug.vim"
+# mkdir -p "$XDG_CONFIG_HOME/nvim/autoload"
+# ln -sf "$DOTFILES/nvim/autoload/plug.vim" "$XDG_CONFIG_HOME/nvim/autoload/plug.vim"
 # Install (or update) all the plugins
-nvim --noplugin +PlugUpdate +qa
+# nvim --noplugin +PlugUpdate +qa
 
 
 [ ! -d "$XDG_CONFIG_HOME/tmux/plugins/tpm" ] \
