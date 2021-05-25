@@ -48,17 +48,29 @@ set autowriteall
 set number
 set relativenumber
 
-" If terminal supports it, set the title to the name of the file edited (also
+" If terminal supports it, set the icon for the file (also
 " see iconstring). 'st', 'urxvt' and 'xterm' doesn't seem to work ...
 set icon
 
+" Enable setting the title for the window (but some terminal don't allow
+" resetting it back to the previous value. I.E. 'st' doesn't)
+set title
+set titlestring=%f%(\ %M%)
+
 " Always use spaces for tabs.
 set expandtab
+
+" Set tab length.
+set tabstop=2
+set shiftwidth=2
 
 " If a search term has uppercase chars, do a case sensitive search. Otherwise
 " use a case insensitive one.
 set ignorecase
 set smartcase
+
+" Set search for tabs to follow ignorecase and smartcase
+set tagcase=followscs
 
 " Tries to automatically indent lines at best it can
 set autoindent
@@ -72,12 +84,13 @@ augroup vimrc-incsearch-highlight
         autocmd CmdlineLeave /,\? :set nohlsearch
 augroup END
 
-" Custom statusline inspired by: https://shapeshed.com/vim-statuslines/
+" Custom statusline {{{2
+" Inspired by: https://shapeshed.com/vim-statuslines/
 " + https://gist.github.com/bla-rs/c439daa0aaa5dea899056bc0b7d34ead
 function! MyFugitive()
     let _ = fugitive#head()
     if exists("g:gitstatus")
-        if g:gitstatus == "changed"
+        if g:gitstatus == "M"
             return strlen(_) ? " 擪  "._ : ""
         else
             return strlen(_) ? " 㑽  "._ : ""
@@ -90,7 +103,7 @@ endfunction
 function! GetGitStatus()
     let gitoutput = systemlist('cd '.expand('%:p:h:S').' && git status --porcelain -b 2>/dev/null | grep M')
     if len(gitoutput) > 0
-        let g:gitstatus = "changed"
+        let g:gitstatus = "M"
     else
         let g:gitstatus = ""
     endif
@@ -100,7 +113,7 @@ autocmd BufEnter,BufWritePost * call GetGitStatus()
 
 set statusline=
 set statusline+=%f
-set statusline+=\ %(<%{g:gitstatus}>%)\ 
+set statusline+=\ %([%{g:gitstatus}]%)\ 
 set statusline+=%m\ 
 set statusline+=%=
 set statusline+=\ %y
