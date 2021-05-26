@@ -1,3 +1,139 @@
+" PLUGINS {{{1
+
+" Load minpac just when executing commands
+function! PackInit() abort
+  packadd minpac
+  call minpac#init()
+
+  call minpac#add('k-takata/minpac', {'type': 'opt'}) " Plugin manager using packages: PackUpdate
+  call minpac#add('overcache/NeoSolarized') " Color theme see configs
+  call minpac#add('neomake/neomake') " Async syntax checking: Neommake!
+  call minpac#add('rust-lang/rust.vim') " Better rust plugin: RustFmt
+  call minpac#add('jiangmiao/auto-pairs') " Smart editing closing brackets
+
+  call minpac#add('neovim/nvim-lspconfig') " Coomon configurations for Nvim LSP client
+
+  " LSP config from https://github.com/sharksforarms/vim-rust
+  call minpac#add('hrsh7th/vim-vsnip') " Snippet engine of LSP snippets
+  call minpac#add('hrsh7th/nvim-compe') " Autocompletion for built-in LSP
+  call minpac#add('nvim-lua/popup.nvim') " Next three are extra to investigate
+  call minpac#add('nvim-lua/plenary.nvim')
+  call minpac#add('nvim-telescope/telescope.nvim')
+
+  call minpac#add('simrat39/rust-tools.nvim') " Extra functionality on top of rust analyzer
+
+endfunction
+
+command! PackUpdate source $MYVIMRC | call PackInit() | call minpac#update()
+command! PackClean  source $MYVIMRC | call PackInit() | call minpac#clean()
+command! PackStatus packadd minpac | call minpac#status()
+
+" PLUGINS SETTINGS {{{1
+
+let g:auto_save = 1  " enable AutoSave on Vim startup
+
+" Full config: when writing or reading a buffer, and on changes in insert and
+" normal mode (after 500ms; no delay when writing).
+call neomake#configure#automake('nrwi', 500)
+" let g:neomake_open_list = 2 " The language server plugin is more efficient
+
+let g:rustfmt_autosave = 1
+
+" Configure lsp
+" https://github.com/neovim/nvim-lspconfig#rust_analyzer
+lua <<EOF
+
+-- nvim_lsp object
+local nvim_lsp = require'lspconfig'
+
+local opts = {
+    tools = {
+        autoSetHints = true,
+        hover_with_actions = true,
+        runnables = {
+            use_telescope = true
+        },
+        inlay_hints = {
+            show_parameter_hints = false,
+            parameter_hints_prefix = "",
+            other_hints_prefix = "",
+        },
+    },
+
+    -- all the opts to send to nvim-lspconfig
+    -- these override the defaults set by rust-tools.nvim
+    -- see https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#rust_analyzer
+    server = {}, -- rust-analyer options
+}
+
+require('rust-tools').setup(opts)
+EOF
+
+" Code navigation shortcuts
+" as found in :help lsp
+nnoremap <silent> <c-]> <cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <silent> K     <cmd>lua vim.lsp.buf.hover()<CR>
+nnoremap <silent> gD    <cmd>lua vim.lsp.buf.implementation()<CR>
+nnoremap <silent> <c-k> <cmd>lua vim.lsp.buf.signature_help()<CR>
+nnoremap <silent> 1gD   <cmd>lua vim.lsp.buf.type_definition()<CR>
+nnoremap <silent> gr    <cmd>lua vim.lsp.buf.references()<CR>
+nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
+nnoremap <silent> gW    <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
+" rust-analyzer does not yet support goto declaration
+" re-mapped `gd` to definition
+nnoremap <silent> gd    <cmd>lua vim.lsp.buf.definition()<CR>
+"nnoremap <silent> gd    <cmd>lua vim.lsp.buf.declaration()<CR>
+
+" Completion
+lua <<EOF
+require'compe'.setup {
+  enabled = true;
+  autocomplete = true;
+  debug = false;
+  min_length = 1;
+  preselect = 'enable';
+  throttle_time = 80;
+  source_timeout = 200;
+  incomplete_delay = 400;
+  max_abbr_width = 100;
+  max_kind_width = 100;
+  max_menu_width = 100;
+
+  source = {
+    path = true;
+    buffer = true;
+    calc = true;
+    vsnip = true;
+    nvim_lsp = true;
+    nvim_lua = true;
+    spell = true;
+    tags = true;
+    snippets_nvim = true;
+  };
+}
+EOF
+inoremap <silent><expr> <C-Space> compe#complete()
+inoremap <silent><expr> <CR>      compe#confirm('<CR>')
+inoremap <silent><expr> <C-e>     compe#close('<C-e>')
+
+" Use <Tab> and <S-Tab> to navigate through popup menu
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" have a fixed column for the diagnostics to appear in
+" this removes the jitter when warnings/errors flow in
+set signcolumn=yes
+
+" Set updatetime for CursorHold
+" 300ms of no cursor movement to trigger CursorHold
+set updatetime=300
+" Show diagnostic popup on cursor hover
+autocmd CursorHold * lua vim.lsp.diagnostic.show_line_diagnostics()
+
+" Goto previous/next diagnostic warning/error
+nnoremap <silent> g[ <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
+nnoremap <silent> g] <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
+
 " COLOR SCHEME {{{1
 set termguicolors
 
@@ -30,8 +166,29 @@ let g:neosolarized_termBoldAsBright = 1
 colorscheme NeoSolarized
 set background=light
 
-" STANDARD KEY MAPPINGS AND COMMANDS {{{1
-let mapleader = "<SPACE>"
+" STANDARD OPTIONS {{{1
+
+" Enable syntax highlighting
+syntax enable
+
+" Better splits (new windows appear below and to the right).
+set splitbelow
+set splitright
+
+" Don't redraw when executing macros.
+set lazyredraw
+
+" Highlight matching parenthesis when editing.
+set showmatch
+
+" Highlight line 99
+set colorcolumn=80
+
+" Use system clipboard.
+set clipboard+=unnamed
+
+" Display tabs as \ and trailing spaces as the middle dot.
+set list listchars=tab:\ \ ,trail:·
 
 " Highlight line where the cursor is. You could also highlight just the
 " numbers on the left.
@@ -87,6 +244,10 @@ augroup END
 " Custom statusline {{{2
 " Inspired by: https://shapeshed.com/vim-statuslines/
 " + https://gist.github.com/bla-rs/c439daa0aaa5dea899056bc0b7d34ead
+
+" Always show status bur
+set laststatus=2
+
 function! MyFugitive()
     let _ = fugitive#head()
     if exists("g:gitstatus")
@@ -123,11 +284,22 @@ set statusline+=\ %p%%
 set statusline+=\ %l:%c
 set statusline+=\ 
 
-" PROGRAMMING IDE {{{1
+" EDITING KEY BINDINGS {{{1
 
-" Automatically regenerate tags file on save. This runs for any file, even not
-" programming ones, which is a bit wasteful. Could specify *.rs, *.cs, etc...
-au BufWritePost * silent! !ctags -R &
+" FILE TYPES {{{1
+autocmd Filetype gitcommit setlocal spell textwidth=72
+
+" http://vim.wikia.com/wiki/Word_wrap_without_line_breaks
+autocmd Filetype markdown setlocal wrap linebreak nolist textwidth=0 wrapmargin=0
+
+" Set make to cargo instead of the useless default of rustc from the rust.vim
+" default plugin.
+autocmd FileType rust compiler! cargo
+
+"
+" PROGRAMMING {{{1
+
+let mapleader = "<SPACE>"
 
 " Enables Omni completion
 filetype plugin on
@@ -141,25 +313,31 @@ if has("autocmd") && exists("+omnifunc")
                 \ endif
         endif
 
-" https://vim.fandom.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
-" Change completeopt so that completion doesn't select the first, but inserts
-" the longest and menu comes up even if just one match.
-let completeopt="longest,menuone"
+" Set completeopt to have a better completion experience
+set completeopt=menu,menuone,noselect
+
+" Don't show intro message when opening without files.
+set shortmess+=I
+" Avoid showing extra messages when using completion
+set shortmess+=c
 
 " When popup is visible Enter selects the highlighted menu item.
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " Simulates down key when popup appears, keeping the menu alive while you
 " type.
-inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+"inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
 " open omni completion menu closing previous if open and opening new menu without changing the text
-inoremap <expr> <C-Space> (pumvisible() ? (col('.') > 1 ? '<Esc>i<Right>' : '<Esc>i') : '') . '<C-x><C-o><C-r>=pumvisible() ? "\<lt>C-n>\<lt>C-p>\<lt>Down>" : ""<CR>'
+"inoremap <expr> <C-Space> (pumvisible() ? (col('.') > 1 ? '<Esc>i<Right>' : '<Esc>i') : '') . '<C-x><C-o><C-r>=pumvisible() ? "\<lt>C-n>\<lt>C-p>\<lt>Down>" : ""<CR>'
 
-" RUST {{{1
-" Set make to cargo instead of the useless default of rustc from the rust.vim
-" default plugin.
-autocmd FileType rust compiler! cargo
+
+" TRICKS {{{1
+
+" Close all folds when opening a new buffer.
+autocmd BufRead * normal zM
+
+
 " BUGS {{{1
 
 " gx to open a browser got broken, this works just for linux, trivially change
