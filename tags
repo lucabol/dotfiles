@@ -1,0 +1,1150 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/lucabol/dotfiles/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210110.0/
+#TabsToolbar[inFullscreen]	firefox/userChrome.css	/^#TabsToolbar[inFullscreen]{$/;"	i
+#main-window #TabsToolbar	firefox/userChrome.css	/^#main-window #TabsToolbar {$/;"	i
+#main-window:not([extradragspace="true"] ) #TabsToolbar > .toolbar-items	firefox/userChrome.css	/^#main-window:not([extradragspace="true"]) #TabsToolbar > .toolbar-items {$/;"	c
+$(OBJ)	st/Makefile	/^$(OBJ): config.h config.mk$/;"	t
+*.boris	Code/settings.json	/^        "*.boris": "json"$/;"	s	object:files.associations
+*[vimbhint='hint focus']	vimb/style.css	/^*[vimbhint='hint focus'] {$/;"	s
+*[vimbhint^='hint']	vimb/style.css	/^*[vimbhint^='hint'] {$/;"	s
+-0,0 +1,136	st-patches/st-ligatures-20200430-0.8.3.diff	/^@@ -0,0 +1,136 @@$/;"	h	newFile:b/hb.c
+-0,0 +1,7	st-patches/st-ligatures-20200430-0.8.3.diff	/^@@ -0,0 +1,7 @@$/;"	h	newFile:b/hb.h
+-1031,6 +1032,9	st-patches/st-ligatures-20200430-0.8.3.diff	/^@@ -1031,6 +1032,9 @@ xunloadfont(Font *f)$/;"	h	modifiedFile:a/x.c
+-11,7 +11,8	st-patches/st-ligatures-20200430-0.8.3.diff	/^@@ -11,7 +11,8 @@$/;"	h	modifiedFile:a/st.h
+-1114,7 +1115,7	st-patches/st-defaultfontsize-20210225-4ef0cbd.diff	/^@@ -1114,7 +1115,7 @@ xinit(int cols, int rows)$/;"	h	modifiedFile:a/x.c
+-1158,7 +1158,7	st-patches/st-no_bold_colors-20170623-b331da5.diff	/^@@ -1158,7 +1158,7 @@ xdrawglyphfontspecs(const XftGlyphFontSpec *specs, Glyph base, int len, in/;"	h	modifiedFile:a/x.c
+-116,10 +108,10	st-patches/st-solarized-light-20190306-ed68fe7.diff	/^@@ -116,10 +108,10 @@ static const char *colorname[] = {$/;"	h	modifiedFile:a/config.def.h
+-1229,7 +1233,7	st-patches/st-ligatures-20200430-0.8.3.diff	/^@@ -1229,7 +1233,7 @@ xmakeglyphfontspecs(XftGlyphFontSpec *specs, const Glyph *glyphs, int len,/;"	h	modifiedFile:a/x.c
+-1336,6 +1340,9	st-patches/st-ligatures-20200430-0.8.3.diff	/^@@ -1336,6 +1340,9 @@ xmakeglyphfontspecs(XftGlyphFontSpec *specs, const Glyph *glyphs, int len,/;"	h	modifiedFile:a/x.c
+-1485,14 +1492,17	st-patches/st-ligatures-20200430-0.8.3.diff	/^@@ -1485,14 +1492,17 @@ xdrawglyph(Glyph g, int x, int y)$/;"	h	modifiedFile:a/x.c
+-15,10 +15,12	st-patches/st-ligatures-20200430-0.8.3.diff	/^@@ -15,10 +15,12 @@ PKG_CONFIG = pkg-config$/;"	h	modifiedFile:a/config.mk
+-19,6 +19,7	st-patches/st-ligatures-20200430-0.8.3.diff	/^@@ -19,6 +19,7 @@ char *argv0;$/;"	h	modifiedFile:a/x.c
+-2038,6 +2039,11	st-patches/st-defaultfontsize-20210225-4ef0cbd.diff	/^@@ -2038,6 +2039,11 @@ main(int argc, char *argv[])$/;"	h	modifiedFile:a/x.c
+-22,6 +22,8	st-patches/st-defaultfontsize-20210225-4ef0cbd.diff	/^@@ -22,6 +22,8 @@ st \\- simple terminal$/;"	h	modifiedFile:a/st.1
+-22,7 +22,8	st-patches/st-ligatures-20200430-0.8.3.diff	/^@@ -22,7 +22,8 @@ config.h:$/;"	h	modifiedFile:a/Makefile
+-25,7 +25,7	st-patches/st-ligatures-20200430-0.8.3.diff	/^@@ -25,7 +25,7 @@ enum win_mode {$/;"	h	modifiedFile:a/win.h
+-2599,7 +2599,8	st-patches/st-ligatures-20200430-0.8.3.diff	/^@@ -2599,7 +2599,8 @@ draw(void)$/;"	h	modifiedFile:a/st.c
+-33,6 +34,7	st-patches/st-ligatures-20200430-0.8.3.diff	/^@@ -33,6 +34,7 @@ enum glyph_attribute {$/;"	h	modifiedFile:a/st.h
+-4,6 +4,7	st-patches/st-defaultfontsize-20210225-4ef0cbd.diff	/^@@ -4,6 +4,7 @@$/;"	h	modifiedFile:a/x.c
+-4,7 +4,7	st-patches/st-ligatures-20200430-0.8.3.diff	/^@@ -4,7 +4,7 @@$/;"	h	modifiedFile:a/Makefile
+-44,6 +46,8	st-patches/st-defaultfontsize-20210225-4ef0cbd.diff	/^@@ -44,6 +46,8 @@ st \\- simple terminal$/;"	h	modifiedFile:a/st.1
+-624,6 +624,8	st-patches/st-clipboard-20180309-c5ba9c0.diff	/^@@ -624,6 +624,8 @@ setsel(char *str, Time t)$/;"	h	modifiedFile:a/x.c
+-84,31 +84,23	st-patches/st-solarized-light-20190306-ed68fe7.diff	/^@@ -84,31 +84,23 @@ unsigned int tabspaces = 8;$/;"	h	modifiedFile:a/config.def.h
+-91,6 +95,10	st-patches/st-defaultfontsize-20210225-4ef0cbd.diff	/^@@ -91,6 +95,10 @@ defines the window title (default 'st').$/;"	h	modifiedFile:a/st.1
+.c.o	st/Makefile	/^.c.o:$/;"	t
+0	Code/keybindings.json	/^    {$/;"	o
+0	Code/settings.json	/^    "editor.rulers": [ 80 ],$/;"	n	array:editor.rulers
+0	Code/settings.json	/^    "rkt",$/;"	s	array:cSpell.enableFiletypes
+0	Code/settings.json	/^    "{docsmsft.docs-linting}\/markdownlint-custom-rules\/rules.js"$/;"	s	array:markdownlint.customRules
+0	Code/settings.json	/^"grammarly.userWords": [ "HTMX" ],$/;"	s	array:grammarly.userWords
+1	Code/keybindings.json	/^    {$/;"	o
+1	Code/settings.json	/^    "racket"$/;"	s	array:cSpell.enableFiletypes
+10	Code/keybindings.json	/^    \/\/ j\/k to move between "open editors", the explorer tree, and outline;$/;"	n
+11	Code/keybindings.json	/^    {$/;"	o
+12	Code/keybindings.json	/^    {$/;"	o
+13	Code/keybindings.json	/^    {$/;"	o
+14	Code/keybindings.json	/^    {$/;"	o
+15	Code/keybindings.json	/^    },{$/;"	o
+16	Code/keybindings.json	/^    {$/;"	o
+17	Code/keybindings.json	/^    {$/;"	o
+18	Code/keybindings.json	/^    {$/;"	o
+19	Code/keybindings.json	/^    {$/;"	o
+1gD	nvim/init.vim	/^nnoremap <silent> 1gD   <cmd>lua vim.lsp.buf.type_definition()<CR>$/;"	m
+2	Code/keybindings.json	/^    },{$/;"	o
+20	Code/keybindings.json	/^    {$/;"	o
+21	Code/keybindings.json	/^    \/\/ Open from history independently from the editor group$/;"	z
+22	Code/keybindings.json	/^    {$/;"	o
+23	Code/keybindings.json	/^    {$/;"	o
+24	Code/keybindings.json	/^    {$/;"	o
+25	Code/keybindings.json	/^    {$/;"	o
+3	Code/keybindings.json	/^    {$/;"	o
+4	Code/keybindings.json	/^    \/\/ j\/k to move between split terminals, h to move back to the editor$/;"	z
+5	Code/keybindings.json	/^    \/\/ j\/k to move between split terminals, h to move back to the editor$/;"	n
+6	Code/keybindings.json	/^    {$/;"	o
+7	Code/keybindings.json	/^    {$/;"	o
+8	Code/keybindings.json	/^    \/\/ j\/k to move between "open editors", the explorer tree, and outline;$/;"	z
+9	Code/keybindings.json	/^    \/\/ j\/k to move between "open editors", the explorer tree, and outline;$/;"	n
+<C-Space>	nvim/init.vim	/^inoremap <silent><expr> <C-Space> compe#complete()$/;"	m
+<C-e>	nvim/init.vim	/^inoremap <silent><expr> <C-e>     compe#close('<C-e>')$/;"	m
+<C-k>	Code/settings.json	/^    "vim.handleKeys": { "<C-k>": false },           \/\/ Used to exit Zen mode$/;"	b	object:vim.handleKeys
+<CR>	nvim.all/init.vim	/^inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>$/;"	m
+<CR>	nvim/init.vim	/^inoremap <expr> <CR> pumvisible() ? "\\<C-y>" : "\\<C-g>u\\<CR>"$/;"	m
+<CR>	nvim/init.vim	/^inoremap <silent><expr> <CR>      compe#confirm('<CR>')$/;"	m
+<Down>	nvim.all/init.vim	/^noremap <Down> <Nop>$/;"	m
+<F2>	nvim.all/init.vim	/^        nmap <silent> <F2> <Plug>(lcn-rename)$/;"	m
+<F6>	nvim.all/init.vim	/^        nmap <F6> <Plug>(lcn-menu)$/;"	m
+<F7>	nvim.all/init.vim	/^nnoremap <F7> :MundoToggle<CR>$/;"	m
+<Leader><Space>	nvim.all/init.vim	/^nnoremap <Leader><Space> :w!<CR>$/;"	m
+<Leader>b	nvim.all/init.vim	/^nnoremap <Leader>b :b<Space>$/;"	m
+<Leader>f	nvim.all/init.vim	/^nnoremap <Leader>f :e#<CR>$/;"	m
+<Leader>q	nvim.all/init.vim	/^nnoremap <Leader>q :q!<CR>$/;"	m
+<Left>	nvim.all/init.vim	/^noremap <Left> <Nop>$/;"	m
+<Right>	nvim.all/init.vim	/^noremap <Right> <Nop>$/;"	m
+<S-Tab>	nvim/init.vim	/^inoremap <expr> <S-Tab> pumvisible() ? "\\<C-p>" : "\\<S-Tab>"$/;"	m
+<S-s>	nvim.all/init.vim	/^xmap <S-s> <Plug>Sneak_S$/;"	m
+<Space>	nvim.all/init.vim	/^map <Space> <Leader>$/;"	m
+<TAB>	nvim.all/init.vim	/^inoremap <expr><TAB>  pumvisible() ? "\\<C-n>" : "\\<TAB>"$/;"	m
+<Tab>	nvim/init.vim	/^inoremap <expr> <Tab>   pumvisible() ? "\\<C-n>" : "\\<Tab>"$/;"	m
+<Up>	nvim.all/init.vim	/^noremap <Up> <Nop>$/;"	m
+<c-]>	nvim/init.vim	/^nnoremap <silent> <c-]> <cmd>lua vim.lsp.buf.definition()<CR>$/;"	m
+<c-k>	nvim/init.vim	/^nnoremap <silent> <c-k> <cmd>lua vim.lsp.buf.signature_help()<CR>$/;"	m
+<c-w>h	nvim.all/init.vim	/^nnoremap <c-w>h <c-w>s$/;"	m
+<cr>	nvim.all/autoload/plug.vim	/^      nmap <buffer> <cr> <plug>(plug-preview)$/;"	m
+<plug>(plug-preview)	nvim.all/autoload/plug.vim	/^    nnoremap <silent> <buffer> <plug>(plug-preview) :silent! call <SID>preview_commit()<cr>$/;"	m
+ARGBEGIN	st/arg.h	/^#define ARGBEGIN	/;"	d
+ARGC	st/arg.h	/^#define ARGC(/;"	d
+ARGEND	st/arg.h	/^#define ARGEND	/;"	d
+ARGF	st/arg.h	/^#define ARGF(/;"	d
+ARG_H__	st/arg.h	/^#define ARG_H__$/;"	d
+ATTRCMP	st/st.h	/^#define ATTRCMP(/;"	d
+ATTR_BLINK	st/st.h	/^	ATTR_BLINK      = 1 << 4,$/;"	e	enum:glyph_attribute
+ATTR_BOLD	st/st.h	/^	ATTR_BOLD       = 1 << 0,$/;"	e	enum:glyph_attribute
+ATTR_BOLD_FAINT	st/st.h	/^	ATTR_BOLD_FAINT = ATTR_BOLD | ATTR_FAINT,$/;"	e	enum:glyph_attribute
+ATTR_FAINT	st/st.h	/^	ATTR_FAINT      = 1 << 1,$/;"	e	enum:glyph_attribute
+ATTR_INVISIBLE	st/st.h	/^	ATTR_INVISIBLE  = 1 << 6,$/;"	e	enum:glyph_attribute
+ATTR_ITALIC	st/st.h	/^	ATTR_ITALIC     = 1 << 2,$/;"	e	enum:glyph_attribute
+ATTR_LIGA	st/st.h	/^	ATTR_LIGA       = 1 << 11,$/;"	e	enum:glyph_attribute
+ATTR_NULL	st/st.h	/^	ATTR_NULL       = 0,$/;"	e	enum:glyph_attribute
+ATTR_REVERSE	st/st.h	/^	ATTR_REVERSE    = 1 << 5,$/;"	e	enum:glyph_attribute
+ATTR_STRUCK	st/st.h	/^	ATTR_STRUCK     = 1 << 7,$/;"	e	enum:glyph_attribute
+ATTR_UNDERLINE	st/st.h	/^	ATTR_UNDERLINE  = 1 << 3,$/;"	e	enum:glyph_attribute
+ATTR_WDUMMY	st/st.h	/^	ATTR_WDUMMY     = 1 << 10,$/;"	e	enum:glyph_attribute
+ATTR_WIDE	st/st.h	/^	ATTR_WIDE       = 1 << 9,$/;"	e	enum:glyph_attribute
+ATTR_WRAP	st/st.h	/^	ATTR_WRAP       = 1 << 8,$/;"	e	enum:glyph_attribute
+AUTHORS	st/st.1	/^.SH AUTHORS$/;"	s	title:ST
+Arg	st/st.h	/^} Arg;$/;"	t	typeref:union:__anonaa52d418020a
+BETWEEN	st/st.h	/^#define BETWEEN(/;"	d
+BUGS	st/st.1	/^.SH BUGS$/;"	s	title:ST
+CSIEscape	st/st.c	/^} CSIEscape;$/;"	t	typeref:struct:__anonaa52d4130508	file:
+CS_FIN	st/st.c	/^	CS_FIN$/;"	e	enum:charset	file:
+CS_GER	st/st.c	/^	CS_GER,$/;"	e	enum:charset	file:
+CS_GRAPHIC0	st/st.c	/^	CS_GRAPHIC0,$/;"	e	enum:charset	file:
+CS_GRAPHIC1	st/st.c	/^	CS_GRAPHIC1,$/;"	e	enum:charset	file:
+CS_MULTI	st/st.c	/^	CS_MULTI,$/;"	e	enum:charset	file:
+CS_UK	st/st.c	/^	CS_UK,$/;"	e	enum:charset	file:
+CS_USA	st/st.c	/^	CS_USA,$/;"	e	enum:charset	file:
+CURSOR_DEFAULT	st/st.c	/^	CURSOR_DEFAULT  = 0,$/;"	e	enum:cursor_state	file:
+CURSOR_LOAD	st/st.c	/^	CURSOR_LOAD$/;"	e	enum:cursor_movement	file:
+CURSOR_ORIGIN	st/st.c	/^	CURSOR_ORIGIN   = 2$/;"	e	enum:cursor_state	file:
+CURSOR_SAVE	st/st.c	/^	CURSOR_SAVE,$/;"	e	enum:cursor_movement	file:
+CURSOR_WRAPNEXT	st/st.c	/^	CURSOR_WRAPNEXT = 1,$/;"	e	enum:cursor_state	file:
+CUSTOMIZATION	st/st.1	/^.SH CUSTOMIZATION$/;"	s	title:ST
+Color	st/x.c	/^typedef XftColor Color;$/;"	t	typeref:typename:XftColor	file:
+D	nvim.all/autoload/plug.vim	/^  nnoremap <silent> <buffer> D  :PlugDiff<cr>$/;"	m
+DC	st/x.c	/^} DC;$/;"	t	typeref:struct:__anon1c6f2a240908	file:
+DEFAULT	st/st.h	/^#define DEFAULT(/;"	d
+DEFAULT KEY	tmux/tmux.conf	/^unbind n #DEFAULT KEY: Move to next window$/;"	k
+DEFAULT KEY	tmux/tmux.conf	/^unbind w #DEFAULT KEY: change current window interactively$/;"	k
+DESCRIPTION	st/st.1	/^.SH DESCRIPTION$/;"	s	title:ST
+DIVCEIL	st/st.h	/^#define DIVCEIL(/;"	d
+Draw	st/x.c	/^typedef XftDraw *Draw;$/;"	t	typeref:typename:XftDraw *	file:
+EARGF	st/arg.h	/^#define EARGF(/;"	d
+ESC_ALTCHARSET	st/st.c	/^	ESC_ALTCHARSET = 8,$/;"	e	enum:escape_state	file:
+ESC_ARG_SIZ	st/st.c	/^#define ESC_ARG_SIZ /;"	d	file:
+ESC_BUF_SIZ	st/st.c	/^#define ESC_BUF_SIZ /;"	d	file:
+ESC_CSI	st/st.c	/^	ESC_CSI        = 2,$/;"	e	enum:escape_state	file:
+ESC_START	st/st.c	/^	ESC_START      = 1,$/;"	e	enum:escape_state	file:
+ESC_STR	st/st.c	/^	ESC_STR        = 4,  \/* DCS, OSC, PM, APC *\/$/;"	e	enum:escape_state	file:
+ESC_STR_END	st/st.c	/^	ESC_STR_END    = 16, \/* a final string was encountered *\/$/;"	e	enum:escape_state	file:
+ESC_TEST	st/st.c	/^	ESC_TEST       = 32, \/* Enter in test mode *\/$/;"	e	enum:escape_state	file:
+ESC_UTF8	st/st.c	/^	ESC_UTF8       = 64,$/;"	e	enum:escape_state	file:
+F	nvim.all/init.vim	/^map F <Plug>Sneak_F$/;"	m
+FRC_BOLD	st/x.c	/^	FRC_BOLD,$/;"	e	enum:__anon1c6f2a240a03	file:
+FRC_ITALIC	st/x.c	/^	FRC_ITALIC,$/;"	e	enum:__anon1c6f2a240a03	file:
+FRC_ITALICBOLD	st/x.c	/^	FRC_ITALICBOLD$/;"	e	enum:__anon1c6f2a240a03	file:
+FRC_NORMAL	st/x.c	/^	FRC_NORMAL,$/;"	e	enum:__anon1c6f2a240a03	file:
+FSharp.lineLens.enabled	Code/settings.json	/^"FSharp.lineLens.enabled": "never",$/;"	s
+FSharp.useSdkScripts	Code/settings.json	/^"FSharp.useSdkScripts": true,$/;"	b
+Font	st/x.c	/^#define Font /;"	d	file:
+Font	st/x.c	/^} Font;$/;"	t	typeref:struct:__anon1c6f2a240808	file:
+Fontcache	st/x.c	/^} Fontcache;$/;"	t	typeref:struct:__anon1c6f2a240b08	file:
+GetGitStatus	nvim/init.vim	/^function! GetGitStatus()$/;"	f
+Glyph	st/st.h	/^#define Glyph /;"	d
+Glyph	st/st.h	/^} Glyph;$/;"	t	typeref:struct:__anonaa52d4180108
+GlyphFontSpec	st/x.c	/^typedef XftGlyphFontSpec GlyphFontSpec;$/;"	t	typeref:typename:XftGlyphFontSpec	file:
+HbFontMatch	st/hb.c	/^} HbFontMatch;$/;"	t	typeref:struct:__anonaa4c7f560108	file:
+I	tmux/tmux.conf	/^setw -g window-status-current-format " #F#I:#W#F "$/;"	k
+I	tmux/tmux.conf	/^setw -g window-status-format " #F#I:#W#F "$/;"	k
+INCS	st/config.mk	/^INCS = -I$(X11INC) \\$/;"	m
+ISCONTROL	st/st.c	/^#define ISCONTROL(/;"	d	file:
+ISCONTROLC0	st/st.c	/^#define ISCONTROLC0(/;"	d	file:
+ISCONTROLC1	st/st.c	/^#define ISCONTROLC1(/;"	d	file:
+ISDELIM	st/st.c	/^#define ISDELIM(/;"	d	file:
+IS_SET	st/st.c	/^#define IS_SET(/;"	d	file:
+IS_SET	st/x.c	/^#define IS_SET(/;"	d	file:
+IS_TRUECOL	st/st.h	/^#define IS_TRUECOL(/;"	d
+K	nvim.all/init.vim	/^        nmap <silent>K <Plug>(lcn-hover)$/;"	m
+K	nvim/init.vim	/^nnoremap <silent> K     <cmd>lua vim.lsp.buf.hover()<CR>$/;"	m
+Key	st/x.c	/^} Key;$/;"	t	typeref:struct:__anon1c6f2a240308	file:
+L	nvim.all/autoload/plug.vim	/^    nnoremap <silent> <buffer> L :call <SID>status_load(line('.'))<cr>$/;"	m
+L	nvim.all/autoload/plug.vim	/^    xnoremap <silent> <buffer> L :call <SID>status_load(line('.'))<cr>$/;"	m
+LC_maps	nvim.all/init.vim	/^function LC_maps()$/;"	f
+LEN	st/st.h	/^#define LEN(/;"	d
+LIBS	st/config.mk	/^LIBS = -L$(X11LIB) -lm -lrt -lX11 -lutil -lXft \\$/;"	m
+LICENSE	st/st.1	/^.SH LICENSE$/;"	s	title:ST
+LIMIT	st/st.h	/^#define LIMIT(/;"	d
+Line	st/st.h	/^typedef Glyph *Line;$/;"	t	typeref:typename:Glyph *
+MANPREFIX	st/config.mk	/^MANPREFIX = $(PREFIX)\/share\/man$/;"	m
+MAX	st/st.h	/^#define MAX(/;"	d
+MD028	Code/settings.json	/^    "MD028": false$/;"	b	object:markdownlint.config
+MIN	st/st.h	/^#define MIN(/;"	d
+MODBIT	st/st.h	/^#define MODBIT(/;"	d
+MODE_8BIT	st/win.h	/^	MODE_8BIT        = 1 << 10,$/;"	e	enum:win_mode
+MODE_ALTSCREEN	st/st.c	/^	MODE_ALTSCREEN   = 1 << 2,$/;"	e	enum:term_mode	file:
+MODE_APPCURSOR	st/win.h	/^	MODE_APPCURSOR   = 1 << 8,$/;"	e	enum:win_mode
+MODE_APPKEYPAD	st/win.h	/^	MODE_APPKEYPAD   = 1 << 2,$/;"	e	enum:win_mode
+MODE_BLINK	st/win.h	/^	MODE_BLINK       = 1 << 11,$/;"	e	enum:win_mode
+MODE_BRCKTPASTE	st/win.h	/^	MODE_BRCKTPASTE  = 1 << 16,$/;"	e	enum:win_mode
+MODE_CRLF	st/st.c	/^	MODE_CRLF        = 1 << 3,$/;"	e	enum:term_mode	file:
+MODE_ECHO	st/st.c	/^	MODE_ECHO        = 1 << 4,$/;"	e	enum:term_mode	file:
+MODE_FBLINK	st/win.h	/^	MODE_FBLINK      = 1 << 12,$/;"	e	enum:win_mode
+MODE_FOCUS	st/win.h	/^	MODE_FOCUS       = 1 << 13,$/;"	e	enum:win_mode
+MODE_FOCUSED	st/win.h	/^	MODE_FOCUSED     = 1 << 1,$/;"	e	enum:win_mode
+MODE_HIDE	st/win.h	/^	MODE_HIDE        = 1 << 7,$/;"	e	enum:win_mode
+MODE_INSERT	st/st.c	/^	MODE_INSERT      = 1 << 1,$/;"	e	enum:term_mode	file:
+MODE_KBDLOCK	st/win.h	/^	MODE_KBDLOCK     = 1 << 6,$/;"	e	enum:win_mode
+MODE_MOUSE	st/win.h	/^	MODE_MOUSE       = MODE_MOUSEBTN|MODE_MOUSEMOTION|MODE_MOUSEX10\\$/;"	e	enum:win_mode
+MODE_MOUSEBTN	st/win.h	/^	MODE_MOUSEBTN    = 1 << 3,$/;"	e	enum:win_mode
+MODE_MOUSEMANY	st/win.h	/^	MODE_MOUSEMANY   = 1 << 15,$/;"	e	enum:win_mode
+MODE_MOUSEMOTION	st/win.h	/^	MODE_MOUSEMOTION = 1 << 4,$/;"	e	enum:win_mode
+MODE_MOUSESGR	st/win.h	/^	MODE_MOUSESGR    = 1 << 9,$/;"	e	enum:win_mode
+MODE_MOUSEX10	st/win.h	/^	MODE_MOUSEX10    = 1 << 14,$/;"	e	enum:win_mode
+MODE_NUMLOCK	st/win.h	/^	MODE_NUMLOCK     = 1 << 17,$/;"	e	enum:win_mode
+MODE_PRINT	st/st.c	/^	MODE_PRINT       = 1 << 5,$/;"	e	enum:term_mode	file:
+MODE_REVERSE	st/win.h	/^	MODE_REVERSE     = 1 << 5,$/;"	e	enum:win_mode
+MODE_UTF8	st/st.c	/^	MODE_UTF8        = 1 << 6,$/;"	e	enum:term_mode	file:
+MODE_VISIBLE	st/win.h	/^	MODE_VISIBLE     = 1 << 0,$/;"	e	enum:win_mode
+MODE_WRAP	st/st.c	/^	MODE_WRAP        = 1 << 0,$/;"	e	enum:term_mode	file:
+MODKEY	st/config.def.h	/^#define MODKEY /;"	d
+MODKEY	st/config.h	/^#define MODKEY /;"	d
+MouseShortcut	st/x.c	/^} MouseShortcut;$/;"	t	typeref:struct:__anon1c6f2a240208	file:
+MyFugitive	nvim/init.vim	/^function! MyFugitive()$/;"	f
+NAME	st/st.1	/^.SH NAME$/;"	s	title:ST
+OBJ	st/Makefile	/^OBJ = $(SRC:.c=.o)$/;"	m
+OPTIONS	st/st.1	/^.SH OPTIONS$/;"	s	title:ST
+PKG_CONFIG	st/config.mk	/^PKG_CONFIG = pkg-config$/;"	m
+PREFIX	st/config.mk	/^PREFIX = \/usr\/local$/;"	m
+PackClean	nvim/init.vim	/^command! PackClean  source $MYVIMRC | call PackInit() | call minpac#clean()$/;"	c
+PackInit	nvim/init.vim	/^function! PackInit() abort$/;"	f
+PackStatus	nvim/init.vim	/^command! PackStatus packadd minpac | call minpac#status()$/;"	c
+PackUpdate	nvim/init.vim	/^command! PackUpdate source $MYVIMRC | call PackInit() | call minpac#update()$/;"	c
+Plug	nvim.all/autoload/plug.vim	/^  command! -nargs=+ -bar Plug call plug#(<args>)$/;"	c
+PlugClean	nvim.all/autoload/plug.vim	/^  command! -nargs=0 -bar -bang PlugClean call s:clean(<bang>0)$/;"	c
+PlugDiff	nvim.all/autoload/plug.vim	/^  command! -nargs=0 -bar PlugDiff    call s:diff()$/;"	c
+PlugInstall	nvim.all/autoload/plug.vim	/^  command! -nargs=* -bar -bang -complete=customlist,s:names PlugInstall call s:install(<bang>0, /;"	c
+PlugLOD	nvim.all/autoload/plug.vim	/^    augroup PlugLOD$/;"	a
+PlugSnapshot	nvim.all/autoload/plug.vim	/^  command! -nargs=? -bar -bang -complete=file PlugSnapshot call s:snapshot(<bang>0, <f-args>)$/;"	c
+PlugStatus	nvim.all/autoload/plug.vim	/^  command! -nargs=0 -bar PlugStatus  call s:status()$/;"	c
+PlugUpdate	nvim.all/autoload/plug.vim	/^  command! -nargs=* -bar -bang -complete=customlist,s:names PlugUpdate  call s:update(<bang>0, [/;"	c
+PlugUpgrade	nvim.all/autoload/plug.vim	/^  command! -nargs=0 -bar PlugUpgrade if s:upgrade() | execute 'source' s:esc(s:me) | endif$/;"	c
+R	nvim.all/autoload/plug.vim	/^  nnoremap <silent> <buffer> R  :call <SID>retry()<cr>$/;"	m
+Rune	st/st.h	/^typedef uint_least32_t Rune;$/;"	t	typeref:typename:uint_least32_t
+S	nvim.all/autoload/plug.vim	/^  nnoremap <silent> <buffer> S  :PlugStatus<cr>$/;"	m
+S	nvim.all/init.vim	/^omap S <Plug>Sneak_S$/;"	m
+SEE	st/st.1	/^.SH SEE ALSO$/;"	s	title:ST
+SEL_EMPTY	st/st.h	/^	SEL_EMPTY = 1,$/;"	e	enum:selection_mode
+SEL_IDLE	st/st.h	/^	SEL_IDLE = 0,$/;"	e	enum:selection_mode
+SEL_READY	st/st.h	/^	SEL_READY = 2$/;"	e	enum:selection_mode
+SEL_RECTANGULAR	st/st.h	/^	SEL_RECTANGULAR = 2$/;"	e	enum:selection_type
+SEL_REGULAR	st/st.h	/^	SEL_REGULAR = 1,$/;"	e	enum:selection_type
+SHORTCUTS	st/st.1	/^.SH SHORTCUTS$/;"	s	title:ST
+SNAP_LINE	st/st.h	/^	SNAP_LINE = 2$/;"	e	enum:selection_snap
+SNAP_WORD	st/st.h	/^	SNAP_WORD = 1,$/;"	e	enum:selection_snap
+SRC	st/Makefile	/^SRC = st.c x.c hb.c$/;"	m
+ST	st/st.1	/^.TH ST 1 st\\-VERSION$/;"	t
+STCFLAGS	st/config.mk	/^STCFLAGS = $(INCS) $(STCPPFLAGS) $(CPPFLAGS) $(CFLAGS)$/;"	m
+STCPPFLAGS	st/config.mk	/^STCPPFLAGS = -DVERSION=\\"$(VERSION)\\" -D_XOPEN_SOURCE=600$/;"	m
+STLDFLAGS	st/config.mk	/^STLDFLAGS = $(LIBS) $(LDFLAGS)$/;"	m
+STREscape	st/st.c	/^} STREscape;$/;"	t	typeref:struct:__anonaa52d4130608	file:
+STR_ARG_SIZ	st/st.c	/^#define STR_ARG_SIZ /;"	d	file:
+STR_BUF_SIZ	st/st.c	/^#define STR_BUF_SIZ /;"	d	file:
+SYNOPSIS	st/st.1	/^.SH SYNOPSIS$/;"	s	title:ST
+Selection	st/st.c	/^} Selection;$/;"	t	typeref:struct:__anonaa52d4130208	file:
+Shortcut	st/x.c	/^} Shortcut;$/;"	t	typeref:struct:__anon1c6f2a240108	file:
+T	nvim.all/init.vim	/^map T <Plug>Sneak_T$/;"	m
+TCursor	st/st.c	/^} TCursor;$/;"	t	typeref:struct:__anonaa52d4130108	file:
+TERMMOD	st/config.def.h	/^#define TERMMOD /;"	d
+TERMMOD	st/config.h	/^#define TERMMOD /;"	d
+TIMEDIFF	st/st.h	/^#define TIMEDIFF(/;"	d
+TRUEBLUE	st/x.c	/^#define TRUEBLUE(/;"	d	file:
+TRUECOLOR	st/st.h	/^#define TRUECOLOR(/;"	d
+TRUEGREEN	st/x.c	/^#define TRUEGREEN(/;"	d	file:
+TRUERED	st/x.c	/^#define TRUERED(/;"	d	file:
+Term	st/st.c	/^} Term;$/;"	t	typeref:struct:__anonaa52d4130408	file:
+TermWindow	st/x.c	/^} TermWindow;$/;"	t	typeref:struct:__anon1c6f2a240408	file:
+U	nvim.all/autoload/plug.vim	/^  nnoremap <silent> <buffer> U  :call <SID>status_update()<cr>$/;"	m
+U	nvim.all/autoload/plug.vim	/^  xnoremap <silent> <buffer> U  :call <SID>status_update()<cr>$/;"	m
+UTF_INVALID	st/st.c	/^#define UTF_INVALID /;"	d	file:
+UTF_SIZ	st/st.c	/^#define UTF_SIZ /;"	d	file:
+VERSION	st/config.mk	/^VERSION = 0.8.4$/;"	m
+X	nvim.all/autoload/plug.vim	/^    nnoremap <silent> <buffer> X :call <SID>revert()<cr>$/;"	m
+X11INC	st/config.mk	/^X11INC = \/usr\/X11R6\/include$/;"	m
+X11LIB	st/config.mk	/^X11LIB = \/usr\/X11R6\/lib$/;"	m
+XEMBED_FOCUS_IN	st/x.c	/^#define XEMBED_FOCUS_IN /;"	d	file:
+XEMBED_FOCUS_OUT	st/x.c	/^#define XEMBED_FOCUS_OUT /;"	d	file:
+XK_ANY_MOD	st/x.c	/^#define XK_ANY_MOD /;"	d	file:
+XK_NO_MOD	st/x.c	/^#define XK_NO_MOD /;"	d	file:
+XK_SWITCH_MOD	st/x.c	/^#define XK_SWITCH_MOD /;"	d	file:
+XSelection	st/x.c	/^} XSelection;$/;"	t	typeref:struct:__anon1c6f2a240708	file:
+XWindow	st/x.c	/^} XWindow;$/;"	t	typeref:struct:__anon1c6f2a240508	file:
+[[	nvim.all/autoload/plug.vim	/^  nnoremap <silent> <buffer> [[ :silent! call <SID>section('b')<cr>$/;"	m
+[json]	Code/settings.json	/^"[json]": {$/;"	o
+]]	nvim.all/autoload/plug.vim	/^  nnoremap <silent> <buffer> ]] :silent! call <SID>section('')<cr>$/;"	m
+__anon1c6f2a240108	st/x.c	/^typedef struct {$/;"	s	file:
+__anon1c6f2a240208	st/x.c	/^typedef struct {$/;"	s	file:
+__anon1c6f2a240308	st/x.c	/^typedef struct {$/;"	s	file:
+__anon1c6f2a240408	st/x.c	/^typedef struct {$/;"	s	file:
+__anon1c6f2a240508	st/x.c	/^typedef struct {$/;"	s	file:
+__anon1c6f2a240608	st/x.c	/^	struct {$/;"	s	struct:__anon1c6f2a240508	file:
+__anon1c6f2a240708	st/x.c	/^typedef struct {$/;"	s	file:
+__anon1c6f2a240808	st/x.c	/^typedef struct {$/;"	s	file:
+__anon1c6f2a240908	st/x.c	/^typedef struct {$/;"	s	file:
+__anon1c6f2a240a03	st/x.c	/^enum {$/;"	g	file:
+__anon1c6f2a240b08	st/x.c	/^typedef struct {$/;"	s	file:
+__anonaa4c7f560108	st/hb.c	/^typedef struct {$/;"	s	file:
+__anonaa52d4130108	st/st.c	/^typedef struct {$/;"	s	file:
+__anonaa52d4130208	st/st.c	/^typedef struct {$/;"	s	file:
+__anonaa52d4130308	st/st.c	/^	struct {$/;"	s	struct:__anonaa52d4130208	file:
+__anonaa52d4130408	st/st.c	/^typedef struct {$/;"	s	file:
+__anonaa52d4130508	st/st.c	/^typedef struct {$/;"	s	file:
+__anonaa52d4130608	st/st.c	/^typedef struct {$/;"	s	file:
+__anonaa52d4180108	st/st.h	/^typedef struct {$/;"	s
+__anonaa52d418020a	st/st.h	/^typedef union {$/;"	u
+_bd	zsh/external/bd.zsh	/^_bd () {$/;"	f
+a/Makefile	st-patches/st-ligatures-20200430-0.8.3.diff	/^--- a\/Makefile$/;"	m
+a/config.def.h	st-patches/st-solarized-light-20190306-ed68fe7.diff	/^--- a\/config.def.h$/;"	m
+a/config.mk	st-patches/st-ligatures-20200430-0.8.3.diff	/^--- a\/config.mk$/;"	m
+a/st.1	st-patches/st-defaultfontsize-20210225-4ef0cbd.diff	/^--- a\/st.1$/;"	m
+a/st.c	st-patches/st-ligatures-20200430-0.8.3.diff	/^--- a\/st.c$/;"	m
+a/st.h	st-patches/st-ligatures-20200430-0.8.3.diff	/^--- a\/st.h$/;"	m
+a/win.h	st-patches/st-ligatures-20200430-0.8.3.diff	/^--- a\/win.h$/;"	m
+a/x.c	st-patches/st-clipboard-20180309-c5ba9c0.diff	/^--- a\/x.c$/;"	m
+a/x.c	st-patches/st-defaultfontsize-20210225-4ef0cbd.diff	/^--- a\/x.c$/;"	m
+a/x.c	st-patches/st-ligatures-20200430-0.8.3.diff	/^--- a\/x.c$/;"	m
+a/x.c	st-patches/st-no_bold_colors-20170623-b331da5.diff	/^--- a\/x.c$/;"	m
+all	st/Makefile	/^all: options st$/;"	t
+allowaltscreen	st/config.def.h	/^int allowaltscreen = 1;$/;"	v	typeref:typename:int
+allowaltscreen	st/config.h	/^int allowaltscreen = 1;$/;"	v	typeref:typename:int
+allowwindowops	st/config.def.h	/^int allowwindowops = 0;$/;"	v	typeref:typename:int
+allowwindowops	st/config.h	/^int allowwindowops = 0;$/;"	v	typeref:typename:int
+alt	st/st.c	/^	Line *alt;    \/* alternate screen *\/$/;"	m	struct:__anonaa52d4130408	typeref:typename:Line *	file:
+alt	st/st.c	/^	int alt;$/;"	m	struct:__anonaa52d4130208	typeref:typename:int	file:
+appcursor	st/x.c	/^	signed char appcursor; \/* application cursor *\/$/;"	m	struct:__anon1c6f2a240308	typeref:typename:signed char	file:
+appkey	st/x.c	/^	signed char appkey;    \/* application keypad *\/$/;"	m	struct:__anon1c6f2a240308	typeref:typename:signed char	file:
+arg	st/st.c	/^	int arg[ESC_ARG_SIZ];$/;"	m	struct:__anonaa52d4130508	typeref:typename:int[]	file:
+arg	st/x.c	/^	const Arg arg;$/;"	m	struct:__anon1c6f2a240108	typeref:typename:const Arg	file:
+arg	st/x.c	/^	const Arg arg;$/;"	m	struct:__anon1c6f2a240208	typeref:typename:const Arg	file:
+args	st/st.c	/^	char *args[STR_ARG_SIZ];$/;"	m	struct:__anonaa52d4130608	typeref:typename:char * []	file:
+argv0	st/x.c	/^char *argv0;$/;"	v	typeref:typename:char *
+ascent	st/x.c	/^	int ascent;$/;"	m	struct:__anon1c6f2a240808	typeref:typename:int	file:
+ascii_printable	st/config.def.h	/^static char ascii_printable[] =$/;"	v	typeref:typename:char[]
+ascii_printable	st/config.h	/^static char ascii_printable[] =$/;"	v	typeref:typename:char[]
+attr	st/st.c	/^	Glyph attr; \/* current char attributes *\/$/;"	m	struct:__anonaa52d4130108	typeref:typename:Glyph	file:
+attrs	st/x.c	/^	XSetWindowAttributes attrs;$/;"	m	struct:__anon1c6f2a240508	typeref:typename:XSetWindowAttributes	file:
+b/hb.c	st-patches/st-ligatures-20200430-0.8.3.diff	/^+++ b\/hb.c$/;"	n
+b/hb.h	st-patches/st-ligatures-20200430-0.8.3.diff	/^+++ b\/hb.h$/;"	n
+badslant	st/x.c	/^	int badslant;$/;"	m	struct:__anon1c6f2a240808	typeref:typename:int	file:
+badweight	st/x.c	/^	int badweight;$/;"	m	struct:__anon1c6f2a240808	typeref:typename:int	file:
+base64_digits	st/st.c	/^static const char base64_digits[] = {$/;"	v	typeref:typename:const char[]	file:
+base64dec	st/st.c	/^base64dec(const char *src)$/;"	f	typeref:typename:char *
+base64dec_getc	st/st.c	/^base64dec_getc(const char **src)$/;"	f	typeref:typename:char
+bd	zsh/external/bd.zsh	/^bd () {$/;"	f
+bellvolume	st/config.def.h	/^static int bellvolume = 0;$/;"	v	typeref:typename:int
+bellvolume	st/config.h	/^static int bellvolume = 0;$/;"	v	typeref:typename:int
+bfont	st/x.c	/^	Font font, bfont, ifont, ibfont;$/;"	m	struct:__anon1c6f2a240908	typeref:typename:Font	file:
+bg	st/st.h	/^	uint32_t bg;      \/* background  *\/$/;"	m	struct:__anonaa52d4180108	typeref:typename:uint32_t
+blinktimeout	st/config.def.h	/^static unsigned int blinktimeout = 800;$/;"	v	typeref:typename:unsigned int
+blinktimeout	st/config.h	/^static unsigned int blinktimeout = 800;$/;"	v	typeref:typename:unsigned int
+bmotion	st/x.c	/^bmotion(XEvent *e)$/;"	f	typeref:typename:void
+body::-webkit-scrollbar	vimb/style.css	/^body::-webkit-scrollbar {$/;"	s
+borderpx	st/config.def.h	/^static int borderpx = 2;$/;"	v	typeref:typename:int
+borderpx	st/config.h	/^static int borderpx = 2;$/;"	v	typeref:typename:int
+bot	st/st.c	/^	int bot;      \/* bottom scroll limit *\/$/;"	m	struct:__anonaa52d4130408	typeref:typename:int	file:
+bpress	st/x.c	/^bpress(XEvent *e)$/;"	f	typeref:typename:void
+breadcrumbs.enabled	Code/settings.json	/^    "breadcrumbs.enabled": true,$/;"	b
+brelease	st/x.c	/^brelease(XEvent *e)$/;"	f	typeref:typename:void
+browse	zsh/scripts.sh	/^browse() {$/;"	f
+buf	st/st.c	/^	char *buf;             \/* allocated raw string *\/$/;"	m	struct:__anonaa52d4130608	typeref:typename:char *	file:
+buf	st/st.c	/^	char buf[ESC_BUF_SIZ]; \/* raw string *\/$/;"	m	struct:__anonaa52d4130508	typeref:typename:char[]	file:
+buf	st/x.c	/^	Drawable buf;$/;"	m	struct:__anon1c6f2a240508	typeref:typename:Drawable	file:
+button	st/x.c	/^	uint button;$/;"	m	struct:__anon1c6f2a240208	typeref:typename:uint	file:
+buttonmask	st/x.c	/^buttonmask(uint button)$/;"	f	typeref:typename:uint
+c	st/st.c	/^	TCursor c;    \/* cursor *\/$/;"	m	struct:__anonaa52d4130408	typeref:typename:TCursor	file:
+cSpell.diagnosticLevel	Code/settings.json	/^"cSpell.diagnosticLevel": "Hint",$/;"	s
+cSpell.enableFiletypes	Code/settings.json	/^"cSpell.enableFiletypes": [$/;"	a
+cb	zsh/scripts.sh	/^cb(){ cargo check --color=always "$@" |& less ; }$/;"	f
+ch	st/x.c	/^	int ch; \/* char height *\/$/;"	m	struct:__anon1c6f2a240408	typeref:typename:int	file:
+charset	st/st.c	/^	int charset;  \/* current charset *\/$/;"	m	struct:__anonaa52d4130408	typeref:typename:int	file:
+charset	st/st.c	/^enum charset {$/;"	g	file:
+chscale	st/config.def.h	/^static float chscale = 1.0;$/;"	v	typeref:typename:float
+chscale	st/config.h	/^static float chscale = 1.0;$/;"	v	typeref:typename:float
+clean	st/Makefile	/^clean:$/;"	t
+clipboard	st/x.c	/^	char *primary, *clipboard;$/;"	m	struct:__anon1c6f2a240708	typeref:typename:char *	file:
+clipcopy	st/x.c	/^clipcopy(const Arg *dummy)$/;"	f	typeref:typename:void
+clippaste	st/x.c	/^clippaste(const Arg *dummy)$/;"	f	typeref:typename:void
+cmap	st/x.c	/^	Colormap cmap;$/;"	m	struct:__anon1c6f2a240508	typeref:typename:Colormap	file:
+cmdfd	st/st.c	/^static int cmdfd;$/;"	v	typeref:typename:int	file:
+cmessage	st/x.c	/^cmessage(XEvent *e)$/;"	f	typeref:typename:void
+col	st/st.c	/^	int col;      \/* nb col *\/$/;"	m	struct:__anonaa52d4130408	typeref:typename:int	file:
+col	st/x.c	/^	Color *col;$/;"	m	struct:__anon1c6f2a240908	typeref:typename:Color *	file:
+collen	st/x.c	/^	size_t collen;$/;"	m	struct:__anon1c6f2a240908	typeref:typename:size_t	file:
+colorname	st/config.def.h	/^static const char *colorname[] = {$/;"	v	typeref:typename:const char * []
+colorname	st/config.h	/^static const char *colorname[] = {$/;"	v	typeref:typename:const char * []
+colors_name	nvim.all/colors/flattened_light.vim	/^let colors_name = 'flattened_light'$/;"	v
+cols	st/config.def.h	/^static unsigned int cols = 80;$/;"	v	typeref:typename:unsigned int
+cols	st/config.h	/^static unsigned int cols = 80;$/;"	v	typeref:typename:unsigned int
+command	Code/keybindings.json	/^        "command": "-extension.vim_ctrl+t",$/;"	s	object:20
+command	Code/keybindings.json	/^        "command": "-gitlens.toggleFileBlame",$/;"	s	object:17
+command	Code/keybindings.json	/^        "command": "-workbench.action.toggleSidebarVisibility"$/;"	s	object:19
+command	Code/keybindings.json	/^        "command": "-workbench.view.extension.azure"$/;"	s	object:23
+command	Code/keybindings.json	/^        "command": "commandId",$/;"	s	object:14
+command	Code/keybindings.json	/^        "command": "fsi.SendSelection",$/;"	s	object:25
+command	Code/keybindings.json	/^        "command": "outline.focus",$/;"	s	object:13
+command	Code/keybindings.json	/^        "command": "selectNextSuggestion",$/;"	s	object:0
+command	Code/keybindings.json	/^        "command": "selectPrevSuggestion",$/;"	s	object:1
+command	Code/keybindings.json	/^        "command": "workbench.action.focusActiveEditorGroup",$/;"	s	object:12
+command	Code/keybindings.json	/^        "command": "workbench.action.focusActiveEditorGroup",$/;"	s	object:16
+command	Code/keybindings.json	/^        "command": "workbench.action.focusActiveEditorGroup",$/;"	s	object:7
+command	Code/keybindings.json	/^        "command": "workbench.action.quickOpenNavigateNext",$/;"	s	object:22
+command	Code/keybindings.json	/^        "command": "workbench.action.quickOpenSelectNext",$/;"	s	object:2
+command	Code/keybindings.json	/^        "command": "workbench.action.quickOpenSelectPrevious",$/;"	s	object:3
+command	Code/keybindings.json	/^        "command": "workbench.action.terminal.focusPreviousPane",$/;"	s	object:6
+command	Code/keybindings.json	/^        "command": "workbench.action.toggleSidebarVisibility"$/;"	s	object:18
+command	Code/keybindings.json	/^        "command": "workbench.explorer.fileView.focus"$/;"	s	object:24
+command	Code/keybindings.json	/^        "command": "workbench.files.action.focusFilesExplorer",$/;"	s	object:11
+command	Code/keybindings.json	/^        "command": "workbench.files.action.focusFilesExplorer",$/;"	s	object:15
+compress	zsh/scripts.sh	/^compress() {$/;"	f
+config.h	st/Makefile	/^config.h:$/;"	t
+cr	zsh/scripts.sh	/^cr(){ cargo run -q --color=always "$@" |& less ; }$/;"	f
+cresize	st/x.c	/^cresize(int width, int height)$/;"	f	typeref:typename:void
+csidump	st/st.c	/^csidump(void)$/;"	f	typeref:typename:void
+csiescseq	st/st.c	/^static CSIEscape csiescseq;$/;"	v	typeref:typename:CSIEscape	file:
+csihandle	st/st.c	/^csihandle(void)$/;"	f	typeref:typename:void
+csiparse	st/st.c	/^csiparse(void)$/;"	f	typeref:typename:void
+csireset	st/st.c	/^csireset(void)$/;"	f	typeref:typename:void
+ct	zsh/scripts.sh	/^ct(){ cargo test --color=always "$@" |& less ; }$/;"	f
+cursor	st/x.c	/^	int cursor; \/* cursor style *\/$/;"	m	struct:__anon1c6f2a240408	typeref:typename:int	file:
+cursor_movement	st/st.c	/^enum cursor_movement {$/;"	g	file:
+cursor_state	st/st.c	/^enum cursor_state {$/;"	g	file:
+cursorshape	st/config.def.h	/^static unsigned int cursorshape = 2;$/;"	v	typeref:typename:unsigned int
+cursorshape	st/config.h	/^static unsigned int cursorshape = 2;$/;"	v	typeref:typename:unsigned int
+cursorthickness	st/config.def.h	/^static unsigned int cursorthickness = 2;$/;"	v	typeref:typename:unsigned int
+cursorthickness	st/config.h	/^static unsigned int cursorthickness = 2;$/;"	v	typeref:typename:unsigned int
+cw	st/x.c	/^	int cw; \/* char width  *\/$/;"	m	struct:__anon1c6f2a240408	typeref:typename:int	file:
+cwscale	st/config.def.h	/^static float cwscale = 1.0;$/;"	v	typeref:typename:float
+cwscale	st/config.h	/^static float cwscale = 1.0;$/;"	v	typeref:typename:float
+cz	nvim.all/init.vim	/^nmap cz  <Plug>Csurround$/;"	m
+d	nvim.all/autoload/plug.vim	/^      nnoremap <silent> <buffer> d :set opfunc=<sid>delete_op<cr>g@$/;"	m
+d	nvim.all/autoload/plug.vim	/^      xnoremap <silent> <buffer> d :<c-u>call <sid>delete_op(visualmode(), 1)<cr>$/;"	m
+dc	st/x.c	/^static DC dc;$/;"	v	typeref:typename:DC	file:
+dd	nvim.all/autoload/plug.vim	/^      nmap     <silent> <buffer> dd d_$/;"	m
+debug.console.fontSize	Code/settings.json	/^"debug.console.fontSize": 24,$/;"	n
+defaultattr	st/config.def.h	/^static unsigned int defaultattr = 11;$/;"	v	typeref:typename:unsigned int
+defaultattr	st/config.h	/^static unsigned int defaultattr = 11;$/;"	v	typeref:typename:unsigned int
+defaultbg	st/config.def.h	/^unsigned int defaultbg = 8;$/;"	v	typeref:typename:unsigned int
+defaultbg	st/config.h	/^unsigned int defaultbg = 8;$/;"	v	typeref:typename:unsigned int
+defaultcs	st/config.def.h	/^static unsigned int defaultcs = 14;$/;"	v	typeref:typename:unsigned int
+defaultcs	st/config.h	/^static unsigned int defaultcs = 14;$/;"	v	typeref:typename:unsigned int
+defaultfg	st/config.def.h	/^unsigned int defaultfg = 12;$/;"	v	typeref:typename:unsigned int
+defaultfg	st/config.h	/^unsigned int defaultfg = 12;$/;"	v	typeref:typename:unsigned int
+defaultfontsize	st/x.c	/^static double defaultfontsize = 0;$/;"	v	typeref:typename:double	file:
+defaultrcs	st/config.def.h	/^static unsigned int defaultrcs = 15;$/;"	v	typeref:typename:unsigned int
+defaultrcs	st/config.h	/^static unsigned int defaultrcs = 15;$/;"	v	typeref:typename:unsigned int
+descent	st/x.c	/^	int descent;$/;"	m	struct:__anon1c6f2a240808	typeref:typename:int	file:
+die	st/st.c	/^die(const char *errstr, ...)$/;"	f	typeref:typename:void
+dirty	st/st.c	/^	int *dirty;   \/* dirtyness of lines *\/$/;"	m	struct:__anonaa52d4130408	typeref:typename:int *	file:
+dist	st/Makefile	/^dist: clean$/;"	t
+dotnet-test-explorer.autoExpandTree	Code/settings.json	/^    "dotnet-test-explorer.autoExpandTree": true,$/;"	b
+dotnet-test-explorer.autoWatch	Code/settings.json	/^    "dotnet-test-explorer.autoWatch": true,$/;"	b
+doubleclicktimeout	st/config.def.h	/^static unsigned int doubleclicktimeout = 300;$/;"	v	typeref:typename:unsigned int
+doubleclicktimeout	st/config.h	/^static unsigned int doubleclicktimeout = 300;$/;"	v	typeref:typename:unsigned int
+dpy	st/x.c	/^	Display *dpy;$/;"	m	struct:__anon1c6f2a240508	typeref:typename:Display *	file:
+draw	st/st.c	/^draw(void)$/;"	f	typeref:typename:void
+draw	st/x.c	/^	Draw draw;$/;"	m	struct:__anon1c6f2a240508	typeref:typename:Draw	file:
+drawregion	st/st.c	/^drawregion(int x1, int y1, int x2, int y2)$/;"	f	typeref:typename:void
+duckduckgo	zsh/scripts.sh	/^duckduckgo() {$/;"	f
+dz	nvim.all/init.vim	/^nmap dz  <Plug>Dsurround$/;"	m
+editor.codeLens	Code/settings.json	/^    "editor.codeLens": false,$/;"	b
+editor.defaultFormatter	Code/settings.json	/^    "editor.defaultFormatter": "vscode.json-language-features"$/;"	s	object:[json]
+editor.fontFamily	Code/settings.json	/^    "editor.fontFamily": "Source Code Variable, Lucida Sans Typewriter, Cascadia Code PL, Consol/;"	s
+editor.fontLigatures	Code/settings.json	/^    "editor.fontLigatures": true,$/;"	b
+editor.fontSize	Code/settings.json	/^    "editor.fontSize": 24,$/;"	n
+editor.fontWeight	Code/settings.json	/^    "editor.fontWeight": "500",$/;"	s
+editor.formatOnPaste	Code/settings.json	/^    "editor.formatOnPaste": true,$/;"	b
+editor.lineNumbers	Code/settings.json	/^    "editor.lineNumbers": "off",$/;"	s
+editor.minimap.enabled	Code/settings.json	/^    "editor.minimap.enabled": false,$/;"	b
+editor.mouseWheelZoom	Code/settings.json	/^"editor.mouseWheelZoom": true,$/;"	b
+editor.renderWhitespace	Code/settings.json	/^    "editor.renderWhitespace": "trailing",$/;"	s
+editor.rulers	Code/settings.json	/^    "editor.rulers": [ 80 ],$/;"	a
+editor.wordWrapColumn	Code/settings.json	/^    "editor.wordWrapColumn": 80,$/;"	n
+esc	st/st.c	/^	int esc;      \/* escape state flags *\/$/;"	m	struct:__anonaa52d4130408	typeref:typename:int	file:
+escape_state	st/st.c	/^enum escape_state {$/;"	g	file:
+eschandle	st/st.c	/^eschandle(uchar ascii)$/;"	f	typeref:typename:int
+evcol	st/x.c	/^evcol(XEvent *e)$/;"	f	typeref:typename:int
+evrow	st/x.c	/^evrow(XEvent *e)$/;"	f	typeref:typename:int
+execsh	st/st.c	/^execsh(char *cmd, char **args)$/;"	f	typeref:typename:void
+explorer.confirmDelete	Code/settings.json	/^"explorer.confirmDelete": false,$/;"	b
+explorer.confirmDragAndDrop	Code/settings.json	/^"explorer.confirmDragAndDrop": false,$/;"	b
+explorer.openEditors.visible	Code/settings.json	/^    "explorer.openEditors.visible": 0,$/;"	n
+expose	st/x.c	/^expose(XEvent *ev)$/;"	f	typeref:typename:void
+f	nvim.all/init.vim	/^map f <Plug>Sneak_f$/;"	m
+f	st/st.h	/^	float f;$/;"	m	union:__anonaa52d418020a	typeref:typename:float
+fg	st/st.h	/^	uint32_t fg;      \/* foreground  *\/$/;"	m	struct:__anonaa52d4180108	typeref:typename:uint32_t
+files.associations	Code/settings.json	/^     "files.associations": {$/;"	o
+files.autoSave	Code/settings.json	/^    "files.autoSave": "afterDelay",$/;"	s
+filetype_csv	nvim.all/init.vim	/^augroup filetype_csv$/;"	a
+filetypedetect	nvim.all/autoload/plug.vim	/^        augroup filetypedetect$/;"	a
+flags	st/x.c	/^	int flags;$/;"	m	struct:__anon1c6f2a240b08	typeref:typename:int	file:
+focus	st/x.c	/^focus(XEvent *ev)$/;"	f	typeref:typename:void
+font	st/config.def.h	/^static char *font = "PragmataPro Liga:size=12:antialias=true:autohint=true";$/;"	v	typeref:typename:char *
+font	st/config.h	/^static char *font = "PragmataPro Liga:size=12:antialias=true:autohint=true";$/;"	v	typeref:typename:char *
+font	st/hb.c	/^	hb_font_t *font;$/;"	m	struct:__anonaa4c7f560108	typeref:typename:hb_font_t *	file:
+font	st/x.c	/^	Font font, bfont, ifont, ibfont;$/;"	m	struct:__anon1c6f2a240908	typeref:typename:Font	file:
+font	st/x.c	/^	XftFont *font;$/;"	m	struct:__anon1c6f2a240b08	typeref:typename:XftFont *	file:
+font_apply_new	urxvt/ext/font-size	/^sub font_apply_new$/;"	s
+font_change_size_xft	urxvt/ext/font-size	/^sub font_change_size_xft$/;"	s
+font_change_size_xlfd	urxvt/ext/font-size	/^sub font_change_size_xlfd$/;"	s
+fonts_change_size	urxvt/ext/font-size	/^sub fonts_change_size$/;"	s
+fonts_reset	urxvt/ext/font-size	/^sub fonts_reset$/;"	s
+fonts_show	urxvt/ext/font-size	/^sub fonts_show$/;"	s
+forcemousemod	st/config.def.h	/^static uint forcemousemod = ShiftMask;$/;"	v	typeref:typename:uint
+forcemousemod	st/config.h	/^static uint forcemousemod = ShiftMask;$/;"	v	typeref:typename:uint
+frc	st/x.c	/^static Fontcache *frc = NULL;$/;"	v	typeref:typename:Fontcache *	file:
+frccap	st/x.c	/^static int frccap = 0;$/;"	v	typeref:typename:int	file:
+frclen	st/x.c	/^static int frclen = 0;$/;"	v	typeref:typename:int	file:
+func	st/x.c	/^	void (*func)(const Arg *);$/;"	m	struct:__anon1c6f2a240108	typeref:typename:void (*)(const Arg *)	file:
+func	st/x.c	/^	void (*func)(const Arg *);$/;"	m	struct:__anon1c6f2a240208	typeref:typename:void (*)(const Arg *)	file:
+g0	nvim/init.vim	/^nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>$/;"	m
+g:LanguageClient_serverCommands	nvim.all/init.vim	/^let g:LanguageClient_serverCommands = {$/;"	v
+g:_plug_bang	nvim.all/autoload/plug.vim	/^    let g:_plug_bang = (s:is_win && has('gui_running') ? 'silent ' : '').'!'.escape(cmd, '#!%')$/;"	v
+g:auto_save	nvim/init.vim	/^let g:auto_save = 1  " enable AutoSave on Vim startup$/;"	v
+g:deoplete#enable_at_startup	nvim.all/init.vim	/^let g:deoplete#enable_at_startup = 1$/;"	v
+g:gitstatus	nvim/init.vim	/^        let g:gitstatus = ""$/;"	v
+g:gitstatus	nvim/init.vim	/^        let g:gitstatus = "M"$/;"	v
+g:hardtime_default_on	nvim.all/init.vim	/^let g:hardtime_default_on = 1$/;"	v
+g:highlightedyank_highlight_duration	nvim.all/init.vim	/^let g:highlightedyank_highlight_duration = 200$/;"	v
+g:lightline	nvim.all/init.vim	/^let g:lightline = { 'colorscheme': 'solarized'}$/;"	v
+g:loaded_plug	nvim.all/autoload/plug.vim	/^let g:loaded_plug = 1$/;"	v
+g:neosolarized_bold	nvim/init.vim	/^let g:neosolarized_bold = 1$/;"	v
+g:neosolarized_contrast	nvim/init.vim	/^let g:neosolarized_contrast = "normal"$/;"	v
+g:neosolarized_italic	nvim/init.vim	/^let g:neosolarized_italic = 1$/;"	v
+g:neosolarized_termBoldAsBright	nvim/init.vim	/^let g:neosolarized_termBoldAsBright = 1$/;"	v
+g:neosolarized_underline	nvim/init.vim	/^let g:neosolarized_underline = 1$/;"	v
+g:neosolarized_vertSplitBgTrans	nvim/init.vim	/^let g:neosolarized_vertSplitBgTrans = 1$/;"	v
+g:neosolarized_visibility	nvim/init.vim	/^let g:neosolarized_visibility = "normal"$/;"	v
+g:plug_home	nvim.all/autoload/plug.vim	/^  let g:plug_home = home$/;"	v
+g:plugs	nvim.all/autoload/plug.vim	/^    let g:plugs[name] = spec$/;"	v
+g:plugs	nvim.all/autoload/plug.vim	/^  let g:plugs = {}$/;"	v
+g:plugs_order	nvim.all/autoload/plug.vim	/^  let g:plugs_order = []$/;"	v
+g:plugs_order	nvim.all/autoload/plug.vim	/^  let g:plugs_order = get(g:, 'plugs_order', keys(g:plugs))$/;"	v
+g:python3_host_prog	nvim.all/init.vim	/^let g:python3_host_prog = '\/usr\/bin\/python3'$/;"	v
+g:python_host_prog	nvim.all/init.vim	/^let g:python_host_prog = '\/usr\/bin\/python'$/;"	v
+g:rg_command	nvim.all/init.vim	/^let g:rg_command = 'rg --vimgrep -S'$/;"	v
+g:rustfmt_autosave	nvim.all/init.vim	/^let g:rustfmt_autosave = 1$/;"	v
+g:rustfmt_autosave	nvim/init.vim	/^let g:rustfmt_autosave = 1$/;"	v
+g:sneak#label	nvim.all/init.vim	/^let g:sneak#label = 1 " Highlights all matchings to pick with keys$/;"	v
+g:surround_no_mappings	nvim.all/init.vim	/^let g:surround_no_mappings= 1 " Conflicts with Sneak resolved below$/;"	v
+g:terminal_color_0	nvim.all/colors/flattened_light.vim	/^  let g:terminal_color_0  = '#eee8d5'$/;"	v
+g:terminal_color_1	nvim.all/colors/flattened_light.vim	/^  let g:terminal_color_1  = '#dc322f'$/;"	v
+g:terminal_color_10	nvim.all/colors/flattened_light.vim	/^  let g:terminal_color_10 = '#93a1a1'$/;"	v
+g:terminal_color_11	nvim.all/colors/flattened_light.vim	/^  let g:terminal_color_11 = '#839496'$/;"	v
+g:terminal_color_12	nvim.all/colors/flattened_light.vim	/^  let g:terminal_color_12 = '#657b83'$/;"	v
+g:terminal_color_13	nvim.all/colors/flattened_light.vim	/^  let g:terminal_color_13 = '#6c71c4'$/;"	v
+g:terminal_color_14	nvim.all/colors/flattened_light.vim	/^  let g:terminal_color_14 = '#586e75'$/;"	v
+g:terminal_color_15	nvim.all/colors/flattened_light.vim	/^  let g:terminal_color_15 = '#002b36'$/;"	v
+g:terminal_color_2	nvim.all/colors/flattened_light.vim	/^  let g:terminal_color_2  = '#859900'$/;"	v
+g:terminal_color_3	nvim.all/colors/flattened_light.vim	/^  let g:terminal_color_3  = '#b58900'$/;"	v
+g:terminal_color_4	nvim.all/colors/flattened_light.vim	/^  let g:terminal_color_4  = '#268bd2'$/;"	v
+g:terminal_color_5	nvim.all/colors/flattened_light.vim	/^  let g:terminal_color_5  = '#d33682'$/;"	v
+g:terminal_color_6	nvim.all/colors/flattened_light.vim	/^  let g:terminal_color_6  = '#2aa198'$/;"	v
+g:terminal_color_7	nvim.all/colors/flattened_light.vim	/^  let g:terminal_color_7  = '#073642'$/;"	v
+g:terminal_color_8	nvim.all/colors/flattened_light.vim	/^  let g:terminal_color_8  = '#fdf6e3'$/;"	v
+g:terminal_color_9	nvim.all/colors/flattened_light.vim	/^  let g:terminal_color_9  = '#cb4b16'$/;"	v
+g:winresizer_start_key	nvim.all/init.vim	/^let g:winresizer_start_key = "<Leader>w"$/;"	v
+gD	nvim/init.vim	/^nnoremap <silent> gD    <cmd>lua vim.lsp.buf.implementation()<CR>$/;"	m
+gW	nvim/init.vim	/^nnoremap <silent> gW    <cmd>lua vim.lsp.buf.workspace_symbol()<CR>$/;"	m
+g[	nvim/init.vim	/^nnoremap <silent> g[ <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>$/;"	m
+g]	nvim/init.vim	/^nnoremap <silent> g] <cmd>lua vim.lsp.diagnostic.goto_next()<CR>$/;"	m
+gc	st/x.c	/^	GC gc;$/;"	m	struct:__anon1c6f2a240908	typeref:typename:GC	file:
+gd	nvim.all/init.vim	/^        nmap <silent> gd <Plug>(lcn-definition)$/;"	m
+gd	nvim/init.vim	/^nnoremap <silent> gd    <cmd>lua vim.lsp.buf.definition()<CR>$/;"	m
+getsel	st/st.c	/^getsel(void)$/;"	f	typeref:typename:char *
+git.autofetch	Code/settings.json	/^    "git.autofetch": true,$/;"	b
+git.confirmSync	Code/settings.json	/^"git.confirmSync": false,$/;"	b
+git.enableSmartCommit	Code/settings.json	/^    "git.enableSmartCommit": true,$/;"	b
+gitlens.codeLens.enabled	Code/settings.json	/^"gitlens.codeLens.enabled": false,$/;"	b
+gitlens.currentLine.scrollable	Code/settings.json	/^"gitlens.currentLine.scrollable": false,$/;"	b
+glyph_attribute	st/st.h	/^enum glyph_attribute {$/;"	g
+gm	st/x.c	/^	int gm; \/* geometry mask *\/$/;"	m	struct:__anon1c6f2a240508	typeref:typename:int	file:
+gr	nvim/init.vim	/^nnoremap <silent> gr    <cmd>lua vim.lsp.buf.references()<CR>$/;"	m
+grammarly.userWords	Code/settings.json	/^"grammarly.userWords": [ "HTMX" ],$/;"	a
+gx	nvim/init.vim	/^nmap gx yiW:!xdg-open <cWORD><CR> <C-r>" & <CR><CR>$/;"	m
+h	st/x.c	/^	int w, h; \/* window width and height *\/$/;"	m	struct:__anon1c6f2a240408	typeref:typename:int	file:
+handle_font	urxvt/ext/font-size	/^sub handle_font$/;"	s
+handle_type	urxvt/ext/font-size	/^sub handle_type$/;"	s
+handler	st/x.c	/^static void (*handler[LASTEvent])(XEvent *) = {$/;"	v	typeref:typename:void (* [LASTEvent])(XEvent *)	file:
+hb.o	st/Makefile	/^hb.o: st.h$/;"	t
+hbfindfont	st/hb.c	/^hbfindfont(XftFont *match)$/;"	f	typeref:typename:hb_font_t *
+hbfontcache	st/hb.c	/^static HbFontMatch *hbfontcache = NULL;$/;"	v	typeref:typename:HbFontMatch *	file:
+hbfontslen	st/hb.c	/^static int hbfontslen = 0;$/;"	v	typeref:typename:int	file:
+hbtransform	st/hb.c	/^hbtransform(XftGlyphFontSpec *specs, const Glyph *glyphs, size_t len, int x, int y)$/;"	f	typeref:typename:void
+hbtransformsegment	st/hb.c	/^hbtransformsegment(XftFont *xfont, const Glyph *string, hb_codepoint_t *codepoints, int start, i/;"	f	typeref:typename:void
+hbunloadfonts	st/hb.c	/^hbunloadfonts()$/;"	f	typeref:typename:void
+height	st/x.c	/^	int height;$/;"	m	struct:__anon1c6f2a240808	typeref:typename:int	file:
+i	st/st.h	/^	int i;$/;"	m	union:__anonaa52d418020a	typeref:typename:int
+ibfont	st/x.c	/^	Font font, bfont, ifont, ibfont;$/;"	m	struct:__anon1c6f2a240908	typeref:typename:Font	file:
+icharset	st/st.c	/^	int icharset; \/* selected charset for sequence *\/$/;"	m	struct:__anonaa52d4130408	typeref:typename:int	file:
+ifont	st/x.c	/^	Font font, bfont, ifont, ibfont;$/;"	m	struct:__anon1c6f2a240908	typeref:typename:Font	file:
+ignoremod	st/config.def.h	/^static uint ignoremod = Mod2Mask|XK_SWITCH_MOD;$/;"	v	typeref:typename:uint
+ignoremod	st/config.h	/^static uint ignoremod = Mod2Mask|XK_SWITCH_MOD;$/;"	v	typeref:typename:uint
+ime	st/x.c	/^	} ime;$/;"	m	struct:__anon1c6f2a240508	typeref:struct:__anon1c6f2a240508::__anon1c6f2a240608	file:
+install	st/Makefile	/^install: st$/;"	t
+iofd	st/st.c	/^static int iofd = 1;$/;"	v	typeref:typename:int	file:
+is_vim	tmux/tmux.conf	/^is_vim="ps -o state= -o comm= -t '#{pane_tty}' \\$/;"	k
+isfixed	st/x.c	/^	int isfixed; \/* is fixed geometry? *\/$/;"	m	struct:__anon1c6f2a240508	typeref:typename:int	file:
+k	st/x.c	/^	KeySym k;$/;"	m	struct:__anon1c6f2a240308	typeref:typename:KeySym	file:
+key	Code/keybindings.json	/^        "key": "alt+b",$/;"	s	object:17
+key	Code/keybindings.json	/^        "key": "alt+b",$/;"	s	object:18
+key	Code/keybindings.json	/^        "key": "ctrl+b",$/;"	s	object:19
+key	Code/keybindings.json	/^        "key": "ctrl+enter",$/;"	s	object:25
+key	Code/keybindings.json	/^        "key": "ctrl+j",$/;"	s	object:0
+key	Code/keybindings.json	/^        "key": "ctrl+j",$/;"	s	object:2
+key	Code/keybindings.json	/^        "key": "ctrl+k ctrl+k",$/;"	s	object:14
+key	Code/keybindings.json	/^        "key": "ctrl+k",$/;"	s	object:1
+key	Code/keybindings.json	/^        "key": "ctrl+k",$/;"	s	object:3
+key	Code/keybindings.json	/^        "key": "ctrl+shift+a",$/;"	s	object:23
+key	Code/keybindings.json	/^        "key": "ctrl+t",$/;"	s	object:20
+key	Code/keybindings.json	/^        "key": "ctrl+tab",$/;"	s	object:22
+key	Code/keybindings.json	/^        "key": "ctrl+w f",$/;"	s	object:24
+key	Code/keybindings.json	/^        "key": "ctrl+w h",$/;"	s	object:11
+key	Code/keybindings.json	/^        "key": "ctrl+w j",$/;"	s	object:13
+key	Code/keybindings.json	/^        "key": "ctrl+w k",$/;"	s	object:15
+key	Code/keybindings.json	/^        "key": "ctrl+w k",$/;"	s	object:7
+key	Code/keybindings.json	/^        "key": "ctrl+w l",$/;"	s	object:12
+key	Code/keybindings.json	/^        "key": "ctrl+w l",$/;"	s	object:16
+key	Code/keybindings.json	/^        "key": "ctrl+w l",$/;"	s	object:6
+key	st/config.def.h	/^static Key key[] = {$/;"	v	typeref:typename:Key[]
+key	st/config.h	/^static Key key[] = {$/;"	v	typeref:typename:Key[]
+keysym	st/x.c	/^	KeySym keysym;$/;"	m	struct:__anon1c6f2a240108	typeref:typename:KeySym	file:
+kmap	st/x.c	/^kmap(KeySym k, uint state)$/;"	f	typeref:typename:char *
+kpress	st/x.c	/^kpress(XEvent *ev)$/;"	f	typeref:typename:void
+l	st/x.c	/^	int l, t; \/* left and top offset *\/$/;"	m	struct:__anon1c6f2a240508	typeref:typename:int	file:
+la	zsh/scripts.sh	/^la(){ ls -AFgh --group-directories-first  --color=always "$@" | less ; }$/;"	f
+lastc	st/st.c	/^	Rune lastc;   \/* last printed char outside of sequence, 0 if control *\/$/;"	m	struct:__anonaa52d4130408	typeref:typename:Rune	file:
+lbearing	st/x.c	/^	short lbearing;$/;"	m	struct:__anon1c6f2a240808	typeref:typename:short	file:
+len	st/st.c	/^	size_t len;            \/* raw string length *\/$/;"	m	struct:__anonaa52d4130508	typeref:typename:size_t	file:
+len	st/st.c	/^	size_t len;            \/* raw string length *\/$/;"	m	struct:__anonaa52d4130608	typeref:typename:size_t	file:
+line	st/st.c	/^	Line *line;   \/* screen *\/$/;"	m	struct:__anonaa52d4130408	typeref:typename:Line *	file:
+liveServer.settings.donotShowInfoMsg	Code/settings.json	/^"liveServer.settings.donotShowInfoMsg": true,$/;"	b
+ll	zsh/scripts.sh	/^ll(){ ls -Fgh --group-directories-first --color=always "$@" | less ; }$/;"	f
+lss	zsh/scripts.sh	/^lss(){ ls -Fh --group-directories-first --color=always "$@" ; }$/;"	f
+main	st/x.c	/^main(int argc, char *argv[])$/;"	f	typeref:typename:int
+mapleader	nvim/init.vim	/^let mapleader = "<SPACE>"$/;"	v
+mappedkeys	st/config.def.h	/^static KeySym mappedkeys[] = { -1 };$/;"	v	typeref:typename:KeySym[]
+mappedkeys	st/config.h	/^static KeySym mappedkeys[] = { -1 };$/;"	v	typeref:typename:KeySym[]
+markdownlint.config	Code/settings.json	/^"markdownlint.config": {$/;"	o
+markdownlint.customRules	Code/settings.json	/^"markdownlint.customRules": [$/;"	a
+mask	st/x.c	/^	uint mask;$/;"	m	struct:__anon1c6f2a240308	typeref:typename:uint	file:
+match	st/hb.c	/^	XftFont *match;$/;"	m	struct:__anonaa4c7f560108	typeref:typename:XftFont *	file:
+match	st/x.c	/^	XftFont *match;$/;"	m	struct:__anon1c6f2a240808	typeref:typename:XftFont *	file:
+match	st/x.c	/^match(uint mask, uint state)$/;"	f	typeref:typename:int
+maxlatency	st/config.def.h	/^static double maxlatency = 33;$/;"	v	typeref:typename:double
+maxlatency	st/config.h	/^static double maxlatency = 33;$/;"	v	typeref:typename:double
+minlatency	st/config.def.h	/^static double minlatency = 8;$/;"	v	typeref:typename:double
+minlatency	st/config.h	/^static double minlatency = 8;$/;"	v	typeref:typename:double
+mod	st/x.c	/^	uint mod;$/;"	m	struct:__anon1c6f2a240108	typeref:typename:uint	file:
+mod	st/x.c	/^	uint mod;$/;"	m	struct:__anon1c6f2a240208	typeref:typename:uint	file:
+mode	st/st.c	/^	char mode[2];$/;"	m	struct:__anonaa52d4130508	typeref:typename:char[2]	file:
+mode	st/st.c	/^	int mode;     \/* terminal mode flags *\/$/;"	m	struct:__anonaa52d4130408	typeref:typename:int	file:
+mode	st/st.c	/^	int mode;$/;"	m	struct:__anonaa52d4130208	typeref:typename:int	file:
+mode	st/st.h	/^	ushort mode;      \/* attribute flags *\/$/;"	m	struct:__anonaa52d4180108	typeref:typename:ushort
+mode	st/x.c	/^	int mode; \/* window state\/mode flags *\/$/;"	m	struct:__anon1c6f2a240408	typeref:typename:int	file:
+mouseaction	st/x.c	/^mouseaction(XEvent *e, uint release)$/;"	f	typeref:typename:int
+mousebg	st/config.def.h	/^static unsigned int mousebg = 0;$/;"	v	typeref:typename:unsigned int
+mousebg	st/config.h	/^static unsigned int mousebg = 0;$/;"	v	typeref:typename:unsigned int
+mousefg	st/config.def.h	/^static unsigned int mousefg = 7;$/;"	v	typeref:typename:unsigned int
+mousefg	st/config.h	/^static unsigned int mousefg = 7;$/;"	v	typeref:typename:unsigned int
+mousereport	st/x.c	/^mousereport(XEvent *e)$/;"	f	typeref:typename:void
+mousesel	st/x.c	/^mousesel(XEvent *e, int done)$/;"	f	typeref:typename:void
+mouseshape	st/config.def.h	/^static unsigned int mouseshape = XC_xterm;$/;"	v	typeref:typename:unsigned int
+mouseshape	st/config.h	/^static unsigned int mouseshape = XC_xterm;$/;"	v	typeref:typename:unsigned int
+mshortcuts	st/config.def.h	/^static MouseShortcut mshortcuts[] = {$/;"	v	typeref:typename:MouseShortcut[]
+mshortcuts	st/config.h	/^static MouseShortcut mshortcuts[] = {$/;"	v	typeref:typename:MouseShortcut[]
+narg	st/st.c	/^	int narg;              \/* nb of args *\/$/;"	m	struct:__anonaa52d4130508	typeref:typename:int	file:
+narg	st/st.c	/^	int narg;              \/* nb of args *\/$/;"	m	struct:__anonaa52d4130608	typeref:typename:int	file:
+nb	st/st.c	/^	} nb, ne, ob, oe;$/;"	m	struct:__anonaa52d4130208	typeref:struct:__anonaa52d4130208::__anonaa52d4130308	file:
+ne	st/st.c	/^	} nb, ne, ob, oe;$/;"	m	struct:__anonaa52d4130208	typeref:struct:__anonaa52d4130208::__anonaa52d4130308	file:
+netwmiconname	st/x.c	/^	Atom xembed, wmdeletewin, netwmname, netwmiconname, netwmpid;$/;"	m	struct:__anon1c6f2a240508	typeref:typename:Atom	file:
+netwmname	st/x.c	/^	Atom xembed, wmdeletewin, netwmname, netwmiconname, netwmpid;$/;"	m	struct:__anon1c6f2a240508	typeref:typename:Atom	file:
+netwmpid	st/x.c	/^	Atom xembed, wmdeletewin, netwmname, netwmiconname, netwmpid;$/;"	m	struct:__anon1c6f2a240508	typeref:typename:Atom	file:
+numlock	st/x.c	/^numlock(const Arg *dummy)$/;"	f	typeref:typename:void
+o	nvim.all/autoload/plug.vim	/^      nmap <buffer> o <plug>(plug-preview)$/;"	m
+ob	st/st.c	/^	} nb, ne, ob, oe;$/;"	m	struct:__anonaa52d4130208	typeref:struct:__anonaa52d4130208::__anonaa52d4130308	file:
+ocx	st/st.c	/^	int ocx;      \/* old cursor col *\/$/;"	m	struct:__anonaa52d4130408	typeref:typename:int	file:
+ocy	st/st.c	/^	int ocy;      \/* old cursor row *\/$/;"	m	struct:__anonaa52d4130408	typeref:typename:int	file:
+oe	st/st.c	/^	} nb, ne, ob, oe;$/;"	m	struct:__anonaa52d4130208	typeref:struct:__anonaa52d4130208::__anonaa52d4130308	file:
+oldbutton	st/x.c	/^static int oldbutton = 3; \/* button event on startup: 3 = release *\/$/;"	v	typeref:typename:int	file:
+omnisharp.enableDecompilationSupport	Code/settings.json	/^"omnisharp.enableDecompilationSupport": true,$/;"	b
+on_action	urxvt/ext/font-size	/^sub on_action$/;"	s
+on_init	urxvt/ext/font-size	/^sub on_init {$/;"	s
+on_start	urxvt/ext/font-size	/^sub on_start$/;"	s
+on_user_command	urxvt/ext/font-size	/^sub on_user_command$/;"	s
+opt_class	st/x.c	/^static char *opt_class = NULL;$/;"	v	typeref:typename:char *	file:
+opt_cmd	st/x.c	/^static char **opt_cmd  = NULL;$/;"	v	typeref:typename:char **	file:
+opt_embed	st/x.c	/^static char *opt_embed = NULL;$/;"	v	typeref:typename:char *	file:
+opt_font	st/x.c	/^static char *opt_font  = NULL;$/;"	v	typeref:typename:char *	file:
+opt_io	st/x.c	/^static char *opt_io    = NULL;$/;"	v	typeref:typename:char *	file:
+opt_line	st/x.c	/^static char *opt_line  = NULL;$/;"	v	typeref:typename:char *	file:
+opt_name	st/x.c	/^static char *opt_name  = NULL;$/;"	v	typeref:typename:char *	file:
+opt_title	st/x.c	/^static char *opt_title = NULL;$/;"	v	typeref:typename:char *	file:
+options	st/Makefile	/^options:$/;"	t
+pattern	st/x.c	/^	FcPattern *pattern;$/;"	m	struct:__anon1c6f2a240808	typeref:typename:FcPattern *	file:
+pid	st/st.c	/^static pid_t pid;$/;"	v	typeref:typename:pid_t	file:
+plug#	nvim.all/autoload/plug.vim	/^function! plug#(repo, ...)$/;"	f
+plug#begin	nvim.all/autoload/plug.vim	/^function! plug#begin(...)$/;"	f
+plug#end	nvim.all/autoload/plug.vim	/^function! plug#end()$/;"	f
+plug#helptags	nvim.all/autoload/plug.vim	/^function! plug#helptags()$/;"	f
+plug#load	nvim.all/autoload/plug.vim	/^function! plug#load(...)$/;"	f
+plug#shellescape	nvim.all/autoload/plug.vim	/^function! plug#shellescape(arg, ...)$/;"	f
+primary	st/x.c	/^	char *primary, *clipboard;$/;"	m	struct:__anon1c6f2a240708	typeref:typename:char *	file:
+printscreen	st/st.c	/^printscreen(const Arg *arg)$/;"	f	typeref:typename:void
+printsel	st/st.c	/^printsel(const Arg *arg)$/;"	f	typeref:typename:void
+priv	st/st.c	/^	char priv;$/;"	m	struct:__anonaa52d4130508	typeref:typename:char	file:
+propnotify	st/x.c	/^propnotify(XEvent *e)$/;"	f	typeref:typename:void
+q	nvim.all/autoload/plug.vim	/^  nnoremap <silent> <buffer> q :call <SID>close_pane()<cr>$/;"	m
+q	nvim.all/autoload/plug.vim	/^  nnoremap <silent> <buffer> q :q<cr>$/;"	m
+q	tmux/tmux.conf	/^set -g -a terminal-overrides ',*:Ss=\\E[%p1%d q:Se=\\E[2 q'$/;"	k
+r.bracketedPaste	Code/settings.json	/^"r.bracketedPaste": true,$/;"	b
+r.rterm.linux	Code/settings.json	/^"r.rterm.linux": "\/usr\/bin\/radian"$/;"	s
+rbearing	st/x.c	/^	short rbearing;$/;"	m	struct:__anon1c6f2a240808	typeref:typename:short	file:
+redraw	st/st.c	/^redraw(void)$/;"	f	typeref:typename:void
+release	st/x.c	/^	uint  release;$/;"	m	struct:__anon1c6f2a240208	typeref:typename:uint	file:
+resettitle	st/st.c	/^resettitle(void)$/;"	f	typeref:typename:void
+resize	st/x.c	/^resize(XEvent *e)$/;"	f	typeref:typename:void
+row	st/st.c	/^	int row;      \/* nb row *\/$/;"	m	struct:__anonaa52d4130408	typeref:typename:int	file:
+rows	st/config.def.h	/^static unsigned int rows = 24;$/;"	v	typeref:typename:unsigned int
+rows	st/config.h	/^static unsigned int rows = 24;$/;"	v	typeref:typename:unsigned int
+run	st/x.c	/^run(void)$/;"	f	typeref:typename:void
+s	nvim.all/init.vim	/^omap s <Plug>Sneak_s$/;"	m
+s	st/st.h	/^	const char *s;$/;"	m	union:__anonaa52d418020a	typeref:typename:const char *
+s	st/x.c	/^	char *s;$/;"	m	struct:__anon1c6f2a240308	typeref:typename:char *	file:
+s:TYPE	nvim.all/autoload/plug.vim	/^let s:TYPE = {$/;"	v
+s:append_ul	nvim.all/autoload/plug.vim	/^function! s:append_ul(lnum, text)$/;"	f
+s:ask	nvim.all/autoload/plug.vim	/^function! s:ask(message, ...)$/;"	f
+s:ask_no_interrupt	nvim.all/autoload/plug.vim	/^function! s:ask_no_interrupt(...)$/;"	f
+s:assign_name	nvim.all/autoload/plug.vim	/^function! s:assign_name()$/;"	f
+s:assoc	nvim.all/autoload/plug.vim	/^function! s:assoc(dict, key, val)$/;"	f
+s:bang	nvim.all/autoload/plug.vim	/^function! s:bang(cmd, ...)$/;"	f
+s:bar	nvim.all/autoload/plug.vim	/^function! s:bar()$/;"	f
+s:base_spec	nvim.all/autoload/plug.vim	/^let s:base_spec = { 'branch': '', 'frozen': 0 }$/;"	v
+s:batchfile	nvim.all/autoload/plug.vim	/^  function! s:batchfile(cmd)$/;"	f
+s:check_ruby	nvim.all/autoload/plug.vim	/^function! s:check_ruby()$/;"	f
+s:checkout	nvim.all/autoload/plug.vim	/^function! s:checkout(spec)$/;"	f
+s:chsh	nvim.all/autoload/plug.vim	/^function! s:chsh(swap)$/;"	f
+s:clean	nvim.all/autoload/plug.vim	/^function! s:clean(force)$/;"	f
+s:close_pane	nvim.all/autoload/plug.vim	/^function! s:close_pane()$/;"	f
+s:compare_git_uri	nvim.all/autoload/plug.vim	/^function! s:compare_git_uri(a, b)$/;"	f
+s:cpo_save	nvim.all/autoload/plug.vim	/^let s:cpo_save = &cpo$/;"	v
+s:define_commands	nvim.all/autoload/plug.vim	/^function! s:define_commands()$/;"	f
+s:delete	nvim.all/autoload/plug.vim	/^function! s:delete(range, force)$/;"	f
+s:delete_op	nvim.all/autoload/plug.vim	/^function! s:delete_op(type, ...)$/;"	f
+s:diff	nvim.all/autoload/plug.vim	/^function! s:diff()$/;"	f
+s:dirpath	nvim.all/autoload/plug.vim	/^  function! s:dirpath(path)$/;"	f
+s:do	nvim.all/autoload/plug.vim	/^function! s:do(pull, force, todo)$/;"	f
+s:doautocmd	nvim.all/autoload/plug.vim	/^function! s:doautocmd(...)$/;"	f
+s:dobufread	nvim.all/autoload/plug.vim	/^function! s:dobufread(names)$/;"	f
+s:err	nvim.all/autoload/plug.vim	/^function! s:err(msg)$/;"	f
+s:esc	nvim.all/autoload/plug.vim	/^function! s:esc(path)$/;"	f
+s:escrtp	nvim.all/autoload/plug.vim	/^function! s:escrtp(path)$/;"	f
+s:extract_name	nvim.all/autoload/plug.vim	/^function! s:extract_name(str, prefix, suffix)$/;"	f
+s:find_name	nvim.all/autoload/plug.vim	/^function! s:find_name(lnum)$/;"	f
+s:finish	nvim.all/autoload/plug.vim	/^function! s:finish(pull)$/;"	f
+s:finish_bindings	nvim.all/autoload/plug.vim	/^function! s:finish_bindings()$/;"	f
+s:format_git_log	nvim.all/autoload/plug.vim	/^function! s:format_git_log(line)$/;"	f
+s:format_message	nvim.all/autoload/plug.vim	/^function! s:format_message(bullet, name, message)$/;"	f
+s:git_dir	nvim.all/autoload/plug.vim	/^function! s:git_dir(dir) abort$/;"	f
+s:git_local_branch	nvim.all/autoload/plug.vim	/^function! s:git_local_branch(dir) abort$/;"	f
+s:git_origin_branch	nvim.all/autoload/plug.vim	/^function! s:git_origin_branch(spec)$/;"	f
+s:git_origin_url	nvim.all/autoload/plug.vim	/^function! s:git_origin_url(dir) abort$/;"	f
+s:git_revision	nvim.all/autoload/plug.vim	/^function! s:git_revision(dir) abort$/;"	f
+s:git_validate	nvim.all/autoload/plug.vim	/^function! s:git_validate(spec, check_branch)$/;"	f
+s:git_version_requirement	nvim.all/autoload/plug.vim	/^function! s:git_version_requirement(...)$/;"	f
+s:glob	nvim.all/autoload/plug.vim	/^function! s:glob(from, pattern)$/;"	f
+s:glob_dir	nvim.all/autoload/plug.vim	/^function! s:glob_dir(path)$/;"	f
+s:hash_match	nvim.all/autoload/plug.vim	/^function! s:hash_match(a, b)$/;"	f
+s:infer_properties	nvim.all/autoload/plug.vim	/^function! s:infer_properties(name, repo)$/;"	f
+s:install	nvim.all/autoload/plug.vim	/^function! s:install(force, names)$/;"	f
+s:is_local_plug	nvim.all/autoload/plug.vim	/^  function! s:is_local_plug(repo)$/;"	f
+s:is_managed	nvim.all/autoload/plug.vim	/^function! s:is_managed(name)$/;"	f
+s:is_powershell	nvim.all/autoload/plug.vim	/^function! s:is_powershell(shell)$/;"	f
+s:is_preview_window_open	nvim.all/autoload/plug.vim	/^function! s:is_preview_window_open()$/;"	f
+s:is_updated	nvim.all/autoload/plug.vim	/^function! s:is_updated(dir)$/;"	f
+s:is_win	nvim.all/autoload/plug.vim	/^let s:is_win = has('win32')$/;"	v
+s:isabsolute	nvim.all/autoload/plug.vim	/^function! s:isabsolute(dir) abort$/;"	f
+s:job_abort	nvim.all/autoload/plug.vim	/^function! s:job_abort()$/;"	f
+s:job_cb	nvim.all/autoload/plug.vim	/^function! s:job_cb(fn, job, ch, data)$/;"	f
+s:job_exit_cb	nvim.all/autoload/plug.vim	/^function! s:job_exit_cb(self, data) abort$/;"	f
+s:job_out_cb	nvim.all/autoload/plug.vim	/^function! s:job_out_cb(self, data) abort$/;"	f
+s:last_non_empty_line	nvim.all/autoload/plug.vim	/^function! s:last_non_empty_line(lines)$/;"	f
+s:lastline	nvim.all/autoload/plug.vim	/^function! s:lastline(msg)$/;"	f
+s:lazy	nvim.all/autoload/plug.vim	/^function! s:lazy(plug, opt)$/;"	f
+s:lines	nvim.all/autoload/plug.vim	/^function! s:lines(msg)$/;"	f
+s:load_plugin	nvim.all/autoload/plug.vim	/^function! s:load_plugin(spec)$/;"	f
+s:loaded	nvim.all/autoload/plug.vim	/^let s:loaded = get(s:, 'loaded', {})$/;"	v
+s:loaded_names	nvim.all/autoload/plug.vim	/^function! s:loaded_names()$/;"	f
+s:lod	nvim.all/autoload/plug.vim	/^function! s:lod(names, types, ...)$/;"	f
+s:lod_cmd	nvim.all/autoload/plug.vim	/^function! s:lod_cmd(cmd, bang, l1, l2, args, names)$/;"	f
+s:lod_ft	nvim.all/autoload/plug.vim	/^function! s:lod_ft(pat, names)$/;"	f
+s:lod_map	nvim.all/autoload/plug.vim	/^function! s:lod_map(map, names, with_prefix, prefix)$/;"	f
+s:log	nvim.all/autoload/plug.vim	/^function! s:log(bullet, name, lines)$/;"	f
+s:log4	nvim.all/autoload/plug.vim	/^function! s:log4(name, msg)$/;"	f
+s:logpos	nvim.all/autoload/plug.vim	/^function! s:logpos(name)$/;"	f
+s:lpad	nvim.all/autoload/plug.vim	/^function! s:lpad(str, len)$/;"	f
+s:mac_gui	nvim.all/autoload/plug.vim	/^let s:mac_gui = has('gui_macvim') && has('gui_running')$/;"	v
+s:me	nvim.all/autoload/plug.vim	/^  let s:me = resolve(expand('<sfile>:p'))$/;"	v
+s:my_cr_function	nvim.all/init.vim	/^function! s:my_cr_function()$/;"	f
+s:names	nvim.all/autoload/plug.vim	/^function! s:names(...)$/;"	f
+s:new_window	nvim.all/autoload/plug.vim	/^function! s:new_window()$/;"	f
+s:nvim	nvim.all/autoload/plug.vim	/^let s:nvim = has('nvim-0.2') || (has('nvim') && exists('*jobwait') && !s:is_win)$/;"	v
+s:nvim_cb	nvim.all/autoload/plug.vim	/^function! s:nvim_cb(job_id, data, event) dict abort$/;"	f
+s:parse_options	nvim.all/autoload/plug.vim	/^function! s:parse_options(arg)$/;"	f
+s:path	nvim.all/autoload/plug.vim	/^  function! s:path(path)$/;"	f
+s:plug_buf	nvim.all/autoload/plug.vim	/^let s:plug_buf = get(s:, 'plug_buf', -1)$/;"	v
+s:plug_call	nvim.all/autoload/plug.vim	/^  function! s:plug_call(fn, ...)$/;"	f
+s:plug_expand	nvim.all/autoload/plug.vim	/^function! s:plug_expand(fmt)$/;"	f
+s:plug_fnamemodify	nvim.all/autoload/plug.vim	/^function! s:plug_fnamemodify(fname, mods)$/;"	f
+s:plug_getcwd	nvim.all/autoload/plug.vim	/^function! s:plug_getcwd()$/;"	f
+s:plug_src	nvim.all/autoload/plug.vim	/^let s:plug_src = 'https:\/\/github.com\/junegunn\/vim-plug.git'$/;"	v
+s:plug_tab	nvim.all/autoload/plug.vim	/^let s:plug_tab = get(s:, 'plug_tab', -1)$/;"	v
+s:plug_tempname	nvim.all/autoload/plug.vim	/^function! s:plug_tempname()$/;"	f
+s:plug_window_exists	nvim.all/autoload/plug.vim	/^function! s:plug_window_exists()$/;"	f
+s:prepare	nvim.all/autoload/plug.vim	/^function! s:prepare(...)$/;"	f
+s:preview_commit	nvim.all/autoload/plug.vim	/^function! s:preview_commit()$/;"	f
+s:progress_bar	nvim.all/autoload/plug.vim	/^function! s:progress_bar(line, bar, total)$/;"	f
+s:progress_opt	nvim.all/autoload/plug.vim	/^function! s:progress_opt(base)$/;"	f
+s:reap	nvim.all/autoload/plug.vim	/^function! s:reap(name)$/;"	f
+s:regress_bar	nvim.all/autoload/plug.vim	/^function! s:regress_bar()$/;"	f
+s:reload_plugins	nvim.all/autoload/plug.vim	/^function! s:reload_plugins()$/;"	f
+s:remove_rtp	nvim.all/autoload/plug.vim	/^function! s:remove_rtp()$/;"	f
+s:remove_triggers	nvim.all/autoload/plug.vim	/^function! s:remove_triggers(name)$/;"	f
+s:reorg_rtp	nvim.all/autoload/plug.vim	/^function! s:reorg_rtp()$/;"	f
+s:retry	nvim.all/autoload/plug.vim	/^function! s:retry()$/;"	f
+s:revert	nvim.all/autoload/plug.vim	/^function! s:revert()$/;"	f
+s:rm_rf	nvim.all/autoload/plug.vim	/^function! s:rm_rf(dir)$/;"	f
+s:rtp	nvim.all/autoload/plug.vim	/^function! s:rtp(spec)$/;"	f
+s:section	nvim.all/autoload/plug.vim	/^function! s:section(flags)$/;"	f
+s:shellesc_cmd	nvim.all/autoload/plug.vim	/^function! s:shellesc_cmd(arg, script)$/;"	f
+s:shellesc_ps1	nvim.all/autoload/plug.vim	/^function! s:shellesc_ps1(arg)$/;"	f
+s:shellesc_sh	nvim.all/autoload/plug.vim	/^function! s:shellesc_sh(arg)$/;"	f
+s:snapshot	nvim.all/autoload/plug.vim	/^function! s:snapshot(force, ...) abort$/;"	f
+s:source	nvim.all/autoload/plug.vim	/^function! s:source(from, ...)$/;"	f
+s:spawn	nvim.all/autoload/plug.vim	/^function! s:spawn(name, cmd, opts)$/;"	f
+s:split_rtp	nvim.all/autoload/plug.vim	/^function! s:split_rtp()$/;"	f
+s:status	nvim.all/autoload/plug.vim	/^function! s:status()$/;"	f
+s:status_load	nvim.all/autoload/plug.vim	/^function! s:status_load(lnum)$/;"	f
+s:status_update	nvim.all/autoload/plug.vim	/^function! s:status_update() range$/;"	f
+s:switch_in	nvim.all/autoload/plug.vim	/^function! s:switch_in()$/;"	f
+s:switch_out	nvim.all/autoload/plug.vim	/^function! s:switch_out(...)$/;"	f
+s:syntax	nvim.all/autoload/plug.vim	/^function! s:syntax()$/;"	f
+s:system	nvim.all/autoload/plug.vim	/^function! s:system(cmd, ...)$/;"	f
+s:system_chomp	nvim.all/autoload/plug.vim	/^function! s:system_chomp(...)$/;"	f
+s:tick	nvim.all/autoload/plug.vim	/^function! s:tick()$/;"	f
+s:to_a	nvim.all/autoload/plug.vim	/^function! s:to_a(v)$/;"	f
+s:to_s	nvim.all/autoload/plug.vim	/^function! s:to_s(v)$/;"	f
+s:triggers	nvim.all/autoload/plug.vim	/^let s:triggers = get(s:, 'triggers', {})$/;"	v
+s:trim	nvim.all/autoload/plug.vim	/^function! s:trim(str)$/;"	f
+s:update	nvim.all/autoload/plug.vim	/^function! s:update(force, names)$/;"	f
+s:update_finish	nvim.all/autoload/plug.vim	/^function! s:update_finish()$/;"	f
+s:update_impl	nvim.all/autoload/plug.vim	/^function! s:update_impl(pull, force, args) abort$/;"	f
+s:update_python	nvim.all/autoload/plug.vim	/^function! s:update_python()$/;"	f
+s:update_ruby	nvim.all/autoload/plug.vim	/^function! s:update_ruby()$/;"	f
+s:update_vim	nvim.all/autoload/plug.vim	/^function! s:update_vim()$/;"	f
+s:upgrade	nvim.all/autoload/plug.vim	/^function! s:upgrade()$/;"	f
+s:upgrade_specs	nvim.all/autoload/plug.vim	/^function! s:upgrade_specs()$/;"	f
+s:version_requirement	nvim.all/autoload/plug.vim	/^function! s:version_requirement(val, min)$/;"	f
+s:vim8	nvim.all/autoload/plug.vim	/^let s:vim8 = has('patch-8.0.0039') && exists('*job_start')$/;"	v
+s:warn	nvim.all/autoload/plug.vim	/^function! s:warn(cmd, msg)$/;"	f
+s:with_cd	nvim.all/autoload/plug.vim	/^function! s:with_cd(cmd, dir, ...)$/;"	f
+s:wrap_cmds	nvim.all/autoload/plug.vim	/^  function! s:wrap_cmds(cmds)$/;"	f
+scr	st/x.c	/^	int scr;$/;"	m	struct:__anon1c6f2a240508	typeref:typename:int	file:
+scroll	st/config.def.h	/^char *scroll = NULL;$/;"	v	typeref:typename:char *
+scroll	st/config.h	/^char *scroll = NULL;$/;"	v	typeref:typename:char *
+search.collapseResults	Code/settings.json	/^"search.collapseResults": "auto",$/;"	s
+search.quickOpen.includeSymbols	Code/settings.json	/^"search.quickOpen.includeSymbols": true,$/;"	b
+search.seedWithNearestWord	Code/settings.json	/^"search.seedWithNearestWord": true,$/;"	b
+sel	st/st.c	/^static Selection sel;$/;"	v	typeref:typename:Selection	file:
+selclear	st/st.c	/^selclear(void)$/;"	f	typeref:typename:void
+selclear_	st/x.c	/^selclear_(XEvent *e)$/;"	f	typeref:typename:void
+selected	st/st.c	/^selected(int x, int y)$/;"	f	typeref:typename:int
+selection_mode	st/st.h	/^enum selection_mode {$/;"	g
+selection_snap	st/st.h	/^enum selection_snap {$/;"	g
+selection_type	st/st.h	/^enum selection_type {$/;"	g
+selextend	st/st.c	/^selextend(int col, int row, int type, int done)$/;"	f	typeref:typename:void
+selinit	st/st.c	/^selinit(void)$/;"	f	typeref:typename:void
+selmasks	st/config.def.h	/^static uint selmasks[] = {$/;"	v	typeref:typename:uint[]
+selmasks	st/config.h	/^static uint selmasks[] = {$/;"	v	typeref:typename:uint[]
+selnormalize	st/st.c	/^selnormalize(void)$/;"	f	typeref:typename:void
+selnotify	st/x.c	/^selnotify(XEvent *e)$/;"	f	typeref:typename:void
+selpaste	st/x.c	/^selpaste(const Arg *dummy)$/;"	f	typeref:typename:void
+selrequest	st/x.c	/^selrequest(XEvent *e)$/;"	f	typeref:typename:void
+selscroll	st/st.c	/^selscroll(int orig, int n)$/;"	f	typeref:typename:void
+selsnap	st/st.c	/^selsnap(int *x, int *y, int direction)$/;"	f	typeref:typename:void
+selstart	st/st.c	/^selstart(int col, int row, int snap)$/;"	f	typeref:typename:void
+sendbreak	st/st.c	/^sendbreak(const Arg *arg)$/;"	f	typeref:typename:void
+set	st/x.c	/^	FcFontSet *set;$/;"	m	struct:__anon1c6f2a240808	typeref:typename:FcFontSet *	file:
+setsel	st/x.c	/^setsel(char *str, Time t)$/;"	f	typeref:typename:void
+shell	st/config.def.h	/^static char *shell = "\/bin\/sh";$/;"	v	typeref:typename:char *
+shell	st/config.h	/^static char *shell = "\/bin\/sh";$/;"	v	typeref:typename:char *
+shortcuts	st/config.def.h	/^static Shortcut shortcuts[] = {$/;"	v	typeref:typename:Shortcut[]
+shortcuts	st/config.h	/^static Shortcut shortcuts[] = {$/;"	v	typeref:typename:Shortcut[]
+sigchld	st/st.c	/^sigchld(int a)$/;"	f	typeref:typename:void
+sixd_to_16bit	st/x.c	/^sixd_to_16bit(int x)$/;"	f	typeref:typename:ushort
+siz	st/st.c	/^	size_t siz;            \/* allocation size *\/$/;"	m	struct:__anonaa52d4130608	typeref:typename:size_t	file:
+snap	st/st.c	/^	int snap;$/;"	m	struct:__anonaa52d4130208	typeref:typename:int	file:
+span[vimbhint='label focus']	vimb/style.css	/^span[vimbhint='label focus'] {$/;"	s
+span[vimbhint^='label']	vimb/style.css	/^span[vimbhint^='label'] {$/;"	s
+specbuf	st/x.c	/^	GlyphFontSpec *specbuf; \/* font spec buffer used for rendering *\/$/;"	m	struct:__anon1c6f2a240508	typeref:typename:GlyphFontSpec *	file:
+spot	st/x.c	/^		XPoint spot;$/;"	m	struct:__anon1c6f2a240508::__anon1c6f2a240608	typeref:typename:XPoint	file:
+spotlist	st/x.c	/^		XVaNestedList spotlist;$/;"	m	struct:__anon1c6f2a240508::__anon1c6f2a240608	typeref:typename:XVaNestedList	file:
+st	st/Makefile	/^st: $(OBJ)$/;"	t
+st.o	st/Makefile	/^st.o: config.h st.h win.h$/;"	t
+state	st/st.c	/^	char state;$/;"	m	struct:__anonaa52d4130108	typeref:typename:char	file:
+strdump	st/st.c	/^strdump(void)$/;"	f	typeref:typename:void
+strescseq	st/st.c	/^static STREscape strescseq;$/;"	v	typeref:typename:STREscape	file:
+strhandle	st/st.c	/^strhandle(void)$/;"	f	typeref:typename:void
+strparse	st/st.c	/^strparse(void)$/;"	f	typeref:typename:void
+strreset	st/st.c	/^strreset(void)$/;"	f	typeref:typename:void
+stty	st/st.c	/^stty(char **args)$/;"	f	typeref:typename:void
+stty_args	st/config.def.h	/^char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";$/;"	v	typeref:typename:char *
+stty_args	st/config.h	/^char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";$/;"	v	typeref:typename:char *
+style bg	tmux/tmux.conf	/^set -g pane-border-style bg=black,fg=black$/;"	k
+style bg	tmux/tmux.conf	/^set -g status-style bg=black,fg=yellow,dim$/;"	k
+style bg	tmux/tmux.conf	/^setw -g mode-style bg=green,fg=black$/;"	k
+style bg	tmux/tmux.conf	/^setw -g window-status-current-style bg=black,fg=yellow,dim$/;"	k
+style bg	tmux/tmux.conf	/^setw -g window-status-style bg=green,fg=black,reverse$/;"	k
+style fg	tmux/tmux.conf	/^set -g message-command-style fg=blue,bg=black$/;"	k
+style fg	tmux/tmux.conf	/^set -g message-style fg=white,bg=red,bold$/;"	k
+style fg	tmux/tmux.conf	/^set -g pane-active-border-style fg=blue,bg=brightblack$/;"	k
+style fg	tmux/tmux.conf	/^set -g pane-active-border-style fg=red$/;"	k
+style fg	tmux/tmux.conf	/^set -g pane-border-style fg=black$/;"	k
+style fg	tmux/tmux.conf	/^set -g status-style fg=blue$/;"	k
+style fg	tmux/tmux.conf	/^set-window-option -g mode-style fg=red,bg=black,bold$/;"	k
+style fg	tmux/tmux.conf	/^set-window-option -g window-status-bell-style fg=white,bg=red,bold$/;"	k
+style fg	tmux/tmux.conf	/^set-window-option -g window-status-current-style fg=red,bg=brightblack,bold$/;"	k
+style fg	tmux/tmux.conf	/^set-window-option -g window-status-style fg=magenta,bg=black,none$/;"	k
+t	nvim.all/init.vim	/^map t <Plug>Sneak_t$/;"	m
+t	st/x.c	/^	int l, t; \/* left and top offset *\/$/;"	m	struct:__anon1c6f2a240508	typeref:typename:int	file:
+tabs	st/st.c	/^	int *tabs;$/;"	m	struct:__anonaa52d4130408	typeref:typename:int *	file:
+tabspaces	st/config.def.h	/^unsigned int tabspaces = 8;$/;"	v	typeref:typename:unsigned int
+tabspaces	st/config.h	/^unsigned int tabspaces = 8;$/;"	v	typeref:typename:unsigned int
+tattrset	st/st.c	/^tattrset(int attr)$/;"	f	typeref:typename:int
+tclearregion	st/st.c	/^tclearregion(int x1, int y1, int x2, int y2)$/;"	f	typeref:typename:void
+tclick1	st/x.c	/^	struct timespec tclick1;$/;"	m	struct:__anon1c6f2a240708	typeref:struct:timespec	file:
+tclick2	st/x.c	/^	struct timespec tclick2;$/;"	m	struct:__anon1c6f2a240708	typeref:struct:timespec	file:
+tcontrolcode	st/st.c	/^tcontrolcode(uchar ascii)$/;"	f	typeref:typename:void
+tcursor	st/st.c	/^tcursor(int mode)$/;"	f	typeref:typename:void
+tdectest	st/st.c	/^tdectest(char c)$/;"	f	typeref:typename:void
+tdefcolor	st/st.c	/^tdefcolor(const int *attr, int *npar, int l)$/;"	f	typeref:typename:int32_t
+tdeftran	st/st.c	/^tdeftran(char ascii)$/;"	f	typeref:typename:void
+tdefutf8	st/st.c	/^tdefutf8(char ascii)$/;"	f	typeref:typename:void
+tdeletechar	st/st.c	/^tdeletechar(int n)$/;"	f	typeref:typename:void
+tdeleteline	st/st.c	/^tdeleteline(int n)$/;"	f	typeref:typename:void
+tdump	st/st.c	/^tdump(void)$/;"	f	typeref:typename:void
+tdumpline	st/st.c	/^tdumpline(int n)$/;"	f	typeref:typename:void
+tdumpsel	st/st.c	/^tdumpsel(void)$/;"	f	typeref:typename:void
+term	st/st.c	/^static Term term;$/;"	v	typeref:typename:Term	file:
+term_mode	st/st.c	/^enum term_mode {$/;"	g	file:
+termdebugger	nvim.all/init.vim	/^let termdebugger="rust-gdb"$/;"	v
+terminal.integrated.cursorBlinking	Code/settings.json	/^    "terminal.integrated.cursorBlinking": false,$/;"	b
+terminal.integrated.cursorStyle	Code/settings.json	/^    "terminal.integrated.cursorStyle": "line",$/;"	s
+terminal.integrated.fontSize	Code/settings.json	/^    "terminal.integrated.fontSize": 20,$/;"	n
+termname	st/config.def.h	/^char *termname = "st-256color";$/;"	v	typeref:typename:char *
+termname	st/config.h	/^char *termname = "st-256color";$/;"	v	typeref:typename:char *
+tfulldirt	st/st.c	/^tfulldirt(void)$/;"	f	typeref:typename:void
+th	st/x.c	/^	int tw, th; \/* tty width and height *\/$/;"	m	struct:__anon1c6f2a240408	typeref:typename:int	file:
+tinsertblank	st/st.c	/^tinsertblank(int n)$/;"	f	typeref:typename:void
+tinsertblankline	st/st.c	/^tinsertblankline(int n)$/;"	f	typeref:typename:void
+tlinelen	st/st.c	/^tlinelen(int y)$/;"	f	typeref:typename:int
+tmoveato	st/st.c	/^tmoveato(int x, int y)$/;"	f	typeref:typename:void
+tmoveto	st/st.c	/^tmoveto(int x, int y)$/;"	f	typeref:typename:void
+tnew	st/st.c	/^tnew(int col, int row)$/;"	f	typeref:typename:void
+tnewline	st/st.c	/^tnewline(int first_col)$/;"	f	typeref:typename:void
+todo-tree.highlights.enabled	Code/settings.json	/^    "todo-tree.highlights.enabled": true,$/;"	b
+todo-tree.tree.showScanModeButton	Code/settings.json	/^"todo-tree.tree.showScanModeButton": false,$/;"	b
+toggleprinter	st/st.c	/^toggleprinter(const Arg *arg)$/;"	f	typeref:typename:void
+top	st/st.c	/^	int top;      \/* top    scroll limit *\/$/;"	m	struct:__anonaa52d4130408	typeref:typename:int	file:
+tprinter	st/st.c	/^tprinter(char *s, size_t len)$/;"	f	typeref:typename:void
+tputc	st/st.c	/^tputc(Rune u)$/;"	f	typeref:typename:void
+tputtab	st/st.c	/^tputtab(int n)$/;"	f	typeref:typename:void
+trantbl	st/st.c	/^	char trantbl[4]; \/* charset table translation *\/$/;"	m	struct:__anonaa52d4130408	typeref:typename:char[4]	file:
+treset	st/st.c	/^treset(void)$/;"	f	typeref:typename:void
+tresize	st/st.c	/^tresize(int col, int row)$/;"	f	typeref:typename:void
+tripleclicktimeout	st/config.def.h	/^static unsigned int tripleclicktimeout = 600;$/;"	v	typeref:typename:unsigned int
+tripleclicktimeout	st/config.h	/^static unsigned int tripleclicktimeout = 600;$/;"	v	typeref:typename:unsigned int
+tscrolldown	st/st.c	/^tscrolldown(int orig, int n)$/;"	f	typeref:typename:void
+tscrollup	st/st.c	/^tscrollup(int orig, int n)$/;"	f	typeref:typename:void
+tsetattr	st/st.c	/^tsetattr(const int *attr, int l)$/;"	f	typeref:typename:void
+tsetchar	st/st.c	/^tsetchar(Rune u, const Glyph *attr, int x, int y)$/;"	f	typeref:typename:void
+tsetdirt	st/st.c	/^tsetdirt(int top, int bot)$/;"	f	typeref:typename:void
+tsetdirtattr	st/st.c	/^tsetdirtattr(int attr)$/;"	f	typeref:typename:void
+tsetmode	st/st.c	/^tsetmode(int priv, int set, const int *args, int narg)$/;"	f	typeref:typename:void
+tsetscroll	st/st.c	/^tsetscroll(int t, int b)$/;"	f	typeref:typename:void
+tstrsequence	st/st.c	/^tstrsequence(uchar c)$/;"	f	typeref:typename:void
+tswapscreen	st/st.c	/^tswapscreen(void)$/;"	f	typeref:typename:void
+ttyhangup	st/st.c	/^ttyhangup()$/;"	f	typeref:typename:void
+ttynew	st/st.c	/^ttynew(const char *line, char *cmd, const char *out, char **args)$/;"	f	typeref:typename:int
+ttyread	st/st.c	/^ttyread(void)$/;"	f	typeref:typename:size_t
+ttyresize	st/st.c	/^ttyresize(int tw, int th)$/;"	f	typeref:typename:void
+ttysend	st/x.c	/^ttysend(const Arg *arg)$/;"	f	typeref:typename:void
+ttywrite	st/st.c	/^ttywrite(const char *s, size_t n, int may_echo)$/;"	f	typeref:typename:void
+ttywriteraw	st/st.c	/^ttywriteraw(const char *s, size_t n)$/;"	f	typeref:typename:void
+tw	st/x.c	/^	int tw, th; \/* tty width and height *\/$/;"	m	struct:__anon1c6f2a240408	typeref:typename:int	file:
+twrite	st/st.c	/^twrite(const char *buf, int buflen, int show_ctrl)$/;"	f	typeref:typename:int
+type	st/st.c	/^	char type;             \/* ESC type ... *\/$/;"	m	struct:__anonaa52d4130608	typeref:typename:char	file:
+type	st/st.c	/^	int type;$/;"	m	struct:__anonaa52d4130208	typeref:typename:int	file:
+u	st/st.h	/^	Rune u;           \/* character code *\/$/;"	m	struct:__anonaa52d4180108	typeref:typename:Rune
+uchar	st/st.h	/^typedef unsigned char uchar;$/;"	t	typeref:typename:unsigned char
+ui	st/st.h	/^	uint ui;$/;"	m	union:__anonaa52d418020a	typeref:typename:uint
+uint	st/st.h	/^typedef unsigned int uint;$/;"	t	typeref:typename:unsigned int
+ulong	st/st.h	/^typedef unsigned long ulong;$/;"	t	typeref:typename:unsigned long
+unicodep	st/x.c	/^	Rune unicodep;$/;"	m	struct:__anon1c6f2a240b08	typeref:typename:Rune	file:
+uninstall	st/Makefile	/^uninstall:$/;"	t
+unmap	st/x.c	/^unmap(XEvent *ev)$/;"	f	typeref:typename:void
+usage	st/x.c	/^usage(void)$/;"	f	typeref:typename:void
+usedfont	st/x.c	/^static char *usedfont = NULL;$/;"	v	typeref:typename:char *	file:
+usedfontsize	st/x.c	/^static double usedfontsize = 0;$/;"	v	typeref:typename:double	file:
+ushort	st/st.h	/^typedef unsigned short ushort;$/;"	t	typeref:typename:unsigned short
+utf8decode	st/st.c	/^utf8decode(const char *c, Rune *u, size_t clen)$/;"	f	typeref:typename:size_t
+utf8decodebyte	st/st.c	/^utf8decodebyte(char c, size_t *i)$/;"	f	typeref:typename:Rune
+utf8encode	st/st.c	/^utf8encode(Rune u, char *c)$/;"	f	typeref:typename:size_t
+utf8encodebyte	st/st.c	/^utf8encodebyte(Rune u, size_t i)$/;"	f	typeref:typename:char
+utf8validate	st/st.c	/^utf8validate(Rune *u, size_t i)$/;"	f	typeref:typename:size_t
+utfbyte	st/st.c	/^static const uchar utfbyte[UTF_SIZ + 1] = {0x80,    0, 0xC0, 0xE0, 0xF0};$/;"	v	typeref:typename:const uchar[]	file:
+utfmask	st/st.c	/^static const uchar utfmask[UTF_SIZ + 1] = {0xC0, 0x80, 0xE0, 0xF0, 0xF8};$/;"	v	typeref:typename:const uchar[]	file:
+utfmax	st/st.c	/^static const Rune utfmax[UTF_SIZ + 1] = {0x10FFFF, 0x7F, 0x7FF, 0xFFFF, 0x10FFFF};$/;"	v	typeref:typename:const Rune[]	file:
+utfmin	st/st.c	/^static const Rune utfmin[UTF_SIZ + 1] = {       0,    0,  0x80,  0x800,  0x10000};$/;"	v	typeref:typename:const Rune[]	file:
+utmp	st/config.def.h	/^char *utmp = NULL;$/;"	v	typeref:typename:char *
+utmp	st/config.h	/^char *utmp = NULL;$/;"	v	typeref:typename:char *
+v	st/st.h	/^	const void *v;$/;"	m	union:__anonaa52d418020a	typeref:typename:const void *
+vim.camelCaseMotion.enable	Code/settings.json	/^    "vim.camelCaseMotion.enable": true,$/;"	b
+vim.changeWordIncludesWhitespace	Code/settings.json	/^    "vim.changeWordIncludesWhitespace": true,$/;"	b
+vim.enableNeovim	Code/settings.json	/^    "vim.enableNeovim": true,$/;"	b
+vim.foldfix	Code/settings.json	/^    "vim.foldfix": true,$/;"	b
+vim.gdefault	Code/settings.json	/^    "vim.gdefault": true,$/;"	b
+vim.handleKeys	Code/settings.json	/^    "vim.handleKeys": { "<C-k>": false },           \/\/ Used to exit Zen mode$/;"	o
+vim.highlightedyank.enable	Code/settings.json	/^    "vim.highlightedyank.enable": true,$/;"	b
+vim.history	Code/settings.json	/^    "vim.history": 1000,$/;"	n
+vim.leader	Code/settings.json	/^    "vim.leader": " ",$/;"	s
+vim.neovimPath	Code/settings.json	/^    "vim.neovimPath": "C:\\\\tools\\\\neovim\\\\Neovim\\\\bin\\\\nvim.exe ",$/;"	s
+vim.replaceWithRegister	Code/settings.json	/^    "vim.replaceWithRegister": true,$/;"	b
+vim.sneak	Code/settings.json	/^    "vim.sneak": true,$/;"	b
+vim.sneakReplacesF	Code/settings.json	/^    "vim.sneakReplacesF": true,$/;"	b
+vim.sneakUseIgnorecaseAndSmartcase	Code/settings.json	/^    "vim.sneakUseIgnorecaseAndSmartcase": true,$/;"	b
+vim.textwidth	Code/settings.json	/^    "vim.textwidth": 100,$/;"	n
+vim.useSystemClipboard	Code/settings.json	/^    "vim.useSystemClipboard": true,$/;"	b
+vim.visualstar	Code/settings.json	/^    "vim.visualstar": true,$/;"	b
+vimrc	nvim/init.vim	/^augroup vimrc-incsearch-highlight$/;"	a
+vis	st/x.c	/^	Visual *vis;$/;"	m	struct:__anon1c6f2a240508	typeref:typename:Visual *	file:
+visibility	st/x.c	/^visibility(XEvent *ev)$/;"	f	typeref:typename:void
+vman	zsh/scripts.sh	/^vman() {$/;"	f
+vscode-neovim.neovimExecutablePaths.linux	Code/settings.json	/^"vscode-neovim.neovimExecutablePaths.linux": "\/usr\/bin\/nvim",$/;"	s
+vtiden	st/config.def.h	/^char *vtiden = "\\033[?6c";$/;"	v	typeref:typename:char *
+vtiden	st/config.h	/^char *vtiden = "\\033[?6c";$/;"	v	typeref:typename:char *
+w	st/x.c	/^	int w, h; \/* window width and height *\/$/;"	m	struct:__anon1c6f2a240408	typeref:typename:int	file:
+when	Code/keybindings.json	/^        "when": "editorFocus && !findWidgetVisible && editorLangId == 'fsharp'"$/;"	s	object:25
+when	Code/keybindings.json	/^        "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && gitlens:activeFileSt/;"	s	object:17
+when	Code/keybindings.json	/^        "when": "editorTextFocus && vim.active && vim.use<C-t> && !inDebugRepl"$/;"	s	object:20
+when	Code/keybindings.json	/^        "when": "editorTextFocus"$/;"	s	object:14
+when	Code/keybindings.json	/^        "when": "explorerViewletFocus"$/;"	s	object:12
+when	Code/keybindings.json	/^        "when": "filesExplorerFocus"$/;"	s	object:13
+when	Code/keybindings.json	/^        "when": "inQuickOpen"$/;"	s	object:2
+when	Code/keybindings.json	/^        "when": "inQuickOpen"$/;"	s	object:22
+when	Code/keybindings.json	/^        "when": "inQuickOpen"$/;"	s	object:3
+when	Code/keybindings.json	/^        "when": "openEditorsFocus"$/;"	s	object:11
+when	Code/keybindings.json	/^        "when": "outlineFocused"$/;"	s	object:15
+when	Code/keybindings.json	/^        "when": "outlineFocused"$/;"	s	object:16
+when	Code/keybindings.json	/^        "when": "suggestWidgetVisible"$/;"	s	object:0
+when	Code/keybindings.json	/^        "when": "suggestWidgetVisible"$/;"	s	object:1
+when	Code/keybindings.json	/^        "when": "terminalFocus"$/;"	s	object:6
+when	Code/keybindings.json	/^        "when": "terminalFocus"$/;"	s	object:7
+width	st/x.c	/^	int width;$/;"	m	struct:__anon1c6f2a240808	typeref:typename:int	file:
+wikipedia	zsh/scripts.sh	/^wikipedia() {$/;"	f
+win	st/x.c	/^	Window win;$/;"	m	struct:__anon1c6f2a240508	typeref:typename:Window	file:
+win	st/x.c	/^static TermWindow win;$/;"	v	typeref:typename:TermWindow	file:
+win_mode	st/win.h	/^enum win_mode {$/;"	g
+window.autoDetectColorScheme	Code/settings.json	/^"window.autoDetectColorScheme": true,$/;"	b
+window.menuBarVisibility	Code/settings.json	/^    "window.menuBarVisibility":"toggle",$/;"	s
+window.zoomLevel	Code/settings.json	/^    "window.zoomLevel": 0,$/;"	n
+wmdeletewin	st/x.c	/^	Atom xembed, wmdeletewin, netwmname, netwmiconname, netwmpid;$/;"	m	struct:__anon1c6f2a240508	typeref:typename:Atom	file:
+worddelimiters	st/config.def.h	/^wchar_t *worddelimiters = L" ";$/;"	v	typeref:typename:wchar_t *
+worddelimiters	st/config.h	/^wchar_t *worddelimiters = L" ";$/;"	v	typeref:typename:wchar_t *
+workbench.activityBar.visible	Code/settings.json	/^    "workbench.activityBar.visible": false, $/;"	b
+workbench.editor.decorations.badges	Code/settings.json	/^"workbench.editor.decorations.badges": true,$/;"	b
+workbench.editor.decorations.colors	Code/settings.json	/^"workbench.editor.decorations.colors": true,$/;"	b
+workbench.sideBar.location	Code/settings.json	/^    "workbench.sideBar.location": "right",$/;"	s
+workbench.startupEditor	Code/settings.json	/^    "workbench.startupEditor": "newUntitledFile",$/;"	s
+x	st/st.c	/^		int x, y;$/;"	m	struct:__anonaa52d4130208::__anonaa52d4130308	typeref:typename:int	file:
+x	st/st.c	/^	int x;$/;"	m	struct:__anonaa52d4130108	typeref:typename:int	file:
+x.o	st/Makefile	/^x.o: arg.h config.h st.h win.h hb.h$/;"	t
+xbell	st/x.c	/^xbell(void)$/;"	f	typeref:typename:void
+xclear	st/x.c	/^xclear(int x1, int y1, int x2, int y2)$/;"	f	typeref:typename:void
+xclipcopy	st/x.c	/^xclipcopy(void)$/;"	f	typeref:typename:void
+xdrawcursor	st/x.c	/^xdrawcursor(int cx, int cy, Glyph g, int ox, int oy, Glyph og, Line line, int len)$/;"	f	typeref:typename:void
+xdrawglyph	st/x.c	/^xdrawglyph(Glyph g, int x, int y)$/;"	f	typeref:typename:void
+xdrawglyphfontspecs	st/x.c	/^xdrawglyphfontspecs(const XftGlyphFontSpec *specs, Glyph base, int len, int x, int y)$/;"	f	typeref:typename:void
+xdrawline	st/x.c	/^xdrawline(Line line, int x1, int y1, int x2)$/;"	f	typeref:typename:void
+xembed	st/x.c	/^	Atom xembed, wmdeletewin, netwmname, netwmiconname, netwmpid;$/;"	m	struct:__anon1c6f2a240508	typeref:typename:Atom	file:
+xfinishdraw	st/x.c	/^xfinishdraw(void)$/;"	f	typeref:typename:void
+xgeommasktogravity	st/x.c	/^xgeommasktogravity(int mask)$/;"	f	typeref:typename:int
+xhints	st/x.c	/^xhints(void)$/;"	f	typeref:typename:void
+xic	st/x.c	/^		XIC xic;$/;"	m	struct:__anon1c6f2a240508::__anon1c6f2a240608	typeref:typename:XIC	file:
+xicdestroy	st/x.c	/^xicdestroy(XIC xim, XPointer client, XPointer call)$/;"	f	typeref:typename:int
+xim	st/x.c	/^		XIM xim;$/;"	m	struct:__anon1c6f2a240508::__anon1c6f2a240608	typeref:typename:XIM	file:
+ximdestroy	st/x.c	/^ximdestroy(XIM xim, XPointer client, XPointer call)$/;"	f	typeref:typename:void
+ximinstantiate	st/x.c	/^ximinstantiate(Display *dpy, XPointer client, XPointer call)$/;"	f	typeref:typename:void
+ximopen	st/x.c	/^ximopen(Display *dpy)$/;"	f	typeref:typename:int
+xinit	st/x.c	/^xinit(int cols, int rows)$/;"	f	typeref:typename:void
+xloadcolor	st/x.c	/^xloadcolor(int i, const char *name, Color *ncolor)$/;"	f	typeref:typename:int
+xloadcols	st/x.c	/^xloadcols(void)$/;"	f	typeref:typename:void
+xloadfont	st/x.c	/^xloadfont(Font *f, FcPattern *pattern)$/;"	f	typeref:typename:int
+xloadfonts	st/x.c	/^xloadfonts(const char *fontstr, double fontsize)$/;"	f	typeref:typename:void
+xmakeglyphfontspecs	st/x.c	/^xmakeglyphfontspecs(XftGlyphFontSpec *specs, const Glyph *glyphs, int len, int x, int y)$/;"	f	typeref:typename:int
+xmalloc	st/st.c	/^xmalloc(size_t len)$/;"	f	typeref:typename:void *
+xrealloc	st/st.c	/^xrealloc(void *p, size_t len)$/;"	f	typeref:typename:void *
+xresize	st/x.c	/^xresize(int col, int row)$/;"	f	typeref:typename:void
+xsel	st/x.c	/^static XSelection xsel;$/;"	v	typeref:typename:XSelection	file:
+xsetcolorname	st/x.c	/^xsetcolorname(int x, const char *name)$/;"	f	typeref:typename:int
+xsetcursor	st/x.c	/^xsetcursor(int cursor)$/;"	f	typeref:typename:int
+xsetenv	st/x.c	/^xsetenv(void)$/;"	f	typeref:typename:void
+xseticontitle	st/x.c	/^xseticontitle(char *p)$/;"	f	typeref:typename:void
+xsetmode	st/x.c	/^xsetmode(int set, unsigned int flags)$/;"	f	typeref:typename:void
+xsetpointermotion	st/x.c	/^xsetpointermotion(int set)$/;"	f	typeref:typename:void
+xsetsel	st/x.c	/^xsetsel(char *str)$/;"	f	typeref:typename:void
+xsettitle	st/x.c	/^xsettitle(char *p)$/;"	f	typeref:typename:void
+xseturgency	st/x.c	/^xseturgency(int add)$/;"	f	typeref:typename:void
+xstartdraw	st/x.c	/^xstartdraw(void)$/;"	f	typeref:typename:int
+xstrdup	st/st.c	/^xstrdup(const char *s)$/;"	f	typeref:typename:char *
+xtarget	st/x.c	/^	Atom xtarget;$/;"	m	struct:__anon1c6f2a240708	typeref:typename:Atom	file:
+xunloadfont	st/x.c	/^xunloadfont(Font *f)$/;"	f	typeref:typename:void
+xunloadfonts	st/x.c	/^xunloadfonts(void)$/;"	f	typeref:typename:void
+xw	st/x.c	/^static XWindow xw;$/;"	v	typeref:typename:XWindow	file:
+xwrite	st/st.c	/^xwrite(int fd, const char *s, size_t len)$/;"	f	typeref:typename:ssize_t
+xximspot	st/x.c	/^xximspot(int x, int y)$/;"	f	typeref:typename:void
+y	st/st.c	/^		int x, y;$/;"	m	struct:__anonaa52d4130208::__anonaa52d4130308	typeref:typename:int	file:
+y	st/st.c	/^	int y;$/;"	m	struct:__anonaa52d4130108	typeref:typename:int	file:
+yz	nvim.all/init.vim	/^nmap yz  <Plug>Ysurround$/;"	m
+yzz	nvim.all/init.vim	/^nmap yzz <Plug>Yssurround$/;"	m
+z	nvim.all/init.vim	/^xmap z <Plug>VSurround$/;"	m
+zenMode.fullScreen	Code/settings.json	/^"zenMode.fullScreen": false,$/;"	b
+zoom	st/x.c	/^zoom(const Arg *arg)$/;"	f	typeref:typename:void
+zoomabs	st/x.c	/^zoomabs(const Arg *arg)$/;"	f	typeref:typename:void
+zoomreset	st/x.c	/^zoomreset(const Arg *arg)$/;"	f	typeref:typename:void

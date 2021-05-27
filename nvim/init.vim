@@ -1,28 +1,26 @@
 " PLUGINS {{{1
 
-" Load minpac just when executing commands
-function! PackInit() abort
-  packadd minpac
-  call minpac#init()
+packadd minpac
+call minpac#init()
 
-  call minpac#add('k-takata/minpac', {'type': 'opt'}) " Plugin manager using packages: PackUpdate
-  call minpac#add('overcache/NeoSolarized') " Color theme see configs
-  call minpac#add('neomake/neomake') " Async syntax checking: Neommake!
-  call minpac#add('rust-lang/rust.vim') " Better rust plugin: RustFmt
-  call minpac#add('jiangmiao/auto-pairs') " Smart editing closing brackets
+call minpac#add('k-takata/minpac', {'type': 'opt'}) " Plugin manager using packages: PackUpdate
+call minpac#add('overcache/NeoSolarized') " Color theme see configs
+call minpac#add('jiangmiao/auto-pairs') " Smart editing closing brackets
 
-  call minpac#add('neovim/nvim-lspconfig') " Coomon configurations for Nvim LSP client
+call minpac#add('nvim-lua/plenary.nvim') "Generic function used by popup.nvim
+call minpac#add('nvim-lua/popup.nvim') " VIM popup api for neovim. Eventually it will go upstream.
+call minpac#add('nvim-telescope/telescope.nvim') " Fuzzy finder
 
-  " LSP config from https://github.com/sharksforarms/vim-rust
-  call minpac#add('hrsh7th/vim-vsnip') " Snippet engine of LSP snippets
-  call minpac#add('hrsh7th/nvim-compe') " Autocompletion for built-in LSP
-  call minpac#add('nvim-lua/popup.nvim') " Next three are extra to investigate
-  call minpac#add('nvim-lua/plenary.nvim')
-  call minpac#add('nvim-telescope/telescope.nvim')
+" LSP config from https://github.com/sharksforarms/vim-rust
+call minpac#add('neovim/nvim-lspconfig') " Coomon configurations for Nvim LSP client
+call minpac#add('hrsh7th/vim-vsnip') " Snippet engine of LSP snippets
+call minpac#add('hrsh7th/nvim-compe') " Autocompletion for built-in LSP
+call minpac#add('simrat39/rust-tools.nvim') " Extra functionality on top of rust analyzer
 
-  call minpac#add('simrat39/rust-tools.nvim') " Extra functionality on top of rust analyzer
 
-endfunction
+" Not using the LSP requires uncommenting the lines below
+" call minpac#add('neomake/neomake') " Async syntax checking: Neommake!
+" call minpac#add('rust-lang/rust.vim') " Better rust plugin: RustFmt
 
 command! PackUpdate source $MYVIMRC | call PackInit() | call minpac#update()
 command! PackClean  source $MYVIMRC | call PackInit() | call minpac#clean()
@@ -30,11 +28,10 @@ command! PackStatus packadd minpac | call minpac#status()
 
 " PLUGINS SETTINGS {{{1
 
-let g:auto_save = 1  " enable AutoSave on Vim startup
 
-" Full config: when writing or reading a buffer, and on changes in insert and
+" Enable if not using LSP. Full config: when writing or reading a buffer, and on changes in insert and
 " normal mode (after 500ms; no delay when writing).
-call neomake#configure#automake('nrwi', 500)
+" call neomake#configure#automake('nrwi', 500)
 " let g:neomake_open_list = 2 " The language server plugin is more efficient
 
 let g:rustfmt_autosave = 1
@@ -112,6 +109,7 @@ require'compe'.setup {
   };
 }
 EOF
+
 inoremap <silent><expr> <C-Space> compe#complete()
 inoremap <silent><expr> <CR>      compe#confirm('<CR>')
 inoremap <silent><expr> <C-e>     compe#close('<C-e>')
@@ -188,7 +186,8 @@ set colorcolumn=80
 set clipboard+=unnamed
 
 " Display tabs as \ and trailing spaces as the middle dot.
-set list listchars=tab:\ \ ,trail:·
+set listchars=tab:->,trail:·
+set list
 
 " Highlight line where the cursor is. You could also highlight just the
 " numbers on the left.
@@ -240,6 +239,9 @@ augroup vimrc-incsearch-highlight
         autocmd CmdlineEnter /,\? :set hlsearch
         autocmd CmdlineLeave /,\? :set nohlsearch
 augroup END
+
+" Don't show intro message when opening without files.
+set shortmess+=I
 
 " Custom statusline {{{2
 " Inspired by: https://shapeshed.com/vim-statuslines/
@@ -313,16 +315,16 @@ if has("autocmd") && exists("+omnifunc")
                 \ endif
         endif
 
-" Set completeopt to have a better completion experience
-set completeopt=menu,menuone,noselect
-
-" Don't show intro message when opening without files.
-set shortmess+=I
 " Avoid showing extra messages when using completion
 set shortmess+=c
 
+" Trying disabling all of the below to see pure LSP experience
+" Set completeopt to have a better completion experience
+" set completeopt=menu,menuone,noselect
+
+
 " When popup is visible Enter selects the highlighted menu item.
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " Simulates down key when popup appears, keeping the menu alive while you
 " type.
