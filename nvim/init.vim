@@ -6,6 +6,7 @@ call minpac#init()
 call minpac#add('k-takata/minpac', {'type': 'opt'}) " Plugin manager using packages: PackUpdate
 call minpac#add('overcache/NeoSolarized') " Color theme see configs
 call minpac#add('jiangmiao/auto-pairs') " Smart editing closing brackets
+call minpac#add('tpope/vim-commentary') " gcc, gc<motion>, in visual mode gc
 
 call minpac#add('nvim-lua/plenary.nvim') "Generic function used by popup.nvim
 call minpac#add('nvim-lua/popup.nvim') " VIM popup api for neovim. Eventually it will go upstream.
@@ -22,12 +23,13 @@ call minpac#add('simrat39/rust-tools.nvim') " Extra functionality on top of rust
 " call minpac#add('neomake/neomake') " Async syntax checking: Neommake!
 " call minpac#add('rust-lang/rust.vim') " Better rust plugin: RustFmt
 
-command! PackUpdate source $MYVIMRC | call PackInit() | call minpac#update()
-command! PackClean  source $MYVIMRC | call PackInit() | call minpac#clean()
+command! PackUpdate source $MYVIMRC | call minpac#update()
+command! PackClean  source $MYVIMRC | call minpac#clean()
 command! PackStatus packadd minpac | call minpac#status()
 
 " PLUGINS SETTINGS {{{1
 
+let mapleader = ","
 
 " Enable if not using LSP. Full config: when writing or reading a buffer, and on changes in insert and
 " normal mode (after 500ms; no delay when writing).
@@ -132,6 +134,12 @@ autocmd CursorHold * lua vim.lsp.diagnostic.show_line_diagnostics()
 nnoremap <silent> g[ <cmd>lua vim.lsp.diagnostic.goto_prev()<CR>
 nnoremap <silent> g] <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 
+" TELESCOPE
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
 " COLOR SCHEME {{{1
 set termguicolors
 
@@ -180,7 +188,7 @@ set lazyredraw
 set showmatch
 
 " Highlight line 99
-set colorcolumn=80
+set colorcolumn=100
 
 " Use system clipboard.
 set clipboard+=unnamed
@@ -301,7 +309,6 @@ autocmd FileType rust compiler! cargo
 "
 " PROGRAMMING {{{1
 
-let mapleader = "<SPACE>"
 
 " Enables Omni completion
 filetype plugin on
